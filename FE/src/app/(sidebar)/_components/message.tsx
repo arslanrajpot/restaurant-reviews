@@ -1,5 +1,6 @@
 "use client";
 
+import DOMPurify from "dompurify";
 import { marked } from "marked";
 import FeedbackButtons from "./FeedbackButtons";
 
@@ -10,6 +11,13 @@ interface MessageProps {
   question?: string; // The user's question for feedback
   userId?: string; // User ID for feedback
 }
+
+// Agent replies can contain text from scraped reviews, so the generated HTML must be sanitized
+const renderAgentHtml = (markdown: string): string => {
+  const html = marked.parse(markdown, { async: false });
+  // DOMPurify needs a DOM; during server rendering fall back to an empty string
+  return DOMPurify.isSupported ? DOMPurify.sanitize(html) : "";
+};
 
 const Message = ({ sender, text, loading, question, userId }: MessageProps) => {
   const cleanedText = text.replace(/\n{2,}/g, "\n").trim();
@@ -32,7 +40,7 @@ const Message = ({ sender, text, loading, question, userId }: MessageProps) => {
           ) : sender === "user" ? (
             cleanedText
           ) : (
-            <div dangerouslySetInnerHTML={{ __html: marked(cleanedText) }} />
+            <div dangerouslySetInnerHTML={{ __html: renderAgentHtml(cleanedText) }} />
           )}
         </div>
         

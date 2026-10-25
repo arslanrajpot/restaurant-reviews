@@ -8,6 +8,8 @@ import threading
 load_dotenv()
 
 SERP_API_KEY = os.getenv("SERPAPI_API_KEY")
+# Seconds to wait for SerpAPI before giving up, so a slow call can't hang a request forever
+REQUEST_TIMEOUT_SECONDS = 30
 
 # API Call Tracking (thread-safe)
 api_usage_stats = {
@@ -68,7 +70,7 @@ def get_single_competitor_details(competitor, location):
 
     try:
         track_api_call(f"Competitor details: {competitor_name}")
-        response = requests.get("https://serpapi.com/search", params=detailed_params)
+        response = requests.get("https://serpapi.com/search", params=detailed_params, timeout=REQUEST_TIMEOUT_SECONDS)
         detailed_data = response.json()
 
         if "place_results" in detailed_data:
@@ -185,7 +187,7 @@ def get_exactly_50_reviews(place_id, restaurant_name):
             params["num"] = 20
 
         try:
-            response = requests.get("https://serpapi.com/search", params=params)
+            response = requests.get("https://serpapi.com/search", params=params, timeout=REQUEST_TIMEOUT_SECONDS)
             data = response.json()
 
             # Check for errors
@@ -220,7 +222,7 @@ def get_exactly_50_reviews(place_id, restaurant_name):
                             remaining_needed = target_reviews - len(all_reviews)
                             reviews_to_add = reviews[:remaining_needed]
                             all_reviews.extend(reviews_to_add)
-                            continue
+                # This response has no pagination token, so requesting again would return the same reviews
                 break
         except Exception as e:
             print(f"Error fetching page {page_count}: {str(e)}")
@@ -301,7 +303,7 @@ def get_all_competitor_details_only(competitors_list, location):
         print(f"\n--- Competitor #{i}: {competitor_name} ---")
 
         try:
-            response = requests.get("https://serpapi.com/search", params=detailed_params)
+            response = requests.get("https://serpapi.com/search", params=detailed_params, timeout=REQUEST_TIMEOUT_SECONDS)
             detailed_data = response.json()
 
             if "place_results" in detailed_data:
@@ -352,7 +354,7 @@ def search_restaurant_for_api(restaurant_name, location=""):
         "api_key": SERP_API_KEY
     }
 
-    main_response = requests.get("https://serpapi.com/search", params=main_params)
+    main_response = requests.get("https://serpapi.com/search", params=main_params, timeout=REQUEST_TIMEOUT_SECONDS)
     main_data = main_response.json()
 
     main_restaurant = None
@@ -377,7 +379,7 @@ def search_restaurant_for_api(restaurant_name, location=""):
                     "api_key": SERP_API_KEY
                 }
 
-                competitor_response = requests.get("https://serpapi.com/search", params=competitor_params)
+                competitor_response = requests.get("https://serpapi.com/search", params=competitor_params, timeout=REQUEST_TIMEOUT_SECONDS)
                 competitor_data = competitor_response.json()
 
                 if "local_results" in competitor_data:
@@ -406,7 +408,7 @@ def search_restaurant_for_api(restaurant_name, location=""):
                     "api_key": SERP_API_KEY
                 }
 
-                competitor_response = requests.get("https://serpapi.com/search", params=competitor_params)
+                competitor_response = requests.get("https://serpapi.com/search", params=competitor_params, timeout=REQUEST_TIMEOUT_SECONDS)
                 competitor_data = competitor_response.json()
 
                 if "local_results" in competitor_data:

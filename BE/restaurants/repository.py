@@ -1,3 +1,4 @@
+from sqlalchemy.exc import IntegrityError
 from database import SessionLocal
 from restaurants.model import Restaurant, UserFeedback
 from uuid import UUID
@@ -59,10 +60,14 @@ def get_existing_restaurant(restaurant_name: str, location: str):
 
 def create_restaurant_from_search(restaurant_data, reviews_data=None):
     """Create a new restaurant entry from search data with review star counts"""
+    restaurant_name = restaurant_data.get('title', restaurant_data.get('name', ''))
+    restaurant_location = restaurant_data.get('address', 'NaN')
+
     with SessionLocal() as db:
-        # Check if restaurant already exists
+        # Check if restaurant already exists (same name at the same address)
         existing = db.query(Restaurant).filter(
-            Restaurant.restaurant_name == restaurant_data.get('title', restaurant_data.get('name'))
+            Restaurant.restaurant_name == restaurant_name,
+            Restaurant.restaurant_location == restaurant_location,
         ).first()
 
         if existing:
@@ -114,10 +119,10 @@ def create_restaurant_from_search(restaurant_data, reviews_data=None):
         # Create new restaurant
         new_restaurant = Restaurant(
             id=uuid.uuid4(),
-            restaurant_name=restaurant_data.get('title', restaurant_data.get('name', '')),
+            restaurant_name=restaurant_name,
             average_price=restaurant_data.get('price', 'NaN'),
             total_rating=float(restaurant_data.get('rating', 0)) if restaurant_data.get('rating') else 0.0,
-            restaurant_location=restaurant_data.get('address', 'NaN'),
+            restaurant_location=restaurant_location,
             neighbourhood='NaN',
             hours_of_operation=hours_of_operation,
             cuisine=cuisine,
@@ -132,7 +137,15 @@ def create_restaurant_from_search(restaurant_data, reviews_data=None):
         )
 
         db.add(new_restaurant)
-        db.commit()
+        try:
+            db.commit()
+        except IntegrityError:
+            # Stored concurrently by another request/thread; return that row instead
+            db.rollback()
+            return db.query(Restaurant).filter(
+                Restaurant.restaurant_name == restaurant_name,
+                Restaurant.restaurant_location == restaurant_location,
+            ).first()
         db.refresh(new_restaurant)
         return new_restaurant
 
@@ -158,13 +171,13 @@ def update_restaurant(restaurant_data):
         return {"message": "Restaurant updated successfully"}
 
 
-def save_user_feedback(feedback_data):
+def save_user_feedback(feedback_data, user_id: str):
     """
     Save user thumbs up/down feedback
     """
     with SessionLocal() as db:
         feedback = UserFeedback(
-            user=feedback_data.user,
+            user=user_id,
             question=feedback_data.question,
             answer=feedback_data.answer,
             thumbs=int(feedback_data.thumbs)

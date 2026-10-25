@@ -57,13 +57,13 @@ def store_competitor_data(competitor_info, pinecone_uploader):
 
 
 def get_payment_failed_email_content(customer_email):
-    subject = "Payment Failed: Your Subscription Has Been Downgraded"
+    subject = "Payment Failed: Action Needed for Your Subscription"
     message = f"""
     <html>
     <body>
         <p>Dear {customer_email.split('@')[0]},</p>
-        <p>We were unable to process your monthly payment. As a result, your subscription has been downgraded to the Free tier.</p>
-        <p>Please buy Subscription with a different card to continue enjoying premium features.</p>
+        <p>We were unable to process your latest subscription payment. Your plan is still active and we will retry the payment automatically over the next few days.</p>
+        <p>Please make sure your card is valid and has sufficient funds. If the payment keeps failing, your subscription will be cancelled and your account moved to the Free tier.</p>
         <p>Thank you!</p> 
         <p style="color: #a87b02; font-weight: bold; font-size: 18px; margin-top: 0;">Review munch</p>
     </body>

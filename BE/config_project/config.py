@@ -1,5 +1,6 @@
 from pydantic_settings import BaseSettings
 from dotenv import load_dotenv
+from urllib.parse import urlparse
 import os
 
 # Load environment variables from .env file
@@ -20,8 +21,11 @@ class Settings(BaseSettings):
     SMTP_EMAIL: str
     SMTP_PASSWORD: str
     
-    # Base URL for email verification links
+    # Frontend URL, used for email links and as the default allowed CORS / redirect origin
     BASE_URL: str
+
+    # Extra allowed frontend origins, comma separated (e.g. "http://localhost:3000,https://www.example.com")
+    CORS_ORIGINS: str = ""
     
     # OpenAI Settings
     OPENAI_API_KEY: str
@@ -30,9 +34,6 @@ class Settings(BaseSettings):
     PINECONE_API_KEY: str
     PINECONE_INDEX: str
     EMBEDDING_MODEL: str
-    
-    # Chainlit Settings
-    CHAINLIT_AUTH_SECRET: str
     
     # SerpAPI Settings
     SERPAPI_API_KEY: str
@@ -50,6 +51,22 @@ class Settings(BaseSettings):
         env_file = ".env"
         case_sensitive = True
         extra = "ignore"  # Allow extra fields in settings
+
+    @property
+    def allowed_origins(self) -> list[str]:
+        origins = [self.BASE_URL] + [o for o in self.CORS_ORIGINS.split(",") if o.strip()]
+        result = []
+        for origin in origins:
+            parsed = urlparse(origin.strip())
+            if parsed.scheme and parsed.netloc:
+                normalized = f"{parsed.scheme}://{parsed.netloc}"
+                if normalized not in result:
+                    result.append(normalized)
+        return result
+
+    def is_allowed_redirect(self, url: str) -> bool:
+        parsed = urlparse(url or "")
+        return f"{parsed.scheme}://{parsed.netloc}" in self.allowed_origins
 
 # Create a single instance of Settings
 try:

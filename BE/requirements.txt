@@ -13,13 +13,12 @@ pinecone==5.4.2
 sentence-transformers==3.4.1
 google_search_results==2.4.2
 alembic
-sqlalchemy
+sqlalchemy>=2.0,<2.1  # 2.1 defaults postgresql:// to psycopg 3, which is not installed
 psycopg2-binary
 pymysql
 passlib
 bcrypt
 PyJWT
-python-jose
 pydantic[email]
 uvicorn[standard]
 stripe>=8.0.0

@@ -281,7 +281,12 @@ export const search_restaurant = async (name: string, location: string): Promise
   }
   
   const responseData: SearchRestaurantResponse = await response.json();
-  
+
+  // The API answers 200 with success=false when the restaurant could not be found or stored
+  if (!responseData.success || !responseData.restaurant_id) {
+    throw new Error(responseData.message || "Restaurant not found. Please check the name and location.");
+  }
+
   return {
     id: responseData.restaurant_id,
     name: responseData.restaurant_name
@@ -305,6 +310,10 @@ export const createCheckoutSession = async (priceId: string, successUrl: string,
     success_url: successUrl,
     cancel_url: cancelUrl,
   });
+};
+
+export const changePlan = async (priceId: string) => {
+  return _callAPI("stripe/change-plan", "POST", { price_id: priceId });
 };
 
 export const get_billing_details = async () => {

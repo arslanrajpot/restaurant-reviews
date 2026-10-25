@@ -25,8 +25,9 @@ if config.config_file_name is not None:
 # target_metadata = mymodel.Base.metadata
 from database import Base
 from users.model import User
-from restaurants.model import Restaurant
+from restaurants.model import Restaurant, UserFeedback
 from subscription.model import Subscription
+from faq.model import FAQ
 
 target_metadata = Base.metadata
 
