@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🥡 Review Munch: Frontend
 
-## Getting Started
+Next.js web app for [Review Munch](../README.md): authentication, the AI review assistant, the analytics dashboard, and subscription management.
 
-First, run the development server:
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 15 (App Router), React 19, TypeScript
+- **Styling:** Tailwind CSS 4
+- **Charts:** Recharts
+- **Markdown rendering:** marked + DOMPurify (sanitized AI output)
+- **Icons:** react-icons
+
+## 📄 Pages
+
+| Route | Description |
+|---|---|
+| `/login`, `/signup` | Authentication. Signup includes restaurant search and automatic onboarding |
+| `/forget_password`, `/reset_password` | Password reset by email link |
+| `/dashboard` | Rating overview, review totals and star-rating breakdown |
+| `/review_agent` | AI assistant chat with guided questions and 👍/👎 feedback |
+| `/setting`, `/setting/change_password`, `/setting/billing_details` | Account, password, invoices and cancellation |
+| `/subscription`, `/subscription/success` | Plan selection, checkout, upgrades and payment confirmation |
+
+## ⚙️ Setup
+
+**Prerequisites:** Node.js 18.18+ and the [backend API](../BE/README.md) running.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+cd FE
+npm ci
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Create or edit `FE/.env`:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```env
+# Backend base URL. Must end with a trailing slash
+NEXT_PUBLIC_BACKEND_BASE_URL=http://localhost:8000/
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Add the frontend origin (e.g. `http://localhost:3000`) to the backend's `BASE_URL` or `CORS_ORIGINS`. Otherwise browsers will block the API requests.
 
-## Learn More
+## ▶️ Scripts
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run dev     # development server at http://localhost:3000
+npm run build   # production build
+npm start       # serve the production build
+npm run lint    # ESLint
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🐳 Docker
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+docker compose up --build
+```
 
-## Deploy on Vercel
+The app is served on port 80. `NEXT_PUBLIC_*` variables are baked in at build time, so rebuild the image after changing `.env`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📁 Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+src/
+├── app/
+│   ├── (auth)/          # Login, signup, password reset
+│   ├── (sidebar)/       # Dashboard, AI chat, settings (authenticated layout)
+│   ├── subscription/    # Plans, checkout, success
+│   └── _components/     # Shared layout components
+├── hooks/               # e.g. useFeedback
+├── service/api.tsx      # Typed API client (JWT auth, error handling)
+├── shared/              # Shared UI (loader)
+└── types/               # API types
+```
