@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Environment files (FE/.env holds only the public backend URL and stays tracked)
+BE/.env
+
+# OS
+.DS_Store

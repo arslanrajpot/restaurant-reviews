@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import loginImage from "@/assets/images/login_image.jpg";
-import { createCheckoutSession, get_user_data } from "@/service/api";
+import { changePlan, createCheckoutSession, get_user_data } from "@/service/api";
 
 const plans = [
   {
@@ -18,7 +18,8 @@ const plans = [
     ],
     id: "pro",
     popular: false,
-    priceId: "price_1RoheuQPh3u6u99AxKoRNgVZ"
+    priceId: "price_1RoheuQPh3u6u99AxKoRNgVZ",
+    tier: "PRO",
   },
   {
     name: "Premium",
@@ -32,17 +33,33 @@ const plans = [
     ],
     id: "premium",
     popular: true,
-    priceId: "price_1Rohn6QPh3u6u99AYY8A5SEg"
+    priceId: "price_1Rohn6QPh3u6u99AYY8A5SEg",
+    tier: "PREMIUM",
   }
 ];
+
+const TIER_RANK: Record<string, number> = { FREE: 0, PRO: 1, PREMIUM: 2 };
 
 const SubscriptionPage = () => {
   const [showSubscribedModal, setShowSubscribedModal] = useState(false);
 
   const handleSubscribe = async (plan: typeof plans[0]) => {
     try {
-      const userData = await get_user_data() as { is_subscribed: boolean };
+      const userData = await get_user_data();
       if (userData.is_subscribed) {
+        // Subscribed users can upgrade their existing subscription to a higher plan
+        if ((TIER_RANK[plan.tier] ?? 0) > (TIER_RANK[userData.tier] ?? 0)) {
+          if (!confirm(`Upgrade to ${plan.name}? The prorated difference will be charged to your card now.`)) {
+            return;
+          }
+          try {
+            const result = await changePlan(plan.priceId);
+            alert(result?.message || "Your plan has been upgraded.");
+          } catch (error) {
+            alert((error as { message?: string })?.message || "Failed to upgrade your plan. Please try again.");
+          }
+          return;
+        }
         setShowSubscribedModal(true);
         return;
       }

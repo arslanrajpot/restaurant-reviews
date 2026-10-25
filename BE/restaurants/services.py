@@ -32,14 +32,14 @@ def get_restaurant(id: UUID):
     return RestaurantResponse(
         restaurant_id=data.id,
         restaurant_name=data.restaurant_name,
-        cuisine=data.cuisine.split(",")[0] if data.cuisine else None,
-        overall_rating=data.overall_rating,
-        total_review_counts=data.total_review_counts,
-        five_stars=data.five_stars,
-        four_stars=data.four_stars,
-        three_stars=data.three_stars,
-        two_stars=data.two_stars,
-        one_stars=data.one_stars,
+        cuisine=data.cuisine.split(",")[0] if data.cuisine else "",
+        overall_rating=data.overall_rating or 0,
+        total_review_counts=data.total_review_counts or 0,
+        five_stars=data.five_stars or 0,
+        four_stars=data.four_stars or 0,
+        three_stars=data.three_stars or 0,
+        two_stars=data.two_stars or 0,
+        one_stars=data.one_stars or 0,
     )
 
 
@@ -57,6 +57,8 @@ def get_restaurant_location_service(id: UUID) -> RestaurantLocationResponse:
         # Return the response model
         return RestaurantLocationResponse(location=location)
 
+    except HTTPException:
+        raise
     except Exception as e:
         logger.error(f"Service error: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
@@ -183,7 +185,7 @@ def get_user_feedback_context(user_id: str):
     disliked = []
     
     for feedback in feedback_history:
-        if feedback.thumbs:
+        if feedback.thumbs == 1:
             liked.append(f"Q: {feedback.question} A: {feedback.answer}, Thumbs: {feedback.thumbs}")
         else: 
             disliked.append(f"Q: {feedback.question} A: {feedback.answer}, Thumbs: {feedback.thumbs}")

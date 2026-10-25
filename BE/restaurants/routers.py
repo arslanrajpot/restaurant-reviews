@@ -9,11 +9,15 @@ from restaurants.schema import (
 )
 from users.model import User
 from users.utils import get_current_user
+from rate_limit import RateLimiter
 from uuid import UUID
 import logging
 
 logger = logging.getLogger(__name__)
 router = APIRouter()
+
+# Restaurant search is public (used during signup) and triggers paid SerpAPI/Pinecone calls
+search_rate_limit = RateLimiter(max_requests=5, window_seconds=60 * 60)
 
 
 @router.get("/get_all_restaurants_name")
@@ -49,7 +53,7 @@ async def get_restaurant_location(id: UUID):
         logger.error(f"Internal server error fetching location for id {id}: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
 
-@router.post("/search_restaurant", response_model=RestaurantDataCaptureResponse)
+@router.post("/search_restaurant", response_model=RestaurantDataCaptureResponse, dependencies=[Depends(search_rate_limit)])
 async def capture_restaurant_data(
         request: RestaurantDataCaptureRequest,
 ):
@@ -68,8 +72,8 @@ async def capture_restaurant_data(
 
 
 @router.post("/feedback")
-def save_feedback(request: FeedbackRequest):
+def save_feedback(request: FeedbackRequest, current_user: User = Depends(get_current_user)):
     """
-    Save user thumbs up/down feedback
+    Save user thumbs up/down feedback for the authenticated user
     """
-    return repository.save_user_feedback(request)
+    return repository.save_user_feedback(request, user_id=str(current_user.id))

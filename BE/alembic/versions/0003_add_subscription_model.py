@@ -37,9 +37,8 @@ def upgrade() -> None:
     sa.UniqueConstraint('user_id')
     )
     op.create_index(op.f('ix_subscriptions_id'), 'subscriptions', ['id'], unique=False)
-    op.add_column('users', sa.Column('is_subscribed', sa.Boolean(), nullable=False))
+    op.add_column('users', sa.Column('is_subscribed', sa.Boolean(), server_default=sa.false(), nullable=False))
     op.add_column('users', sa.Column('message_count', sa.Integer(), nullable=True))
-    op.add_column('users', sa.Column('tier', sa.Enum('FREE', 'PREMIUM', 'PRO', name='tier'), nullable=False))
     # ### end Alembic commands ###
 
 

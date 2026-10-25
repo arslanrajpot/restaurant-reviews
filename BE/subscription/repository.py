@@ -2,7 +2,7 @@ from database import SessionLocal
 from subscription.model import Subscription
 from users.repository import get_user_by_email
 import uuid
-from datetime import datetime
+from datetime import datetime, timezone
 
 def create_or_update_subscription(user_email: str, stripe_subscription_id: str, status: str, payment_method: str = None, amount: int = None, interval: str = None, period_end: datetime = None):
     db = SessionLocal()
@@ -89,10 +89,10 @@ def get_expired_subscriptions():
     """Get all subscriptions that have passed their end date"""
     db = SessionLocal()
     try:
-        current_time = datetime.utcnow()
+        current_time = datetime.now(timezone.utc)
         return db.query(Subscription).filter(
             Subscription.end_date <= current_time,
-            Subscription.status == "cancelled"
+            Subscription.status.in_(["cancelled", "canceled"])
         ).all()
     finally:
         db.close()

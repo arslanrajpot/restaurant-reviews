@@ -1,3 +1,5 @@
+from typing import Optional
+from sqlalchemy import update, func
 from database import SessionLocal
 from users.model import User
 from datetime import datetime
@@ -69,17 +71,30 @@ def update_user_tier(email: str, new_tier, is_subscribed: bool = False) -> User:
         else:
             raise ValueError("User not found")
 
-def decrement_message_count(user_id: str) -> int:
+def reserve_message(user_id) -> Optional[int]:
+    """
+    Atomically take one message from the user's allowance.
+    Returns the remaining count, or None if the user has no messages left.
+    """
     with SessionLocal() as db:
-        user = db.query(User).filter(User.id == user_id).first()
-        if user and user.message_count > 0:
-            user.message_count -= 1
-            db.commit()
-            db.refresh(user)
-            return user.message_count
-        elif user:
-            return 0
-        else:
-            raise ValueError("User not found")
+        remaining = db.execute(
+            update(User)
+            .where(User.id == user_id, User.message_count > 0)
+            .values(message_count=User.message_count - 1)
+            .returning(User.message_count)
+        ).scalar_one_or_none()
+        db.commit()
+    return remaining
+
+
+def refund_message(user_id) -> None:
+    """Give back a message taken by reserve_message when answering failed"""
+    with SessionLocal() as db:
+        db.execute(
+            update(User)
+            .where(User.id == user_id)
+            .values(message_count=func.coalesce(User.message_count, 0) + 1)
+        )
+        db.commit()
 
 

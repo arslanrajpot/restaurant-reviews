@@ -33,7 +33,7 @@ class RestaurantDataCaptureResponse(BaseModel):
 
 
 class FeedbackRequest(BaseModel):
-    user: str
+    user: Optional[str] = None  # Ignored; the user is taken from the auth token
     question: str
     answer: str
     thumbs: int

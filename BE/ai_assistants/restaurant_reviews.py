@@ -1,6 +1,6 @@
 import os
 import time
-from typing import Dict, Optional
+from typing import Dict, List, Optional
 from pinecone import Pinecone
 from langchain_pinecone import PineconeVectorStore
 from langchain_openai import ChatOpenAI
@@ -26,12 +26,13 @@ embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
 
 
 class RestaurantAssistant:
-    def __init__(self, restaurant_id: str, user_feedback_context: str=''):
+    def __init__(self, restaurant_id: str, user_feedback_context: str='', history: Optional[List[Dict]] = None):
         self.pc = Pinecone(api_key=PINECONE_API_KEY)
         self.chat_model = self.setup_chat_model()
         self.vectorstore = self.setup_vectorstore()
         self.retriever = self.setup_retriever()
         self.memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
+        self.load_history(history or [])
         self.agent = None
         self.restaurant_context = services.fetch_restaurant_context(restaurant_id)
         self.user_feedback_context = user_feedback_context
@@ -47,6 +48,14 @@ class RestaurantAssistant:
             top_p=0.4,
             max_tokens=1000
         )
+
+    def load_history(self, history: List[Dict]):
+        """Load earlier messages of this conversation so follow-up questions have context"""
+        for entry in history:
+            if entry.get("author") == "user":
+                self.memory.chat_memory.add_user_message(entry["content"])
+            else:
+                self.memory.chat_memory.add_ai_message(entry["content"])
 
     def setup_vectorstore(self):
         return PineconeVectorStore(
@@ -107,7 +116,7 @@ class RestaurantAssistant:
             - If information is unclear or unavailable, acknowledge it
             - If asked about a specific restaurant, first check its available menu, popular dishes, or customer preferences.
             - Only provide reviews about [restaurant name] if they are specifically relevant to the query
-            - KEEP RESPONSES UNDER 500 WORDS WHILE MAINTAINING QUALITY AND DETAIL, IF YOU DONT I WILL KILL YOU !!
+            - Keep responses under 500 words while maintaining quality and detail.
             
             PERSONALIZATION BASED ON USER FEEDBACK:
             You must adapt your response style and content strictly based on user feedback to maximize relevance and satisfaction.
@@ -122,7 +131,6 @@ class RestaurantAssistant:
                 - Simplifying or expanding detail
                 - Varying structure (e.g., table vs paragraph vs bullet points)
                 - Offering a different perspective or format (e.g., examples, table)
-            - User gave a thumbs down to the previous response because it was too repetitive or lacked variation. Try a different format or offer additional insights.
             - Learn user preference patterns over time and bias toward them without needing repeated thumbs.
             
             ONLY use the feedback context as a hard constraint — not as a hint or soft suggestion. Ignore any other assumptions.
@@ -131,8 +139,7 @@ class RestaurantAssistant:
             - Use natural paragraph formatting with proper spacing for clarity.
             - Make sure that the headings are always on a new line for readability
             - Use bullet points for key information
-            - Avoid Markdown symbols like #, **, and unnecessary \n
-            - Give me response as markdown format 
+            - Format the response as Markdown, avoiding unnecessary blank lines
 
             Important Note:
             NEVER mention which tool or source provided the information."""
@@ -153,7 +160,7 @@ class RestaurantAssistant:
             agent=agent,
             tools=tools,
             memory=self.memory,
-            verbose=True,
+            verbose=False,
             handle_parsing_errors=True,
             max_iterations=3
         )
@@ -163,24 +170,17 @@ class RestaurantAssistant:
 
     async def get_response(self, query: str) -> Dict:
         start_time = time.time()
-        try:
-            result = self.agent.invoke({
-                "input": self.format_query_with_context(query),
-            })
-            response = result['output'] if isinstance(result, dict) else str(result)
+        # Errors propagate so the caller can report them (and not charge the user for a message)
+        result = await self.agent.ainvoke({
+            "input": self.format_query_with_context(query),
+        })
+        response = result['output'] if isinstance(result, dict) else str(result)
 
-            return {
-                "response": response,
-                "agent_used": "unified",
-                "elapsed_time": time.time() - start_time
-            }
-        except Exception as e:
-            return {
-                "response": "Error processing your request",
-                "reasoning": str(e),
-                "agent_used": "error",
-                "elapsed_time": time.time() - start_time
-            }
+        return {
+            "response": response,
+            "agent_used": "unified",
+            "elapsed_time": time.time() - start_time
+        }
 
     async def on_message(self, message: str, is_specific: bool = False, faq_id: Optional[int] = None, db=None):
         try:

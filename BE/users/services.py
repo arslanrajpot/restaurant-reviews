@@ -8,6 +8,8 @@ from users.utils import (
     get_current_user,
     verify_password,
     send_reset_password_email,
+    create_reset_token,
+    get_user_from_reset_token,
 )
 from users.model import User
 
@@ -31,7 +33,7 @@ def signup_user(user_data: SignupRequest) -> User:
 
 
 def verify_user(token: str):
-    user = get_current_user(token)
+    user = get_current_user(token, is_token=True)
 
     if not user:
         raise HTTPException(status_code=404, detail="User does not exist")
@@ -71,19 +73,19 @@ def login(email, password) -> str:
 
 
 def forget_password(email):
+    # Same response whether or not the account exists, so this can't be used to discover registered emails
+    response = {"message": "If an account exists for this email, a password reset link has been sent."}
     user = repository.get_user_by_email(email)
-    if not user:
-        raise HTTPException(status_code=400, detail="User not found.")
-    access_token = create_access_token(data={"sub": user.email})
-    send_reset_password_email(user.email, user.name, access_token)
+    if not user or user.is_deleted:
+        return response
+    reset_token = create_reset_token(user)
+    send_reset_password_email(user.email, user.name, reset_token)
 
-    return {"message": "please check your email"}
+    return response
 
 
 def reset_password(token, password):
-    user = get_current_user(token, is_token=True)
-    if not user:
-        raise HTTPException(status_code=404, detail="User does not exist")
+    user = get_user_from_reset_token(token)
     if verify_password(password, user.password):
         raise HTTPException(
             status_code=403,

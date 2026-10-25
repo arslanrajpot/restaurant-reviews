@@ -2,6 +2,7 @@
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import Loader from "@/shared/loader";
+import { BASE_API_URL } from "@/service/api";
 import { useRouter } from "next/navigation";
 import { Suspense } from "react";
 
@@ -30,8 +31,12 @@ function SuccessPageContent() {
   const router = useRouter();
 
   useEffect(() => {
+    if (!sessionId) {
+      setLoading(false);
+      return;
+    }
     if (sessionId) {
-      fetch(`${process.env.NEXT_PUBLIC_BACKEND_BASE_URL || "http://localhost:8000"}/stripe/success?session_id=${sessionId}`)
+      fetch(`${BASE_API_URL}stripe/success?session_id=${encodeURIComponent(sessionId)}`)
         .then(res => res.json())
         .then(data => {
           setDetails(data);

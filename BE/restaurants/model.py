@@ -1,5 +1,5 @@
 import uuid
-from sqlalchemy import Column, Integer, String, Boolean, DateTime, Float, ForeignKey
+from sqlalchemy import Column, Integer, String, Boolean, DateTime, Float, ForeignKey, UniqueConstraint
 from database import Base
 from sqlalchemy.dialects.postgresql import UUID
 import datetime
@@ -12,9 +12,13 @@ if TYPE_CHECKING:
 
 class Restaurant(Base):
     __tablename__ = "restaurants"
+    # Chains share a name, so a restaurant is identified by name + location
+    __table_args__ = (
+        UniqueConstraint("restaurant_name", "restaurant_location", name="uq_restaurants_name_location"),
+    )
 
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    restaurant_name = Column(String, unique=True, nullable=False)
+    restaurant_name = Column(String, nullable=False)
     average_price = Column(String, nullable=True)
     total_rating = Column(Float, default=0.0, nullable=True)
     restaurant_location = Column(String, nullable=True)
