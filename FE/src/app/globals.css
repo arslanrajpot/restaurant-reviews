@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+
+:root {
+  --button-theme: #A57C00;
+  --color-theme: #005F73;
+  --background: #ffffff;
+  --foreground: #171717
+}
+
+.dot-typing {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: .5px;
+  background-color: black;
+  animation: scaling 2.5s ease-in-out infinite;
+}
+
+@keyframes scaling {
+  0%, 100% {
+    transform: scale(0.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+.dot-typing:nth-child(0) {
+  animation-delay: .3s;
+}
+.dot-typing:nth-child(1) {
+  animation-delay: .6s;
+}
+.dot-typing:nth-child(0) {
+  animation-delay: 1s;
+}
+
+.logo-zoom {
+  width: 200px;
+  animation: zoomInOut 2s infinite ease-in-out;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

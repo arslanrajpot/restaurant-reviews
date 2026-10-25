@@ -1,0 +1,7 @@
+version: '3'
+services:
+  review-munch-dashboard:
+    build: .
+    ports:
+      - "80:3000"
+    command: "npm run start"

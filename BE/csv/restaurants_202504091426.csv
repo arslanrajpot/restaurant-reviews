@@ -1,0 +1,818 @@
+"id","restaurant_name","average_price","total_rating","restaurant_location","neighbourhood","hours_of_operation","cuisine","tags","overall_rating","food_rating","service_rating","ambience_rating","created_at","is_active"
+cdb70271-530a-4d8f-8d7b-841759986efb,Blanchette,£26 to £40,4.6,"9 D'Arblay Street, London, W1F 8DR",Soho,Mon–Sat 12:00 pm–10:00 pm,"French, Mediterranean","Beer, Cafe, Cocktails, Counter Seating, Full Bar, Gluten-free Options, Outdoor Smoking Area, Patio/Outdoor Dining, Private Room, View, Wheelchair Access, Wine",5,5,5,5,2025-03-19 11:10:36.623,true
+"52909748-aecb-4d03-a655-f24a27c2f2a4",Alex Dilling at Hotel Café Royal,£41 and over,4.6,"68 Regent St., London, Greater London W1B 4DY",Soho,Tue–Sat 6:00 pm–12:00 am Sat 12:00 pm–4:30 pm,"French, Contemporary European, Modern European","Beer, Chef's Table, Cocktails, Corkage Fee, Full Bar, Gluten-free Options, Non-Smoking, Private Room, View, Wheelchair Access, Wine",1,1,1,1,2025-03-19 11:10:38.089,true
+f5371921-4a97-4581-951c-a4b2d4f41875,Sushi Kyu,£26 to £40,4.6,"30 Brewer St, London, Greater London W1F 0SS",Soho,Lunch Daily 12:00 pm–3:00 pm Dinner Mon–Sat 5:30 pm–10:30 pm Sun 5:30 pm–10:00 pm,Japanese,"Beer, Counter Seating, Delivery, Non-Smoking, Takeout, Wine",4,5,5,4,2025-03-19 11:10:39.217,true
+"24be074a-d82c-4e98-8b7d-5708ff0c4a3a",The Counter - Soho,£26 to £40,4.5,"15 Kingly St, London, Greater London W1B 5PS",Soho,"Mon 5:00 pm–11:00 pm Tue, Wed 12:00 pm–12:00 am Thu–Sat 12:00 pm–1:00 am Sun 12:00 pm–8:00 pm","Turkish, Mediterranean, Greek","Banquet, Bar/Lounge, Beer, Chef's Table, Cocktails, Counter Seating, Entertainment, Full Bar, Gluten-free Options, Late Night, Non-Smoking, Patio/Outdoor Dining, Wine",4,5,5,5,2025-03-19 11:10:40.111,true
+d656fc42-2bc8-4273-ba4c-326dbcba3eb3,Ember Yard,£41 and over,4.4,"60 Berwick Street, London, W1F 8SU",Soho,Lunch Daily 12:00 pm–5:00 pm Bar Thu–Sat 5:00 pm–1:00 am Dinner Mon–Sat 5:00 pm–11:00 pm Sun 5:00 pm–10:00 pm,"Tapas / Small Plates, Spanish, Italian","Banquet, Bar/Lounge, Beer, Chef's Table, Cocktails, Corkage Fee, Counter Seating, Full Bar, Gender Neutral Restroom, Gluten-free Options, Late Night, Non-Smoking, Patio/Outdoor Dining, Patio/Outdoor Dining, Private Room, Vegan, Weekend Brunch, Wine",5,4,5,5,2025-03-19 11:10:41.053,true
+bc1c8865-3c24-4ef9-924f-845688b85949,Pierre Victoire,£26 to £40,4.5,"5 Dean Street, Soho, London, W1D 3RQ",Soho,"Mon–Wed, Sun 12:00 pm–11:00 pm Thu–Sat 12:00 pm–11:30 pm","French, Bistro, Traditional French","Gluten-free Options, Vegan, Wine",4,4,2,3,2025-03-19 11:10:41.943,true
+faf30ef1-f659-4b03-9061-e260174b0419,Bar des Prés,£41 and over,4.7,"16 Albemarle St, London, Greater London W1S 4HW",Piccadilly,Daily 12:00 pm–3:00 pm Mon–Sat 6:00 pm–11:00 pm Sun 6:00 pm–10:00 pm,"French / Japanese, Asian","Bar/Lounge, Beer, Cocktails, Patio/Outdoor Dining, Wine",2,3,1,3,2025-03-19 11:10:42.893,true
+"88ae2c92-bdcb-4ccb-9c51-806f9589190b",Manzi's,£26 to £40,4.4,"1 Bateman's Buildings, London, Greater London W1D 3EN",Soho,Tue 12:00 pm–9:30 pm Wed–Sat 12:00 pm–11:00 pm,"Seafood, Fish","Bar/Lounge, Beer, Cocktails, Counter Seating, Entertainment, Full Bar, Late Night, Patio/Outdoor Dining, Private Room, Wheelchair Access, Wine",5,4,5,5,2025-03-19 11:10:43.919,true
+aca661f4-44db-4748-8e6c-680a3fef3557,Suvlaki Soho,£25 and under,4.6,"21 Bateman Street, London, W1D 3AL",Soho,"Lunch Tue 3:00 pm–3:15 pm Fri, Sat 12:15 pm–4:30 pm Dinner Tue–Thu 5:00 pm–9:00 pm Fri, Sat 5:00 pm–9:45 pm Sun 5:00 pm–8:45 pm","Greek, Barbecue, Mediterranean","Beer, Gender Neutral Restroom, Gluten-free Options, Late Night, Non-Smoking, Patio/Outdoor Dining, Takeout, Wine",5,5,5,5,2025-03-19 11:10:44.778,true
+"78665eb3-9daf-4052-81bb-ab2602e5673a",Aqua Kyoto,£41 and over,4.5,"5th Floor, 240 Regent Street, (Entrance on 30 Argyll Street), London, W1B 3BR",Soho,"Lunch Mon–Fri 12:00 pm–2:30 pm Brunch Sat, Sun 12:00 pm–2:45 pm Bar Mon–Thu, Sun 12:00 pm–12:00 am Fri, Sat 12:00 pm–12:30 am Dinner Mon–Thu, Sun 5:00 pm–10:00 pm Fri, Sat 5:00 pm–10:15 pm","Japanese, Sushi, Tempura","Bar/Lounge, Beer, Cocktails, Counter Seating, Entertainment, Full Bar, Gluten-free Options, Late Night, Non-Smoking, Patio/Outdoor Dining, Patio/Outdoor Dining, Vegan, View, Weekend Brunch, Wheelchair Access, Wine",5,5,5,5,2025-03-19 11:10:45.610,true
+"313f1846-cadf-414c-8ab2-448902056c4f",Dear Jackie,£41 and over,4.8,"20 Broadwick St, London, Greater London W1F 8HT",Soho,"Dinner Tue–Thu 5:30 pm–12:00 am Fri, Sat 5:30 pm–12:30 am",Italian,"Banquet, Beer, Cocktails, Full Bar, Gender Neutral Restroom, Gluten-free Options, Non-Smoking, Private Room, Vegan, Wheelchair Access, Wine",5,5,5,5,2025-03-19 11:10:46.415,true
+"4a33ca42-e6ea-4a87-8ac5-9916fa032acb",Ristorante Frescobaldi London,£41 and over,4.6,"15 New Burlington Place, London, W1S 2HX",Mayfair,Mon–Thu 12:00 pm–9:45 pm Fri 12:00 pm–7:00 pm Sat 12:30 pm–7:00 pm Sun 12:30 pm–4:30 pm Sun 5:00 pm–9:45 pm,"Italian, Modern Tuscan","Banquet, Bar/Lounge, Beer, Cocktails, Full Bar, Gluten-free Options, Outdoor Smoking Area, Patio/Outdoor Dining, Patio/Outdoor Dining, Private Room, Weekend Brunch, Wheelchair Access, Wine",4,4,4,3,2025-03-19 11:10:46.421,true
+f8d312e4-e7cf-45ad-a014-aae354d157ab,O Ver St James,£41 and over,4.5,"1 Norris Street, London, SW1Y 4RJ",Piccadilly,Fri 5:30 pm–10:00 pm Sat 12:00 pm–10:00 pm Sun 12:00 pm–6:00 pm Lunch Mon–Fri 12:00 pm–3:00 pm Dinner Mon–Thu 5:00 pm–9:30 pm,"Italian, Pizzeria, Contemporary Italian","Bar/Lounge, Beer, Cocktails, Corkage Fee, Counter Seating, Delivery, Full Bar, Gender Neutral Restroom, Gluten-free Options, Late Night, Outdoor Smoking Area, Patio/Outdoor Dining, Patio/Outdoor Dining, Private Room, Takeout, Vegan, Weekend Brunch, Wheelchair Access, Wine",4,5,3,4,2025-03-19 11:10:47.239,true
+f6751b97-16e3-4c8d-8b67-daa71ef168da,Aline Lebanese Kitchen,£25 and under,4.5,"14 Maddox Street, London, W1S 1PQ",Oxford Circus,Mon–Sat 12:00 pm–12:00 am,"Lebanese, Vegetarian / Vegan, Middle Eastern","Banquet, Beer, BYO Liquor, BYO Wine, Cafe, Cocktails, Delivery, Gluten-free Options, Outdoor Smoking Area, Takeout, Wheelchair Access, Wine",5,5,5,4,2025-03-19 11:10:48.056,true
+acd6a25b-e66e-4d4d-84e2-0fe23428dd08,Barbounia,£41 and over,4.6,"Barbounia at The Gallery, 68 Regent Street, London, England W1B 4DY",Piccadilly,Mon–Sat 12:00 pm–10:00 pm,"Mediterranean, European, Contemporary European","Banquet, Bar/Lounge, Beer, Cocktails, Corkage Fee, Counter Seating, Full Bar, Gluten-free Options, Late Night, Non-Smoking, Vegan, View, Wheelchair Access, Wine",1,1,1,1,2025-03-19 11:10:48.866,true
+"7c5db2ee-f354-4c34-ad37-672aaabfec84",Bacchanalia,£41 and over,4.4,"1-3 Mount St, London, Greater London W1K 3NB",Mayfair,Mon–Sat 12:00 pm–12:30 am Sun 12:00 pm–12:00 am,"Greek, Italian, Contemporary Italian","Bar/Lounge, Entertainment, Gluten-free Options, Non-Smoking, Private Room, Vegan, Wheelchair Access",5,5,5,5,2025-03-19 11:10:49.680,true
+ed0a53dc-8543-423d-ad74-d390db44e6ec,"215 Kitchen & Drinks","",0.0,"","","","","",5,5,5,5,2025-03-19 11:10:50.490,true
+"6a4c0908-4b30-4916-b4ae-07b219f6d1e3",Mad Dogs & Englishmen,"",0.0,"","","","","",5,5,5,5,2025-03-19 11:10:50.673,true
+e020842d-8ae1-488b-9e41-9088294172f2,Andrew Edmunds,"",0.0,"","","","","",5,5,5,5,2025-03-19 11:10:50.680,true
+"5bfe3af1-d4af-4426-96a2-2a3b8be22b93",Berts Jazz Bar,"",0.0,"","","","","",5,5,5,5,2025-03-19 11:10:51.803,true
+"735997d2-c6f3-44a8-a738-f058c3a86c73",BEZA ETHIOPIAN VEGAN RESTAURANT,"",0.0,"","","","","",3,3,4,4,2025-03-19 11:10:51.809,true
+"6280b9ef-b089-4cd4-913e-3fa5792ce9d9",Bistro Union,"",0.0,"","","","","",5,5,4,4,2025-03-19 11:10:51.985,true
+"48ee9228-f0d7-47cf-aab3-3dfedb966743",Blacklock City,"",0.0,"","","","","",5,5,5,5,2025-03-19 11:10:51.992,true
+b4cb5007-8fd8-4759-8a85-b0f20564d676,Blacklock Shoreditch,"",0.0,"","","","","",4,5,4,5,2025-03-19 11:10:51.998,true
+"94f9fe43-e838-43e5-87c3-53d2ecdad2cf",Brawn,"",0.0,"","","","","",5,5,5,5,2025-03-19 11:10:52.004,true
+"4fb9d810-3e71-48c3-ae1d-3c9057513707",Burnt Truffle,"",0.0,"","","","","",3,4,3,4,2025-03-19 11:10:53.079,true
+"2272c567-aa52-4c45-80b7-84e0c36dc144",Cafe 1,"",0.0,"","","","","",5,5,4,5,2025-03-19 11:10:53.862,true
+"6b981869-3d8b-40da-b257-50d5bf5ceb3e",Cambio de Tercio,"",0.0,"","","","","",5,5,5,5,2025-03-19 11:10:55.512,true
+cd2e8d6d-b58e-4726-985a-015bfd35b91a,Cento Uno,"",0.0,"","","","","",2,1,4,2,2025-03-19 11:10:56.160,true
+"6938dcc4-2d19-4650-adf3-a4609c1aca79",CHIMICHURRIS,"",0.0,"","","","","",5,5,5,5,2025-03-19 11:10:56.495,true
+cdeba07d-76fc-440d-ba55-0383ab77297b,Clipstone,"",0.0,"","","","","",5,5,5,5,2025-03-19 11:10:56.851,true
+"6b8b442e-d74a-4d77-8389-373ce20a98a4",Coal Office,"",0.0,"","","","","",4,5,4,5,2025-03-19 11:10:58.066,true
+"045c3871-19c7-4117-b886-d229bab62b2c",Cube Mayfair,"",0.0,"","","","","",5,5,5,5,2025-03-19 11:10:59.421,true
+"58ace2fe-cc99-4e69-950f-59cb4976e66f",Glasgow - Bucks Bar West Regent St,"",0.0,"","","","","",5,5,5,5,2025-03-19 11:11:01.454,true
+"0e1d95eb-ce3f-48c9-b5ac-6f50dbbfc422",Casa italia,"",0.0,"","","","","",5,5,5,4,2025-03-19 11:11:03.866,true
+c5c4d773-52de-4a42-b36b-47a46e37f03e,Cecconi's,"",0.0,"","","","","",5,5,5,5,2025-03-19 11:11:04.399,true
+b40a4b94-b0b6-482a-b290-72cfd3db8e8d,CORE by Clare Smyth,"",0.0,"","","","","",5,5,5,5,2025-03-19 11:11:06.006,true
+cecac984-a4c5-489d-b144-0aa456322124,COYA Mayfair,"",0.0,"","","","","",5,5,5,5,2025-03-19 11:11:07.895,true
+"70d8181a-f46a-4976-9d4f-8453de11d9c3",Claude Bosi at Bibendum,"",0.0,"","","","","",2,1,2,1,2025-03-19 11:11:08.875,true
+"9606aa33-035d-46a3-b7af-d7b517247c7c",Churrasco Steakhouse,"",0.0,"","","","","",5,5,5,5,2025-03-19 11:11:09.943,true
+"3a6ef1fb-027e-440f-8a29-b871e3bc6e41",Chakana,"",0.0,"","","","","",5,5,5,5,2025-03-19 11:11:10.947,true
+"352730f8-bac3-40ed-bddd-bfb04fd6518c",Dineindulge,"",0.0,"190 Aztec West BS32 4TP Bristol United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:11.949,true
+"944504b9-af9a-4271-b7f0-df24d73e057a",The House of Bruar,"",0.0,"PH18 5TW Pitagowan United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:13.533,true
+"874af91d-e9c8-4a92-8fe8-cf9a8bd7a5c4",Barmans.co.uk,"",0.0,"Saxon Way, Melbourn SG8 6DN Royston United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:17.285,true
+f232e8f5-2341-40c4-912e-434c4b16263d,La Belle Assiette UK,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:17.720,true
+ff38cd5a-74c8-45b8-b8bf-ac3b0adc9324,Sporting Targets,"",0.0,"Sporting Targets Ltd, Knotting Lane MK44 1BX Riesley United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.029,true
+"086cceee-6593-4ab1-9709-6d2d89dbc9a9",Dinggly,"",0.0,"1st Floor, Hello House, 135 Somerford Road BH23 3PY Christchurch United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.125,true
+"6951984c-f5ff-4e05-ab20-731f70a12ca5",LRS UK,"",0.0,"Link House, 1880 Leek Road ST27AH Stoke on Trent United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.162,true
+bce160d9-efcd-4716-8d11-ca184ae7c6a7,The Alchemist Shop,"",0.0,"The Alchemist Base SK9 3HP Handforth United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.187,true
+"9ee7a07f-1053-47ee-99d7-7e359487318b",Verve People,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.238,true
+"5d27dc9e-5eaa-4b30-9e20-4366c1f11da4",Hallsintl,"",0.0,"Waterloo Street 11 NE1 4DP Newcastle upon Tyne United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.257,true
+"9bc5b993-2f0b-4db5-9b46-93366b775c37",Mussarats,"",0.0,"123-127 Wilmslow Road M14 5AN Manchester United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.293,true
+"3946598d-9564-4205-ab9d-1ae5212c98f2",THE ODD WHEEL LIMITED,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.319,true
+"34d72184-9236-4139-90b7-e0ed4bdacd7c",The Ledbury - Notting Hill,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.327,true
+f965e6fb-d173-4b3a-b30f-b6bc823cb3c4,Bookenigma,"",0.0,"85 Great Portland street W1W 7LT London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.334,true
+"74f1f30f-93e3-41a1-b863-6d974f1e9d82",Morley Hayes,"",0.0,"Main Road DE7 6DG Morley United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.340,true
+e3469759-d757-4680-909d-8927ccd1286d,Chop and Wok,"",0.0,"Cannon Street 17 B2 5EN Birmingham United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:19.351,true
+"2199dcc5-ed10-420e-a20f-5af983e33261",Thebeefyboys,"",0.0,United Kingdom,"","","","",5,0,0,0,2025-03-19 11:11:19.354,true
+"9e3c4b96-f753-4492-bc36-d9ae2d807a2c",Hala Restaurant,"",0.0,"Grand Parade 29-30 N4 1LG London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.361,true
+f3452ec2-8afd-4358-9193-1bbf8b6aca45,Cubana Tapas Bar,"",0.0,"Leopold Street 4 S1 2JG Sheffield United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.366,true
+b9509084-600e-4273-a841-7a7c9ae06342,The Plough Inn,"",0.0,"GL7 3HG Kelmscott United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.370,true
+"7dd6e1d9-d99c-4118-8d62-0b2623e6ffea",The Restaurant Bar & Grill,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.375,true
+"937705e0-b83c-4383-ad3b-6a1ee75e9915",Blackhouse,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.380,true
+"26789c17-2e8f-4410-b8f4-5d1df1d71018",Bluebell Helpston,"",0.0,"Woodgate 10 PE6 7ED Helpston United Kingdom,","","","","",4,0,0,0,2025-03-19 11:11:19.384,true
+"59e5071c-309e-4370-a310-ec20d00046a9",Smackshamburgers,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.387,true
+"0ab9532e-2580-467f-94c7-54d8078643fd",Thegeorgeatkilsby,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.391,true
+"37f6ee61-f37a-4b5f-aa92-29b29e0caeba",Thequarterpotbank,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.395,true
+"8b72ddc2-d62e-4614-88c1-a09ed994bcfd",Melove,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.399,true
+"48655835-19dc-406c-9806-762d5c15160f",Barlimon,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.402,true
+ecf03195-9a72-463b-b60a-6db2b63032ba,Benllechtandoori,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.406,true
+"4fc260d6-c027-4090-ad22-8c8b7ea433aa",Benvenutoristorante,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.409,true
+"3e6f4cc8-992c-4d3e-9f96-59748a052a7f",The Goring,"",0.0,"Beeston Place 15 SW1W 0JW London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.412,true
+"3bc98912-1e0a-4c5a-b48a-8f168b1139ff",Meson Callejon,"",0.0,"The Rear of 137 Upper Street N1 1QP London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.416,true
+"9837cfae-7e50-4437-b2bc-47062b026df9",Cambiomarcia,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.419,true
+"2d59ae09-f221-4fb5-aef7-34a8da2c39d4",andystaverna.co.uk,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.422,true
+e743a856-07de-45ef-8349-fc1281c8e802,The White Rose,"",0.0,"Newton Road 1-3 SA3 4AR The Mumbles United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.424,true
+"62188f96-c827-485b-95de-7600064913d0",Bishoponthebridge,"",0.0,"High Street 1 SO23 9JX Winchester United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.427,true
+"124b58fa-dcc5-48aa-8786-c0b9f4c6f40b",Tudorrosecoulsdon,"",0.0,"Coulsdon Road 270 CR5 1EB Coulsdon United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.430,true
+d321be2a-a1d3-48f8-88be-1611c0134403,weareyates.co.uk,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.433,true
+b9e682c2-3a5d-48ea-b94a-59ce8429e476,Rules,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.437,true
+"30667287-a6b8-4333-af5e-b86efb5577c6",Cafeistanbul,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.440,true
+"59de8410-f356-4e20-b268-cf1ed7a35ec2",Buddha-Bar Hotel Budapest Klotild Palace,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.442,true
+"8aac62f3-b6ea-4280-9ef8-9dab7976b7e6",The Barbary,"",0.0,"Neal's Yard 16 WC2H 9DP London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.445,true
+f1cdcb7f-973e-42d5-ad34-fd62ff7972dd,Trovefoods,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.451,true
+"455d9085-875e-433e-9907-837697576aee",Rootsteddington,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.453,true
+"9adca1d5-e15a-40e8-8a79-3c245ad53e3b",Soranoitalian,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.459,true
+b480173e-1ff5-4274-a478-78b5b6db2a5e,Sanlorenzowarrington,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.463,true
+"6ebdd004-f7bc-49d4-b864-1c434a0b4e9d",The Richmond,"",0.0,"Hatton Garden 24 L3 Liverpool United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.466,true
+b709d03c-0bfa-46dd-8a9a-448254f5de41,Bottelinos,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.469,true
+"23490f3b-62a2-486e-ab6a-17bdb4d66375",Dimitri’s,"",0.0,"Deansgate M3 4FN Manchester United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.474,true
+"5adc8ad0-2e0e-452f-99f9-2e92ff6efd68",Villagecooks,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.478,true
+a94398cd-4aac-466c-ad6a-edd7b03995e9,Bellini Seaburn,"",0.0,"Torver Crescent SR6 8LG Sunderland United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.481,true
+f959c194-2703-4312-a2e7-976c54d01cf7,Marmadukescafedeli,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.484,true
+"0664eaa9-aaf7-4cfc-8a69-d72410132da8",Dineindia Bromsgrove,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.488,true
+"83b54a4a-f567-43a5-b872-275898dc6789",Mangetout,"",0.0,"Tylers Avenue 7 SS1 2BB Southend-on-Sea United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.491,true
+"3da8de43-b608-495b-93e0-3485f9aace9b",Empiregrill,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.495,true
+"2dabb802-06e2-486a-8239-e4fbf72de5a5",Salutation Inn,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.498,true
+e8b7a8fd-fe1a-41ea-8c84-f7f20f8c4483,Thecliffhouse,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.501,true
+a0955057-a4b8-49a0-b2a1-1fa0f0d66480,Vaadi,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.504,true
+"71ed393d-b2fb-4551-9847-10a58ebcd50b",Spicegardens,"",0.0,"103 brunt ash lane BR1 5ab Bromley United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.508,true
+"2dc9cdc4-2676-4332-b4ab-385059461f0c",Websters Events,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.510,true
+c6cbd46f-ddb7-4cda-9511-33745e72aec6,Souk Kitchen,"",0.0,"North Street 277 BS3 1JP Bristol United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.513,true
+a1524252-cfb6-4c00-99f0-7b569f6335dd,tigerrockliverpool.uk,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.515,true
+"9e0b18c6-45a9-408b-8cfa-fb43764ab47a",Timbers Restaurant,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.518,true
+bd87d542-ff99-4f32-97b6-221357d8c498,Spanishcity,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.520,true
+"94e8a542-ce05-48f3-8648-9ca81517c8d2",Aveika,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.523,true
+"7767f918-684f-4a9c-a34f-a0322e38d429",indianaroma.co.uk,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.525,true
+eefe5dbb-d5de-4013-837d-199fd6d0e329,Tscafe,"",0.0,"10 olrig street KW147BJ Thurso United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.528,true
+e9f83005-168e-47bd-a73d-4dfb4900e87b,Noura Lebanese Restaurants,"",0.0,"Hobart Place 16 SW1W 0HH London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.530,true
+"2917c8b9-26d8-41e6-934e-a98c56caa962",Thedeershutpub,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.532,true
+"56618fa5-cdae-47eb-9015-c5e3b714740f",Zestlytham,"",0.0,United Kingdom,"","","","",5,0,0,0,2025-03-19 11:11:19.535,true
+"949d0d93-c8e7-4967-a9bb-f7b9b0322911",Theoakinnstaplow,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.537,true
+"408fa308-0c24-4d46-9606-677c03a10a3e",Lashings Sports Bar,"",0.0,"Lashings House, 81-83 Upper Stone Street ME15 6HE Maidstone United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.540,true
+e165c991-04a5-4bb7-afc9-3aab622f9fab,Chelsfieldfarm,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.542,true
+"4f046be0-e09d-4cbb-8267-b21e2a11567a",Raphael Restaurant,"",0.0,"Upper Borough Walls 3 BA1 1RG Bath United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.545,true
+"49b2881b-beb8-471f-90ea-5cad2fe15ffa",Lunya,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.547,true
+e59cc95c-cd53-4178-b09a-b95dc67b31f2,Villaverde,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.549,true
+"381361dd-d3d8-463a-a7f8-997cb533b970",flatironsteak.co.uk,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.551,true
+"94270690-6a45-4eda-b8df-aeb59d6a3ea9",makhalal.co.uk,"",0.0,"United Kingdom,","","","","",4,0,0,0,2025-03-19 11:11:19.576,true
+"851479b7-2dd0-4291-bdf3-1f0e0f086839",Bonoo,"",0.0,"Finchley Road 675 NW2 2JP London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.594,true
+"16b73060-2666-4abb-bd43-53eb2be66709",Donasao - The Best Resturant Of the Year!,"",0.0,"Devons Road 75 E3 3PJ London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.603,true
+"92cb0bdd-9b08-40ad-9555-ebbf83eb19a9",Brouge restaurants,"",0.0,"241 Hampton Road TW2 5NJ Twickenham United Kingdom,","","","","",4,0,0,0,2025-03-19 11:11:19.610,true
+"33a19e6c-3020-4094-a6ec-0d559eb03cb7",Chilango,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.617,true
+"7ea611cd-90e2-410e-8d57-ce6d668be72e",Bucks Bar,"",0.0,"West Regent Street 111 G2 2RU Glasgow United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.625,true
+"3024de62-3457-4b87-9317-ba189eec7d13",Jimmystheo2,"",0.0,"Millennium Way SE10 0PT London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.633,true
+e54b88c6-211d-402e-9a2c-d9c18692826a,Zambrero,"",0.0,"","","","","",3,0,0,0,2025-03-19 11:11:19.640,true
+"3fd516d6-f743-4387-9ea0-49393b829ee3",Thegrandhotelbirmingham,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.646,true
+"3b3bdbbd-8990-4477-bf68-8f830e07d7d8",Ristorante Da-vinci,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.651,true
+"1b919b9e-19fe-4eeb-acc8-6382308439d9",Italian Kitchen,"",0.0,"Hahnemann Court SR5 2SQ Sunderland United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:19.654,true
+febfe29e-291a-44c1-a4bc-f8136cc9daa9,Zari Restaurant,"",0.0,"Ifield Drive 214 RH11 0DQ Crawley United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.658,true
+"9ecc5b18-ee6b-4804-a83d-138cf52899fd",Tiffanyshotel,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.663,true
+"1a64d118-ac84-4b93-909f-24f4702f9cf1",Hoppers,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.667,true
+f020e6f5-3e7f-4c04-abcd-fd205c0794da,Garfunkel's,"",0.0,"Saint Martin's Lane 37 WC2N 4ER London United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:19.670,true
+"2daa70dd-d979-4359-ad7a-294529e198e4",Fernandez Leicester,"",0.0,"Friar Lane LE1 5RA Leicester United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.672,true
+"3ffa6dd3-9e10-4ca0-89d5-d77b6d5681b7",The Oak Bistro,"",0.0,"Lensfield Rd 6 CB2 1EG Cambridge United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.675,true
+"19d7b793-60d8-47c6-b2b3-a5552734ae90",The Wildebeest,"",0.0,"Norwich Road 82-86 NR14 8QJ Stoke Holy Cross United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:19.677,true
+ef41c5a8-4207-4443-8973-cf34edad89a4,Tandooricottage,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.679,true
+a87cae8f-2c56-4b8f-bd33-947d65e0efbf,The Lock & Barrel Frinton,"",0.0,"Connaught Avenue 28 CO13 9PR Frinton-on-Sea United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.681,true
+"11d8e20d-7ebd-4ac2-a8e1-9390d4df60dd",Courtyard Cafe,"",0.0,"High Street 63 RG27 8NY Hartley Wintney United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.684,true
+"415bfd12-1af0-401f-aa0b-3e7992b4ebd6",The Gaskell Arms,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.688,true
+"3c34857f-c722-4e88-80fa-d914e5ba66b8",Feathers Hotel Holt,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.690,true
+"6b27885b-5fcc-4485-a77c-eceb7dedbf71",Matsya Dining,"",0.0,"Curzon Street 55 W1J 8PG London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.693,true
+d46a170b-4321-4914-9960-a5f2f76f9237,Alishan Tandoori,"",0.0,"Battlefield Road 250 G42 9HU Glasgow United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.696,true
+"416f6790-32a3-423c-beff-3e7c6ebae993",Theflyingpigbowness,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.698,true
+"15070e18-5143-4387-9aca-807be9d1b18c",Balti Towers,"",0.0,"Station Street 82 DE14 Burton-on-Trent United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.701,true
+"2c6044cd-249b-444b-a0ae-f17437d1149e","2hungry","",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.703,true
+da0b7fb1-118c-42f8-b1dc-86d3c529e1bf,Touro,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.706,true
+ee4b6965-c4e3-4894-a816-61b0e8b6be37,aqua nueva,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.709,true
+"6bf07af8-65aa-4770-ae76-6926954a2088",Forestersguild,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.713,true
+"897abf0c-ecd1-4cf9-9cf6-b905a799d1c9",The29029broadstone,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.716,true
+"317ec89b-b5d6-4c4b-9fa9-7cfdef696fa4",Hickorys,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.719,true
+f2d49d27-2c21-4924-bf17-82fdf8b6ab9b,Pestorestaurants,"",0.0,"","","","","",4,0,0,0,2025-03-19 11:11:19.841,true
+"8e0aec10-a778-42e0-95c5-de0c3f2ed931",Fazenda Bar & Grill,"",0.0,"Wharf Approach 3 LS1 4GN Leeds United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:19.877,true
+e8a8d0ad-2687-4e36-ada1-768961b2826a,Horse and Groom,"",0.0,"Epsom Road GU1 2RG Guildford United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.902,true
+c70e2949-c1e0-420f-93a5-f026fb4df757,pasturerestaurant.com,"",0.0,United Kingdom,"","","","",5,0,0,0,2025-03-19 11:11:19.913,true
+"976602fe-b314-4dfb-b726-958ecaeafe8f",Neds Noodle Bar,"",0.0,"Belvedere Road 3E SE1 7GQ London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.921,true
+"58c9a614-8ad2-4a99-972d-3a5a37d10058",Mitton Hall,"",0.0,"BB7 9PQ Clitheroe United Kingdom,","","","","",4,0,0,0,2025-03-19 11:11:19.927,true
+"17e64187-2e04-43eb-918a-b206efa1c373",Ocean Beach,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.935,true
+a7e4fb3e-0399-425b-b7cf-d84b71baad98,ViceroyDuffield,"",0.0,"Tamworth Street 2b DE56 4ER Duffield United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.941,true
+"9a9caccb-880c-4862-bc05-07ce9e12a482",Red's True Barbecue,"",0.0,"Weaver Street 10 LS4 Leeds United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.948,true
+"4204df16-cdc3-444e-941e-73c36d3f96e1",The Smoke Haus,"",0.0,"Wind Street SA1 Swansea United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.953,true
+b72cd090-86cb-4d26-904a-31d3de7a416f,Greatbritishinn,"",0.0,"69 Newnham Street, Ely, Cambridgeshire, CB7 4PQ","","","","",5,0,0,0,2025-03-19 11:11:19.963,true
+"0a1f7a6e-f873-4f09-9edc-53dc82ab7d78",Trenchersrestaurant,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.968,true
+ecb9f58c-8d40-47b9-8e88-2073a8499e69,The Trout,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.974,true
+c1889a67-acdc-4e0f-ba47-30cd8a11118a,The Ebrington Arms,"",0.0,"Victoria Terrace GL55 6NH Ebrington United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.979,true
+"9614333c-fb7f-4ec5-bb98-5850beef0588",Coach and Horses,"",0.0,"High Street WS15 3BL Abbots Bromley United Kingdom,","","","","",4,0,0,0,2025-03-19 11:11:19.983,true
+"9df8281a-2a63-4866-ad0d-5b6f980a13d5",Paignton Club,"",0.0,"Esplanade Road TQ4 6BE Paignton United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:19.988,true
+"785b7364-eb9d-41e4-8225-22a08635b4d1",Brightside,"",0.0,"United Kingdom,","","","","",4,0,0,0,2025-03-19 11:11:19.992,true
+"7eb0142c-8c30-4337-a352-30a323ca54ce",Langlandsbrasserie,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:19.996,true
+b1d9b806-1da4-4931-a783-d41b821352a1,Melissa Restaurant,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.001,true
+b380cc8e-7015-41f1-8333-8ff5a7ec3dd9,The Corin,"",0.0,"54a Tooting High St, London SW17 0RN tooting broadway United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.004,true
+"6da1990e-ba8b-4ecb-b812-ca41dd68c412",Kulchaexpress,"",0.0,"184 north hide lane ub2 5se southall United Kingdom,","","","","",4,0,0,0,2025-03-19 11:11:20.007,true
+"11eed11f-4c93-49f3-83dd-3c4350bca1eb",Theivydublin,"",0.0,"13-17 Dawson St, Dublin, D02 TF98, Ireland","","","","",5,0,0,0,2025-03-19 11:11:20.009,true
+b497ce41-1399-4d63-b94b-8860389285a7,Amuse Restaurant,"",0.0,United Kingdom,"","","","",5,0,0,0,2025-03-19 11:11:20.012,true
+"99e53b4b-d051-4462-9565-8596c125c5b6",Imperial Restaurant,"",0.0,"Durham Road 489 NE9 5EX Gateshead United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.015,true
+b54d3345-afa0-4ea3-8251-2f3d2aa94e30,Taranalingfield,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.018,true
+b00cd5a5-1808-42a3-a369-1d510b5e0abe,Stringfellows,"",0.0,"Upper St Martin's Lane 13 London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.020,true
+"5e44f6fe-8022-4c37-9fb3-1deb9c82c9e3",Gangnamstevenage,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.023,true
+"0407698b-6ec9-4234-aa64-efc8c92d8d8b",Eat Deli and Eat Cafe,"",0.0,"Kilmarnock Road 67-69 G41 3YR Glasgow United Kingdom,","","","","",4,0,0,0,2025-03-19 11:11:20.026,true
+"48154bcd-8293-4491-aad6-359b37b070ac",Lalbaghrestaurant,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.028,true
+f3adc229-da4a-40e9-ad90-3a63bd9ef5c7,Luna Rossa,"",0.0,"Packhorse Road 24 SL9 7DA Gerrards Cross United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.030,true
+c2f85895-eff9-4b75-b0b9-ec275102ce27,Osakarestaurants,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.031,true
+"05bb23ef-4c94-4efa-8c49-993ab64dbee1",Bragazzis,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.034,true
+"53b1914b-1aac-41c3-820a-89ddb35e5bd1",Thehighburybarnpub,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.036,true
+"544497e6-e0a4-4544-852c-2caff725dc5e",Dragon Palace,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.038,true
+"27639d54-0afe-4968-a1eb-3a9936a24973",Hettiesteas,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.040,true
+"678e94ff-3382-4547-99ea-edf721704cea",Roastitbubblyjocks,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.042,true
+e061169c-7e2c-4e6e-990b-eae0e249f437,terreaterre.co.uk,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.044,true
+b84e1c7d-2578-4b69-8702-65ab1c8c2dc0,Blackcatcafe,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.046,true
+"11b50337-8a37-4b53-8f90-59c7c1f8721a",Mckicks,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.048,true
+ffd65407-6da9-4632-8240-786e126d5216,Tom Yam,"",0.0,"Fountain Place 3 SK12 1QX Poynton United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.050,true
+"4d8ebda1-53d4-487c-bc2f-8ccbbda5002a",NYEAT,"",0.0,"Leopold Road 14 SW19 7BD London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.052,true
+efb66d75-1cc7-4582-8e48-0b37a8d22356,EL GUACA LIMITED,"",0.0,"High Street 122 CM9 5HB Maldon United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.054,true
+e1b253c8-b289-48da-bab4-fe4d56458448,Oak Apple,"",0.0,"Spetchley Road WR5 2LT Worcester United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.056,true
+b3cadcd3-e725-47b7-8f54-e1ce76a8d694,Foxlow,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.058,true
+"3b28f313-bfec-4afd-b6fb-70aee05b3539",Davy's Wine Bars,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.060,true
+"864004c3-5aef-4bf0-b9ea-df8fcf96e936",Pear Tree Kitchen,"",0.0,"SE8 5ET London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.061,true
+ba664f02-cd07-4254-a9c4-c91b26d3ef69,Littlelankarestaurant,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.064,true
+"4185db9a-04a3-4503-882c-9f1d028947a9",Meat 59,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.066,true
+b03c8923-0774-4f0d-bc6f-94785704ed04,Qype,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.069,true
+c2dcf278-7076-4e4f-b39f-1dd863c2da7e,Lime Restaurant,"",0.0,"Manilla Street 1 E14 8JZ London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.071,true
+"6df85451-e534-4d89-b13e-43cc13c4ec31",Stef's Italian,"",0.0,"3 Berners Street W1T 3LD London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.073,true
+e3e0b77a-b3a9-4399-a85e-f8b6ada72d07,Casa Colombiana,"",0.0,"6 Grand Arcade, off Vicar Lane LS1 6PG Leeds United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.075,true
+"8d014b86-a96b-4c1b-8b67-6a6ef59edd1b",Langstone Manor Holiday Park,"",0.0,"Moortown, Tavistock PL19 9JZ Tavistock United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.077,true
+"73f501c6-45da-4dc1-b2f5-8c13190a5a36",Thepizzaoven,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:22.625,true
+"61edc370-4e49-40fe-ab98-b178b4ff426f",Thai Crystal Restaurant,"",0.0,"Westow Hill 7 SE19 1TQ London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.079,true
+b9316629-8053-4dd8-9add-72400422afd1,Lobsterpot,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.081,true
+"8338caa3-03ec-4bd0-9b51-d46182b7b61e",The Grange Inn,"",0.0,"Grange Road KY16 8LF St Andrews United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.083,true
+"4566bd3c-3745-445f-b037-5c58e744fd62",Smashedpreston,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.085,true
+"004d5075-eacf-4a7a-896f-fe602ecb84cd",Thali Restaurant,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.087,true
+"187314a9-41e5-46a8-a0f1-e221da5defe2",chishuru.com,"",0.0,United Kingdom,"","","","",5,0,0,0,2025-03-19 11:11:20.089,true
+"6ace1b34-3336-4b56-bb26-9d97a7b31881",Greekyefseis,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.090,true
+ed341919-24c1-4a29-bd48-76aa6a985585,The Tree at Cadmore,"",0.0,"Marlow Road HP14 3QJ Cadmore End United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.092,true
+c3a57f01-3bf0-4935-95bd-3703351b361e,Bangbangcanteen,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.094,true
+"74faaefb-56b1-43ff-b930-b660fa9ba6bf",Funkigriller,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.096,true
+ca94b613-9938-4409-a090-954574ca9085,Cottageinthewood,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.098,true
+"8fcfa0ed-c267-47ec-b5b3-a5502f145926",Theallanparkstirling,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.101,true
+afadf775-3474-4779-a7db-dce0b2c49522,Hunstantonskicafe,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.103,true
+"2af15954-5710-4328-a8d7-600e3121ada7",Weecurryshopglasgow,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.104,true
+ff84c2cb-c3c8-40bf-9935-64fb43550ae1,Apo Kitchen,"",0.0,"Gallowgate 1391 G31 4EX Glasgow United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.107,true
+d0c07d58-a5df-4d64-ada8-ba94b205de3d,Kings Cross Hotel,"",0.0,"Caroline Street 25 CF10 1FF Cardiff United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.108,true
+"70598c3f-a554-43c4-8d62-18a1b0a95288",Clayskitchen,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.110,true
+"6bff3455-43fa-4362-9b21-419f4c115d26",Henryburgers,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.112,true
+"631b73f2-13f4-41cc-bcd0-df89c4c40c9e",Themuddyduckpub,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.115,true
+"41b3270b-5a29-4661-ba28-cebff3e70ade",Jeremy's Restaurant,"",0.0,"Borde Hill Lane RH16 1XP Haywards Heath United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.117,true
+"3ea6d901-f241-4430-80d3-50dd3294463b",miners-arms.co.uk,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.119,true
+"990b6c83-4388-43d0-a697-e66b5bb031fd",Driftwood Spars,"",0.0,"Trevaunance Close TR5 0SW Saint Agnes United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.122,true
+"2e594129-b4fc-4c7d-a0d5-88f3d7e3613a",Bistrofranc,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.123,true
+b7fe508c-85a0-4b4b-86b1-2ae4b0953c37,Homemadecafe,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.125,true
+"18f3458b-09b9-4f0b-8056-b40207ab9cfc",Boğaz Restaurant,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.127,true
+"80a63195-ee43-4691-9ae0-94043dd99b6f",The George Eliot,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.129,true
+"911ebb91-aff7-4871-afa2-0a6e38b3911a",Muchos Nachos,"",0.0,"Whyke Road 140 PO19 Chichester United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.131,true
+a6df80c1-1974-4972-b446-207ae1ab335f,Galatapera,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.133,true
+"4a4632e3-a389-4103-84bd-391c6fefd97f",Mattoni,"",0.0,"Four Chimneys Crescent 114 PE7 8FH Peterborough United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.135,true
+deeed5c4-9f5d-4ac1-80d1-5ce3554c3ac9,Petesaria,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.137,true
+"8c6f3ebf-8109-421a-91ce-96c9936fddd6",Rubino Kitchen,"",0.0,"Chigborough Road CM9 4RE Maldon United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.141,true
+dde7ca95-65bc-4c6e-8581-54ebfe5f1aee,Khan's Restaurant,"",0.0,"Lavender Hill 159 SW11 5QH London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.143,true
+"4923580b-e965-4f43-8ab2-4e7bc2c6f9ed",Mogulindiarestaurant,"",0.0,United Kingdom,"","","","",5,0,0,0,2025-03-19 11:11:20.145,true
+"972c6100-c1c0-4fdd-84aa-819b6ec100a2",Pandaskitchen,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.147,true
+a07afb40-5b57-4b34-be63-497ab64201ff,Mr Basrai,"",0.0,"Beresford Terrace 3 KA7 2EG Ayr United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.149,true
+"477c5b36-641a-4501-9e49-1e6ba6dc8d78",Rio Steakhouse,"",0.0,"","","","","",2,0,0,0,2025-03-19 11:11:20.313,true
+"06153a9c-057c-4290-b2fe-cdca1802bc49",Mildreds,"",0.0,"United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:20.328,true
+fc1a6b31-dc9d-45ae-947c-4b2f5513cbfe,Arbuckles,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.339,true
+"5295bb85-4543-4bc0-88a0-f4d150d157bd",Chunkeez Touchtakeaway,"",0.0,United Kingdom,"","","","",5,0,0,0,2025-03-19 11:11:20.350,true
+"359bc1fb-855c-4fa8-9f53-096e4eead4cb",Classic Inns,"",0.0,"Capability Green 500 LU1 3LS Luton United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.359,true
+"6b2dd57c-9335-4125-8885-9e939b8d6644",Thebanc,"",0.0,"West Green Road 261-263 N15 3BH London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.368,true
+"10cf85e5-ffcd-4a68-be03-75b4e1d56c0d",The Hatton Arms,"",0.0,"Birmingham Road CV35 7JJ Hatton United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:20.374,true
+"302edcc6-3508-41ed-834b-8eb4126e1b55",The Talbot,"",0.0,"United Kingdom,","","","","",4,0,0,0,2025-03-19 11:11:20.381,true
+"102e28a7-7310-43fa-92ed-3ca705178faa",The Garden Cafe,"",0.0,"Stony Street 16 BA11 1BU Frome United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.387,true
+"273837c0-f913-44b9-ae46-07bcd5a5d659",Elpulpo,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.393,true
+"5844328d-18e8-4d73-8604-977d2a73a518",Sunnysidepubnorthampton,"",0.0,"United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:20.398,true
+a273fc53-eb5b-4bd3-b820-9305b6411ef8,The Southampton Arms,"",0.0,"Moorgreen Road 89 SO30 2HG West End United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:20.403,true
+"7cb18dcb-9c4a-4f4d-b976-eca3f4523a73",Pub Rooms,"",0.0,"","","","","",4,0,0,0,2025-03-19 11:11:20.407,true
+"49898e9d-54ce-4708-a571-6ac66791a24d",Trafalgar Tavern,"",0.0,"Park Row SE10 9NG London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.411,true
+ac1f0977-7ca7-4593-8613-6faed8659ec2,Rogersfishandchips,"",0.0,"","","","","",4,0,0,0,2025-03-19 11:11:20.415,true
+bb68a13d-6170-4d19-9e10-76686a924e8b,"63rdand1st","",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.418,true
+"9dc55a3c-e0ff-4b0e-9d9b-df3ba099b173",Simply Thai,"",0.0,"Cavendish Circus 2-3 SK17 6AT Buxton United Kingdom,","","","","",4,0,0,0,2025-03-19 11:11:20.421,true
+"9c62910c-9c10-4d70-a351-b7f89083d596",Robinhoodswannington,"",0.0,"","","","","",4,0,0,0,2025-03-19 11:11:20.424,true
+"45625e0f-6bb9-4980-9dbe-91aaeefb10fd",Opheem,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.426,true
+"9277bd1f-0471-4994-ba17-e5c4e2f4b968",Dockers Inn,"",0.0,"97 Wapping Lane E1W 2RW London United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:20.429,true
+ef148e49-0e49-4341-8081-cc22cadf0804,Takeaways R Us,"",0.0,"The Basement, 66 Woodlands Road G3 6HA Glasgow United Kingdom,","","","","",4,0,0,0,2025-03-19 11:11:20.430,true
+"1a9d99ac-b7f9-4abe-b2d8-125677eea815",Boldhotel,"",0.0,United Kingdom,"","","","",5,0,0,0,2025-03-19 11:11:20.432,true
+c0b6f877-12a9-4647-b78f-4f73f106df56,woolpackwarehorne.co.uk,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.434,true
+"2ec712ba-8e70-4dee-be7b-c89019e8cc39","90 On The Green","",0.0,"90 Aldermans Hill N13 4PP London United Kingdom,","","","","",4,0,0,0,2025-03-19 11:11:20.437,true
+"6ca95663-76e2-4bd0-9137-fcd4ffef6cab",theeagle.co.uk,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.439,true
+"1d24eaf9-3808-4076-af7d-2ed6ed188970",The Fat Cat,"",0.0,"United Kingdom,","","","","",4,0,0,0,2025-03-19 11:11:20.441,true
+"9a7e45a7-b226-4115-91cb-96e3618f7c6c",Thecowshedrestaurant,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.443,true
+"25d39c5c-6be0-4981-b29e-e4fdd8d72c53",Kobejones,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.445,true
+"4b646b13-4c34-4d1e-8786-3d58fa623c7d",Eating Inn,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.448,true
+ec740d3f-a5a5-4d17-9997-85a1784e4e61,Markhammoorinn,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.450,true
+"6eb50132-be55-4567-89ce-15e72074879d",The Dysart Petersham,"",0.0,"Petersham Road 135 TW10 7AA Richmond United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.451,true
+e820e86c-4128-460e-a7d0-9ba293e2589b,Grelha D'Ouro,"",0.0,"South Lambeth Road 153 SW8 1XN London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.453,true
+"9fe49dfb-6cf1-43a6-894a-bd2983817f07",Tamarind Kitchen,"",0.0,"D'Arblay Street 12 W1F 8DU London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.454,true
+"97a33341-e884-479e-a43f-90267e05d517",stmartharestaurant.co.uk,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.457,true
+efc63a88-0af9-4d92-a958-9672f9bfdda1,almaharwich.co.uk,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.460,true
+f32e08eb-9cfe-4f1b-b8bf-2895d34aa7c5,Totally Delicious,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.463,true
+"5c6391e9-64c8-407e-b576-64b8bbb3bcd7",Gallery Belfast,"",0.0,"Dublin Road 65 BT2 7SJ Belfast United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.465,true
+"6e944773-2758-4098-a82c-68dabea86947",Home Food4Sharing,"",0.0,"Lidget Street 17 HD3 3JB Huddersfield United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.466,true
+"94cb56fa-c3c7-4b67-88d9-7270e6dfb2f7",Thesmokinglobster,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.468,true
+"0f582cc4-a2b3-42ca-9106-9677cae5963b",Empires,"",0.0,"Saint Mary's Street 24 EH1 1SU Edinburgh United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.470,true
+"97640399-6697-4468-aae1-e712e1366013",Surfside,"",0.0,"PL27 6TB Polzeath United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.472,true
+"70a0769e-a765-4ebd-b170-64a0e593d8f0",Georgeanddragondn14,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.474,true
+"848c70dd-2e1f-4cc8-ae8a-f5fc18fee06e",Bellinimelton,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.475,true
+"94d962e1-01bf-4aaa-908d-1d9b2b1ce8d8",ChubaRasa,"",0.0,"Heath Road 68 TW1 4BW Twickenham United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.477,true
+"550c1ed7-2fcb-4963-b512-54aaff8db3ac",Fortekitchen,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.479,true
+"0eb503e2-4756-41c6-98b9-c47d3dc97191",Stein’s,"",0.0,"Craneford Way 35 TW2 7SB Twickenham United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.480,true
+a4520a13-5b2d-4569-b443-b049563db2c3,lalocandaedinburgh.co.uk,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.484,true
+ae6a30d2-52a1-4f23-b402-789cc1088aa1,Forum,"",0.0,"Winckley Street 15-16 PR1 2AA Preston United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.486,true
+b6d63d13-5e1a-4ed1-b903-5f2df898c364,Taphousesmisby,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.488,true
+aa27ae07-564e-4109-a04a-3a890c55a784,Theolivetreewells,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.490,true
+a28b7169-b253-4d1d-b0f7-61ae94b8a5df,Cafe Mila,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.491,true
+"600c1c4a-a476-4ec9-857b-e4e66ad76d52",Shantii Formby,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.493,true
+a3d98036-aa59-4090-9fd5-1657eef833de,Wonderwokchinese,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.495,true
+b6755cc9-58ad-4d7f-8d21-c8d580d7b528,Crofton and Park,"",0.0,"71 – 75 Shelton Street WC2H 9JQ London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.496,true
+"89ff8ab8-cb16-4347-8cf4-88d1fd1dcae7",Nicks Restaurant,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.498,true
+"0964c1e5-4383-420c-9466-374df7458959",Ricenoodlesandrolls,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.500,true
+"8795cace-692e-48d0-92b5-c531f53d822c",Ordertaker,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.501,true
+a983a1f6-90eb-4109-b4c4-a4c1b23195e8,ravellolanchester.com,"",0.0,United Kingdom,"","","","",5,0,0,0,2025-03-19 11:11:20.503,true
+"02114756-47d8-4067-85d5-1bd0bd9362a9",Delgadospizzeria,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.504,true
+"385b12bd-a185-425b-b21e-dfefa771168c",Waka,"",0.0,"Eastcheap 39 EC3M London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.506,true
+"8c08b79b-7b48-486a-b758-aa3610cd4c2b",Iznik,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.507,true
+d2037966-683a-4c99-804b-2579d67732d8,nolepizza.co.uk,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.509,true
+ae89ed1a-7da7-40c9-b641-3ce7a7d076e4,Michaelsmediterranean,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.511,true
+"453def1f-93a9-4c7e-a574-91f67b7eb88b",Inver,"",0.0,"PA27 8DG Strachur United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.512,true
+"6e6876f4-68b9-4b83-9bdb-56430039083f",districtmanchester.co.uk,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.514,true
+"3efd37ad-367e-4867-93a1-5c2415c3a3c3",Enderbyhousepub,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.515,true
+"4109f088-8247-4c4e-a60c-5133ec7610d5",Ifoodchinese,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.519,true
+"7f408a0e-25eb-4328-b1cf-dcd92dea14b3",The Beachfield Hotel,"",0.0,"The Beachfield Hotel, 37 Western Promenade Road TR18 4NW Penzance United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.520,true
+"9f973cca-489b-4d58-9fd6-61027cd2ef10",Swan House Tearoom,"",0.0,"Swan House Tea Room Cone Valley, Woolaston, Glos GL15 6AD Woolaston United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.522,true
+fca79f54-40cd-4aa9-8c0d-1dd1a2242c93,Arrivedercipizzeria,"",0.0,"47 Rue Gay-Lussac, 75005 Paris, France","","","","",5,0,0,0,2025-03-19 11:11:20.523,true
+b5cf5b4c-dad3-41ab-becf-36ae94f9496f,Thecambrianinn,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.524,true
+"182bd1c8-3848-4705-a265-3b39a26ea2b0",Aizle Edinburgh,"",0.0,"Saint Leonard's Street 107 EH8 9QY Edinburgh United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.526,true
+"273b1830-941b-4446-8b24-b71e1a717943",Wolkiterestaurant,"",0.0,"Hornsey Road 82 N7 London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.527,true
+"084898ed-f22a-41ba-8f54-853c5671e23a",Okawarihour,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.529,true
+"37cc7ee3-3e2e-4bdf-a961-d31622174aed",Ranjits Kitchen,"",0.0,"Pollokshaws Road 607 G41 2QG Glasgow United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.530,true
+"21ac5ace-6ee5-4efa-90aa-2077b55521b4",Bell's Diner,"",0.0,"York Road 1-3 BS6 5QB Bristol United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.532,true
+"84117eb7-37e1-440a-b593-48e34bcdf51a",Teantoast,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.533,true
+a5c8a551-54c8-42b5-9b72-8bbd2c3becf0,Archieslondon,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.534,true
+c1c6f6cd-806e-475a-844d-fd650cc2e162,Savour Magazine,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.536,true
+"7976e850-3de6-4609-8f60-049a5bd047fe",Themillatstcatherinespark,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.537,true
+"75a7555c-6ad3-4176-a1db-d411388d5528",Babaghanouj,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.539,true
+c8bb3ad2-ec68-4816-ae16-b7e4d91f8d94,Monty's,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.540,true
+c59ba174-eb31-47d3-bc05-fd9b12a1aeeb,Thebanglachef Dn2,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.541,true
+"6f0f3858-2751-4040-9749-2b2289ec99e7",Taipan Mk,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.543,true
+"2f4147e7-edc2-424e-80ff-e38c7a0a45f3",Colytonbakehouse,"",0.0,United Kingdom,"","","","",5,0,0,0,2025-03-19 11:11:20.544,true
+c3f1e169-eb64-416d-9f02-ed89450fde04,Sanddollarcafe,"",0.0,"Beach Boulevard 2 AB24 5HZ Aberdeen United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.546,true
+"394501ef-bdde-4ae7-9873-d9be6fcb004b",London in the Sky,"",0.0,"Peardon Street SW8 London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.547,true
+"9e02b057-4de0-4fe9-abbd-446067deaeab",The Waterway,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.548,true
+"92cd71c1-1b26-4251-ad06-a7b6b6007450","3pigeons","",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.550,true
+b01bf54e-2eed-4f0a-a40d-ded77c1ddbc7,Ilcolosseo Athlone,"",0.0,"6 Northgate St, Athlone, Co. Westmeath, N37 EY47, Ireland","","","","",5,0,0,0,2025-03-19 11:11:20.551,true
+"67e332a1-365b-46f5-a894-d2a08b9f0012",Lattakia,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.553,true
+aed346c8-54bb-4656-9d6f-af128112e53e,RamsHead Grappenhall,"",0.0,"Church Lane WA4 3EP Warrington United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:20.554,true
+"7f3ff5f1-4af1-4e57-a42f-dd1e1ead79ea",Toptoursglobal,"",0.0,United Kingdom,"","","","",5,0,0,0,2025-03-19 11:11:20.556,true
+"30962ba1-154f-441c-b65b-046a063d3985",Albachiara,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:20.557,true
+d07214a3-ffca-47cb-ad11-4b9d7c10fd72,tattu.co.uk,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:22.557,true
+d9941018-25e6-4043-b3bc-4ef9c170e7ec,Highwayman Pub,"",0.0,"Burrow, Lancashire LA6 2RJ","","","","",5,0,0,0,2025-03-19 11:11:22.575,true
+"7821244f-ab10-46af-8467-129199e89571",Restaurantbabylon,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:22.589,true
+"3911b012-046d-4f17-ae0c-70bb2cee6272",Zuma,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:22.599,true
+"585e6c3e-cffd-42a1-84e3-8cdad2e90337",Oxwichbayhotel,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:22.608,true
+"931582eb-eff2-42f6-9ab5-d9e68de10f48",Balans,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:22.616,true
+"87f11554-8023-48c1-874a-42098d08f263",Turtle Bay,"",0.0,"Broad Quay 8 BS1 4DA Bristol United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:20.560,true
+"0e1fc464-2370-4ae4-8a32-bd738bab204a",pizzapunks.co.uk,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:21.203,true
+fc6140b3-f8cd-431f-822d-d58b2924040c,the blue jay,"",0.0,"Linville Close DE21 7BH Derby United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:21.270,true
+"4673118a-7a46-45f3-9aae-7613e9db6ee2",Pavilion Restaurant,"",0.0,"Middleborough 20-22 CO1 1QX Colchester United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:21.284,true
+"7157e041-b8be-413d-bb42-7617cbc6f035",Ayllu,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:21.296,true
+f4c22ea2-40e9-49a5-85ab-3742b0a17d73,Jamaicainn,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:21.307,true
+"516b6c41-3868-4fe6-af9a-951f3eb25494",Tipu Sultan,"",0.0,United Kingdom,"","","","",1,0,0,0,2025-03-19 11:11:21.316,true
+e5e68fbb-780c-414e-904a-7d57ead67f99,Toptable,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:21.326,true
+ed086b9c-8bf4-4d21-ae82-63a76beee658,Rishis Aberdeen,"",0.0,"210 - 212 George Street Aberdeen, AB25 1BS Aberdeen United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:21.332,true
+"095d167d-0030-454c-a70e-8cdc1b53df80",Randall & Aubin Restaurant - Soho,"",0.0,"","","","","",2,0,0,0,2025-03-19 11:11:21.339,true
+"7be974b1-fda1-40cf-a97b-f499c6c938ad",Sanjha,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:21.345,true
+ec9841a4-b76b-42c6-aa9d-b016566e8953,searcys.co.uk,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:21.350,true
+"7a151d4c-c08c-4474-a2e4-0799d4bc1c57",Tonkotsu Ramen,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:21.354,true
+"44aa135f-6aec-4920-ae34-40c376abebd8",Fatso’s,"",0.0,"King Street 33 NR30 2PN Great Yarmouth United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:21.358,true
+"3942e5a6-4bd2-44dc-82b9-6a31c01746d8",Pizza Pazza,"",0.0,"Wightman Road 282 N8 0LT London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:21.362,true
+"546df3d6-fe6d-49db-b34a-c69a07f2ad4b",Norwayinn,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:21.366,true
+"2070b69b-5e79-4685-b48e-1426d8e0cab5",Foodilic,"",0.0,"North Street 60 BN1 1RH Brighton United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:21.370,true
+ad6af78f-fee9-4a33-9ba0-8c4fa8030be6,Scotts Southqueensferry,"",0.0,"","","","","",2,0,0,0,2025-03-19 11:11:21.374,true
+"6f1b0a71-cc34-4434-a5c0-794126b80758",Alice House WH,"",0.0,"West End Lane 283-285 NW6 1RD London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:21.377,true
+b678d44b-2fd8-4b63-9178-62889d9ebc90,Mussel Inn,"",0.0,United Kingdom,"","","","",5,0,0,0,2025-03-19 11:11:21.380,true
+"09134e93-980c-4857-b434-5c4046c9daa5",Strays,"",0.0,United Kingdom,"","","","",3,0,0,0,2025-03-19 11:11:21.382,true
+"31afcce6-315e-4de7-9350-2d5df38a1a8a",Thepheasantinntoddington,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:21.385,true
+f71a4f54-47d5-4424-998a-f4fdcd107c93,The Admiralty,"",0.0,"Trafalgar Square 66 WC2N 5DS London United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:21.388,true
+b3a276c4-2aad-43bd-bf37-dff8cab0f5f5,Moorland Garden Hotel,"",0.0,"Yeoland Down PL20 Yelverton United Kingdom,","","","","",4,0,0,0,2025-03-19 11:11:21.390,true
+"976d008d-7ae4-4aa0-bb11-a7cd9e817205",Ladamedepiclondon,"",0.0,"Trinity Square 10 EC3N 4AJ London United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:21.393,true
+"8ae8561e-343a-4d48-bfa9-084b3536ee3a",Dawatgroup,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:21.395,true
+e9172ea8-c9d5-4d3a-96ac-40115c8a19c5,West Berkshire Brewery,"",0.0,"The Old Dairy, Frilsham Farm RG18 0XT Yattendon United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:21.397,true
+"11e9bcf0-c45b-4e6e-94af-b22c4e5ba98a",Theolivetreeledbury,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:21.399,true
+"454ac6e5-85ef-4ebf-a676-81bbb83bb68f",Tikkaway,"",0.0,"","","","","",4,0,0,0,2025-03-19 11:11:21.401,true
+"7c214125-03ba-41f3-883d-7a18d311f22c",Wheatsheafesher,"",0.0,"","","","","",4,0,0,0,2025-03-19 11:11:21.402,true
+"989de041-c97d-4854-bd7c-ecd407b555ea",Simpsonstavern,"",0.0,"","","","","",4,0,0,0,2025-03-19 11:11:21.404,true
+afcbe1fb-5881-465e-9953-8311ad75121e,Min Jiang,"",0.0,"2 - 24 Kensington High Street London","","","","",4,0,0,0,2025-03-19 11:11:21.407,true
+"992a456a-1393-426d-bf21-071c56b797ca",Dorsethouselyme,"",0.0,United Kingdom,"","","","",4,0,0,0,2025-03-19 11:11:21.409,true
+bde2937e-974a-464c-9c9a-1911b84bdadc,Figosmedkitchen,"",0.0,"United Kingdom,","","","","",4,0,0,0,2025-03-19 11:11:21.410,true
+da592144-221d-4ffd-81cb-276a1c85d83f,Bellbovingdon,"",0.0,"United Kingdom,","","","","",4,0,0,0,2025-03-19 11:11:21.411,true
+cffaed40-0629-4f24-9f93-c1d9020b1da0,Chinapalacegreatbentley,"",0.0,"","","","","",4,0,0,0,2025-03-19 11:11:21.413,true
+c0bc61c8-5898-41a5-ab13-b9fb2f4c7e84,Crookandshears,"",0.0,"","","","","",4,0,0,0,2025-03-19 11:11:21.414,true
+bf9091f1-8401-45b6-9370-bbc144117d60,Nisbets Limited,"",0.0,"Fourth Way, Avonmouth BS11 8TB Bristol United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:21.416,true
+a0e1cce2-e8f3-42ae-8e0d-6dba76b59955,Hawksmoor at Home,"",0.0,"Unit B, Jacks Place, 6 Corbet Place E1 6NN London United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:22.285,true
+"0ae6f33f-897d-46c4-86d0-da57708725d7",Tabletable,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:22.420,true
+"5444fb45-850e-4675-92e9-04ab2d18e5e9",Blues Kitchen,"",0.0,"Camden High Street 111-113 NW1 7SN London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:22.475,true
+"87287b96-ace2-4338-a1aa-55dace80372a",Steakout,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:22.513,true
+"05fec63f-8242-4799-80e5-9d5f02345162",Smith Western,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:22.537,true
+"9f55775e-1e97-4b9c-ae31-328bc6797095",Hencote,"",0.0,"SY1 1RJ Shrewsbury United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:22.632,true
+"17bf83a3-8fea-4bb9-bdaf-4d207c4f94de",Da Mario Restaurant,"",0.0,"Gloucester Road 15 SW7 4PP London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:22.639,true
+"7ec368ff-0715-4091-9804-6b12325c7b58",Crowded House Bury,"",0.0,"Crowded House, 626 Manchester Road, 626 Manchester Road, 626 Manchester Road BL9 9SU Bury United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:22.645,true
+a038054a-c465-4590-8230-3200173284eb,The Beehive,"",0.0,"Hartley Lane Whitley Bay United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:22.650,true
+"45f4d5ef-de67-4f47-9ba1-538d27aee826",The Waterside Inn,"",0.0,"Ferry Road SL6 2AU Bray United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:22.656,true
+"24a5a6df-ee2b-4cca-8912-56ab82bb42fc",Salkaara,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:22.661,true
+d41bc958-c505-4bc7-adcb-d478b93fa4fa,Forgans,"",0.0,"Market Street 110 KY16 9PB St Andrews United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:22.666,true
+"9eed53b7-df93-4d88-bda2-a5be68606a2b",Sandycove Hotel,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:22.670,true
+c7ce5c84-a516-4d89-b1cc-2ec6bf75412d,Giraffe,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:22.674,true
+edd0c888-adc3-4fc4-9fa5-5d55239b287e,The Wolseley,"",0.0,United Kingdom,"","","","",5,0,0,0,2025-03-19 11:11:22.677,true
+b1d1380c-5b87-4385-b1a5-0b608f34b1ad,Marshallsfarmshop,"",0.0,"United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:22.681,true
+"008da7e3-0460-4582-91de-80d6a21868dd",Mamma Linas,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:22.684,true
+"717fbcf6-61a4-4b54-ba9d-ecefe0d80d37",chatsworthkitchen.co.uk,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:22.688,true
+"652d23b4-2545-47e6-a334-9a742f2b7417",Theshipatelswick,"",0.0,"","","","","",2,0,0,0,2025-03-19 11:11:22.690,true
+f26a4b7e-5b62-4ceb-91cf-bd1cf7195f2a,Chickenandsteak,"",0.0,"","","","","",3,0,0,0,2025-03-19 11:11:22.693,true
+"07ddf26f-503b-4683-b1ea-a8d5e918ef67",Livpanasia,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:22.695,true
+"8accfda7-c0ef-45a8-ab6b-4643c43b2a0e",Chimneyhouse Hotel,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:22.697,true
+"43423447-8f17-46a9-8b11-339483431319",Inn on the Square,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:22.699,true
+"07d1773d-e318-4598-9ca4-0e79bdd41be9",Ramaspice,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:22.701,true
+ea23edd4-08f1-41fe-873c-2d47cbf74580,Estábulo,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:22.703,true
+"1595dbd5-37cd-4f17-a8ce-8ca9cc8809f9",Greenking Pubs,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:22.751,true
+"0d5a8030-ed8d-4254-b235-582b58e4bf66",Fox and Hounds Grantham,"",0.0,"Grantham Road NG334AB Old Somerby United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:22.789,true
+"069e2c3c-d263-4edf-aa49-aeede025e52c",Cottage Loaf,"",0.0,"Market Street LL30 2SR Llandudno United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:22.813,true
+"95b28704-5b52-4911-94b3-4bac60feef2c",Three Horse Shoes,"",0.0,"Leeds Road 16 LS26 8JU Oulton United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:22.820,true
+"8199fb05-eb15-4c9d-8a04-fe82f109ed54",Tandooriparlour,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:22.828,true
+"7d1d228e-2c85-448b-8cf3-d0de7f601e54",Glasshouseeastbourne,"",0.0,"United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:22.834,true
+"6f3cbf88-9ecc-4d87-b0e6-7c0fc49a1905",Colwickhallhotel,"",0.0,United Kingdom,"","","","",1,0,0,0,2025-03-19 11:11:22.839,true
+d04346a0-5f3d-41e5-b408-eaeab06a9681,Mu Mu,"",0.0,"Rockingham Road 42 NN16 8JS Kettering United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:22.847,true
+f0701897-cd86-42c6-bdc4-634fbf274a30,Felixrestaurants,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:22.852,true
+ca5e41a6-b7c3-4368-9ad2-5a01532a56fd,Raviz,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:22.857,true
+"70548c5d-9024-4545-bd4c-6831f6766449",Brunning and Price,"",0.0,"Saighton Lane CH3 6EG Chester United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:22.862,true
+"1b20855b-8db0-4282-a6fd-95a6c979d077",Koreana,"",0.0,"","","","","",2,0,0,0,2025-03-19 11:11:22.867,true
+"01fa2291-8305-4f8d-9d22-55b733e3f520",Oldmillrestaurant,"",0.0,"","","","","",3,0,0,0,2025-03-19 11:11:22.871,true
+"23e82441-a741-409f-93c8-b1f5f45dddd9",The Palomar,"",0.0,"Rupert Street W1D 6DN London United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:22.877,true
+"5b2bbad0-175e-408a-9d3b-1a48167a6bed",theglades.co.uk,"",0.0,"","","","","",3,0,0,0,2025-03-19 11:11:22.882,true
+eda0cfd0-043b-4f88-89dd-19919f7e3572,Asadal,"",0.0,"","","","","",4,0,0,0,2025-03-19 11:11:22.886,true
+"13d9177d-19ba-4b44-a7b4-878157c54bd9",Lalas Restaurant,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:22.890,true
+bf9a69be-56eb-4562-a5b0-d3ce5eb26653,Aquum,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:22.894,true
+"3d8e78e1-bf17-4aa6-81c9-42a4ac65b2b3",The Queens Head,"",0.0,"","","","","",3,0,0,0,2025-03-19 11:11:22.898,true
+"9a024540-490f-4881-aa1d-f425bda043a5",Lovetoast,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:22.902,true
+"27250aeb-7576-4d82-ac19-8dbbb75fa9b8",Derwent Arms,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:22.906,true
+a57f9a18-5cca-4351-8346-9598a9852373,Pearmain Pubs,"",0.0,"High Street 123 GU21 4SS Woking United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:22.909,true
+"90a0211f-c0e9-406d-842f-4d94110e1a94",Abergavenny Arms,"",0.0,"Frant Road TN2 5LE Tunbridge Wells United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:22.913,true
+"0593fb4c-eea1-4893-8a94-c5c48f6a94d7",Avellino,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:22.917,true
+c9942c9d-f89a-4133-a885-c4d1ab23a44a,Timbrellsyard,"",0.0,United Kingdom,"","","","",2,0,0,0,2025-03-19 11:11:22.919,true
+b3895b6a-c02b-4ddb-85aa-08484a1ac8ab,JW3,"",0.0,"Finchley Road 341-351 NW3 6ET London United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:22.922,true
+dfa36efe-f58e-4b2a-8a02-251c381bfd01,Nagsheadpubrouth,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:22.926,true
+"55e1d3d2-1115-4982-9fd6-cbc58f59cce2",The Pytchley,"",0.0,"High Street NN6 7AP West Haddon United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:22.929,true
+"2d700a7e-a627-408d-b53f-dae780fef33a",Criterionrestaurant,"",0.0,"","","","","",3,0,0,0,2025-03-19 11:11:22.931,true
+e7c254ac-b66c-4e2d-bffe-809b7b0a4141,Thewhitehousepub,"",0.0,"United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:22.933,true
+bd54f354-51c8-427d-bfa0-68f977e85cf1,Redlionwaterend,"",0.0,"United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:22.936,true
+e6d67459-3d22-41f1-b6d5-db365c7da33f,Tarshish,"",0.0,"United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:22.939,true
+"01340032-f02a-401d-85df-ca91e6a3dc07",Koh-I-Noor,"",0.0,"North Street 235 G3 7DL Glasgow United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:22.941,true
+"01bcc5fd-591d-4d22-b6f5-02adf29334ec",Thespywayinn,"",0.0,"United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:22.945,true
+a4e26823-d8ca-487f-a507-cf389e85934c,worcesterwhitehouse.co.uk,"",0.0,"United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:22.947,true
+"5bdffba5-c823-4b8d-8d55-20bb167d0b3d",Noisylobster,"",0.0,"United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:22.949,true
+"00141bc3-7ade-4a9e-89c7-22e57518ebd9",Saltydogbangor,"",0.0,United Kingdom,"","","","",3,0,0,0,2025-03-19 11:11:22.951,true
+"5a4b2059-4fff-4b85-ba09-72f9fe023236",Chiquito,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:22.953,true
+cc375e3c-f6d8-4f6f-ac4b-3bd320bbc705,Sizzling Pubs,"",0.0,"Abbey Road LS5 3NG Leeds United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:23.342,true
+"193bf34f-e1d3-4572-a370-50fece186748",Ole & Steen,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:23.479,true
+e638cfdd-c610-4b67-8a12-6c4c321b3e48,tamatanga,"",0.0,"Park Row 35 NG1 6EE Nottingham United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:23.586,true
+"2b406018-a9bb-47c7-ac33-41b8bd0b2e16",The Olive Tree Restaurant,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:23.608,true
+"55b506a6-6b9f-4f57-b90a-c834d097983f",prezzo.co.uk,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:23.625,true
+"191a467b-9730-4d79-b439-bbfbc3102b15",Professional Hygiene,"",0.0,"UNIT 5 CCT BUILDING BS11 0YB BRISTOL United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:23.638,true
+"0c5cf19d-b5dc-4ef2-b354-6fdcf4b99746",The Bell,"",0.0,"Bromsgrove Road DY9 Stourbridge United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:23.650,true
+bc2371ee-3860-46ab-ba36-60cf950dfbd3,Chaophraya Thai Restaurant,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:23.658,true
+b3931189-8fb7-4475-820d-9146238401c1,Northcote,"",0.0,"Northcote Road BB6 Langho United Kingdom,","","","","",4,0,0,0,2025-03-19 11:11:23.666,true
+"15d5a8ef-f657-44fa-89e2-f4fa31f82daf",Severngorgepubtelford,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:23.672,true
+"7d33050e-5de6-4968-a9da-22ecfd13148f",Tradingpostpub,"",0.0,"United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:23.677,true
+"9c502c00-6241-4e51-aa76-222bca00b238",Gomshallmill,"",0.0,"United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:23.683,true
+e038de13-a62f-40ce-be8f-e3ec72a131d8,The Star Inn The City,"",0.0,"Museum Street YO1 7DT York United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:23.689,true
+"67b6b347-2df8-49e3-9e7d-43d296bad839",Enfesrestaurant,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:23.694,true
+a2a216bd-f1f7-489a-ac34-f8681609a55c,Umami Streetfood,"",0.0,"Elm Grove 167 PO5 1LU Portsmouth United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:23.699,true
+"9dc25867-166d-4f5c-af15-e73d9ebab4b5",The Bottle & Glass,"",0.0,"Bones Lane RG9 4JX Henley-on-Thames United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:23.703,true
+a4245ceb-bace-44cf-9333-35f9a2f56684,Thegrovecromer,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:23.707,true
+"8e1d20b7-2c00-44b4-ab94-8d7bab514e32",The Chestnut Horse,"",0.0,"","","","","",2,0,0,0,2025-03-19 11:11:23.711,true
+f3f66e45-1352-457b-871a-291b161974f2,Delhi Brasserie,"",0.0,"High Street 66-67 OX10 0BX Wallingford United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:23.714,true
+"60f9d7d1-343d-45a3-8f58-195cfce394be",Hambleton Hall,"",0.0,"","","","","",3,0,0,0,2025-03-19 11:11:23.717,true
+bd2ee614-3f68-40fa-a7dc-95edebdcf9f6,Rasasayangfood,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:23.721,true
+"756d2291-c4a1-4225-84b7-4de07ce214af",Hotboxd,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:23.724,true
+"29c33df8-05ad-495d-add2-8a605e87df06",Towngatetakeaway,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:23.727,true
+"66301967-9665-4cd5-acdc-777509f348bd",Beverleyarms,"",0.0,"","","","","",3,0,0,0,2025-03-19 11:11:23.730,true
+d44cc2de-1fa5-4923-862c-94b05c05a5d7,Pekingchefbath,"",0.0,"Saint Kilda's Road 84 BA2 3QJ Bath United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:23.732,true
+"0c81a06f-a125-47f2-b649-484e7d339bda",Shepherdanddogpub,"",0.0,"United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:23.733,true
+"18f1ade2-658a-4fda-9cfc-2b5388f313b9",Artisanmeze,"",0.0,"","","","","",2,0,0,0,2025-03-19 11:11:23.734,true
+"4d222218-8011-4cc3-adcb-6d5e512c1ec3",Novaforestkitchen,"",0.0,"United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:23.736,true
+a535cf4d-42f8-45c3-999d-0078842d2e62,Missdaisystearooms,"",0.0,"United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:23.737,true
+"4d4385ce-338b-46f2-b999-16d4a451a8b7",Kingsfishrestaurant,"",0.0,"United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:23.739,true
+"80964881-4adb-48c8-a0fb-4ac92f1039a0",mashsteak,"",0.0,"","","","","",2,0,0,0,2025-03-19 11:11:23.740,true
+"3f46b39d-f3af-412b-96e2-c4454b56229a",Vintage Inns pubs,"",0.0,"Princes Avenue LS8 2EP Leeds United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:23.742,true
+"03735a0c-e2f7-4151-8fbd-e39b127e6ad7",All Bar One,"",0.0,"Saint Vincent Street 56-72 G2 5TS Glasgow United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:23.956,true
+caf04bd6-d3aa-4ca3-ad11-388a012110e0,Loungers,"",0.0,"Lower Park Row 15-16 BS1 5BN Bristol United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.080,true
+cdda8ab1-6d29-4b57-894d-2a3a4155b959,rudyspizza.co.uk,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:24.133,true
+cbde3536-868a-4d97-a0b2-72841d3b1887,Strada,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:24.153,true
+"101f4cb6-424b-446f-8fa9-8a753b4b0767",The Walnut Tree,"",0.0,"Llandewi Court NP7 8AW Llanddewi Skirrid United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:24.397,true
+a29558b2-2243-4c33-a3be-b453f073a965,Theploughfenditton,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:24.407,true
+"9927f113-005f-4507-ba65-253c060fed8a",L’antica Pizzeria,"",0.0,"Heath Street 66 NW3 1DN London United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:24.414,true
+cde184aa-f588-4d46-b8e5-e6a93ed1b33c,Santa Maria Pizzeria,"",0.0,"Saint Mary's Road 15 W5 5RA London United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:24.420,true
+f943821a-3fa6-4e4f-ac76-e6c993ccfc4c,The Groes Inn,"",0.0,"LL32 8TN Ty'n-y-groes United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.424,true
+"01e262bb-55fa-4f0f-9a5f-0e8a7d2d3924",Purnell’s,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:24.430,true
+"1ac0d2a2-65bf-4794-a830-5fa240204beb",The Mayfair Chippy,"",0.0,"North Audley Street 14 W1K 6WE London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:24.435,true
+"387b9d94-f603-4b30-a5c8-23c1fa95e051",Aramintastandoori,"",0.0,"","","","","",2,0,0,0,2025-03-19 11:11:24.440,true
+d05fc098-091a-4ff7-89aa-ee7685dcfd9a,Horseandfarrier,"",0.0,United Kingdom,"","","","",3,0,0,0,2025-03-19 11:11:24.443,true
+b36dfe0c-dd9f-4ebd-80af-ed11f85754b0,Sophiessteakhouse,"",0.0,"","","","","",3,0,0,0,2025-03-19 11:11:24.447,true
+"4044df6b-cce6-449c-8d82-22437f22dd07",NYC Bar & Grill,"",0.0,"DN10 6JG Bawtry United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.451,true
+"852b99cf-4030-4518-9c86-18dd5d878ab2",junglecave.uk,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.454,true
+"1707bf7b-20d9-43ed-9f1e-5266dc8ae550",rotiking.co.uk,"",0.0,"","","","","",2,0,0,0,2025-03-19 11:11:24.456,true
+c73572d7-7ebb-433f-a3b1-f289fecb2a75,aquashard.co.uk,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.459,true
+"5ee2431a-22d7-4403-a4c7-5bc7d1feed27","The Bull & Willow Room, Great Totham","",0.0,"Maldon Road 2 CM9 8NH Great Totham United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:24.462,true
+e68674e7-0a6c-449b-a2a4-3c88032c2efa,Pubsulike,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:24.464,true
+"8fbc51b2-7fa4-42d8-acc6-d89014ed9240",Yashin Ocean House,"",0.0,"Old Brompton Road 117-119 SW7 3LE London United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:24.466,true
+"3f3202bf-c4c0-43fd-b988-ea5256986c0c",Charlotte Dujardin,"",0.0,United Kingdom,"","","","",3,0,0,0,2025-03-19 11:11:24.468,true
+"8e34d2f2-cb27-4695-b00a-efceac3c8d62",Thehorseandchains,"",0.0,"","","","","",2,0,0,0,2025-03-19 11:11:24.470,true
+"34f935ad-db23-4c90-b7de-dc8a4dda019c",figorestaurant.co.uk,"",0.0,"United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:24.474,true
+c162e637-db96-4e9d-a33d-45a1d5cb6dfc,Dafteddysni,"",0.0,"","","","","",2,0,0,0,2025-03-19 11:11:24.478,true
+"0f289665-fd01-4ba0-918d-f0480e59a5e1",Theparkliverpool,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.481,true
+"1f7a9819-f49b-42f9-bd28-ecb9084e63e6",Thebluelagoonbristol,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.483,true
+"16c22d35-c18d-4f20-880c-ba39f8917c3e",Theredlionmumby,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:24.484,true
+"1ced3240-cb8b-4d3c-81e2-0a61f517263d",Riceboxoxford,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.487,true
+"970bd754-2d7c-43e1-b7f7-c9538f17a627","8thsin","",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.489,true
+"4e116f7b-0b25-4809-a65d-a91ccb74ac7e",Themerrymonk,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.492,true
+"05f11c65-da6e-47ef-9b12-b81165b95841",Trattoriabowness,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.494,true
+"65be2022-0956-418d-a360-536fe49418cf",Zazabazaar,"",0.0,United Kingdom,"","","","",1,0,0,0,2025-03-19 11:11:24.496,true
+"935af9f7-e6ab-4ea8-9613-93d1c0c19cb0",Thesouthgate,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.497,true
+cdc07c5c-cbd5-41ed-9a83-9dfe0ebe03ac,Thepheasantbrill,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.499,true
+"81210328-a2fd-4d95-8368-8300adb0074b",Threehorseshoesmarlow,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.501,true
+"4f52467c-bf2f-457e-bd10-24afe3b6727b",Coastlinefishandchips,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.502,true
+"1dc8e1a6-f5bb-4eae-8d27-40ac8ebd5ef5",Randyswingbar,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.504,true
+"9082ab6f-2747-42ae-85da-63ba1f68a502",Sudawk,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.505,true
+f12ca32a-3d18-49d4-8beb-f0451daa84db,John Carrigan's Eating House,"",0.0,"Birkhall Road 3 ML3 8BG Hamilton United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.507,true
+"01cdb2ad-dc20-4b7b-a707-916fdbf8e447",Tish,"",0.0,United Kingdom,"","","","",1,0,0,0,2025-03-19 11:11:24.509,true
+"7a5efbed-1a0f-4c26-8ce1-64054711a300",The Oak Inn Defford,"",0.0,"A4104 WR8 9BW Defford United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.510,true
+"6cf4a769-1286-4fb3-b047-43550c3f84c2",Bar 166 & Bistro,"",0.0,"Town Street 166 LS18 4AQ Horsforth United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.512,true
+dacf8dfd-6c51-4c69-8676-760963499942,Buddyshenley,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.514,true
+f4649b87-f7d2-41b6-a20c-071b2b2b60b0,Mailexperiences,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:24.515,true
+"046b40b2-4e84-4ffb-a6c6-93ab0b7e8e30",The Three Houses,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.516,true
+ee397296-a29c-4f54-9505-be874ac70fee,Skivarp,"",0.0,United Kingdom,"","","","",1,0,0,0,2025-03-19 11:11:24.518,true
+"16af56cb-e8b7-45dc-b715-3330284e1282",Kitchenventures,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:24.519,true
+ae59d373-b61d-4d14-8a87-34efe18e2fb7,sancarlofumo.co.uk,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.521,true
+"6f630ea8-c1e3-4810-a427-349bf769807e",tokyoramen.co.uk,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.522,true
+"095cf707-8632-47da-8266-2f28c8d33922",Flavourz World Buffet,"",0.0,"Wolverhampton Road Oldbury United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.524,true
+"16964e06-6798-45de-ae17-55c823659a41",Thewelsh House,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.525,true
+"0bfb748d-b914-4147-b57b-b8699b43e55d",Rapsa,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:24.526,true
+"1e1b37a6-c1d8-441c-b216-3093aee39c07",Cafejanan,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:24.528,true
+"4343b63c-2652-4e46-91ff-5aa149591f0d",The Olive Lounge,"",0.0,"Bawtry Road 169 S66 Wickersley United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.529,true
+"6a6842c6-fe66-4469-8516-3cfc6fd696f3",Richoux,"",0.0,"School Road 20 RG31 5AL Reading United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.530,true
+"87d186d7-f39d-49d4-9f45-b4c3481957af",Cgrestaurant,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:24.533,true
+"0e7d67fc-9443-4a88-8936-3e7b4b529ab6",Browns Restaurants,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:24.534,true
+a2f24b82-04d4-4aec-bceb-cd2a068c091f,Bar + Block,"",0.0,"Porz Avenue LU5 5XE Houghton Regis United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:25.687,true
+"1838b62f-0615-43b6-81ac-006ca9cf8803",chaiiwala.co.uk,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:25.768,true
+"32065629-1823-4c05-a775-ad573698051f",Gino My Restaurant,"",0.0,Old Hall Street Liverpool,"","","","",2,0,0,0,2025-03-19 11:11:26.108,true
+"77d5f391-dd18-40f6-bb5e-e38dae91d57a",The Dome,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:27.065,true
+"367ae7e9-f7a4-4761-a6de-43bfa3c97fdb",Smashontrent,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:27.097,true
+"20641ed5-bb3b-4120-9872-6cb340ff2325",Manjaros,"",0.0,"United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:27.112,true
+"74e2d71a-c0cd-4c9d-a1d8-7db025d2dc78",Sintillate,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:27.124,true
+eac7edb6-c236-4086-b9c2-81325bb5b37b,Ambrette Restaurant,"",0.0,"King Street 44 CT9 1QE Margate United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:27.131,true
+"4b3ada85-ca4c-4953-a409-d0add7c96720",Willowrestaurants,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:27.137,true
+"91734668-5bc2-469a-b1aa-534dcb8ab2a8",The George Townhouse,"",0.0,"High Street 8 CV36 4AJ Shipston-on-Stour United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:27.140,true
+bfbd28fe-a3c7-4b50-8905-f2c9171ca7e1,Rusticopizza,"",0.0,"","","","","",2,0,0,0,2025-03-19 11:11:27.144,true
+"0d711476-e73a-49e6-b300-3993dfd8d153",Sabai Sabai,"",0.0,"High Street 268 B17 Birmingham United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:27.147,true
+ad778568-03ad-4731-9bbf-39a4081a19f7,Silverdinebanqueting,"",0.0,"Salisbury Road 61 TW4 Hounslow United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:27.150,true
+a4597e84-ea61-457b-be0b-94bad5be7a00,Thefishmarketnewhaven,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:27.153,true
+"9358626f-6764-4a03-828a-03035d4674f8",Michael Nadra,"",0.0,"Elliott Road 8 W4 1PE London United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:27.155,true
+"7d19a885-bfa6-4ad3-a570-b61001065532",Henrys Smokehouse,"",0.0,"United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:27.158,true
+a24593db-ff5c-4aba-8753-3335a4ddbed6,Maurizio Dining,"",0.0,"Mill Road 44 CB1 2AS Cambridge United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:27.160,true
+"986b5e5d-6b59-4d6b-9da9-0ce33331c0d8",Victoriainn Penzance,"",0.0,"","","","","",2,0,0,0,2025-03-19 11:11:27.163,true
+"99906672-b68c-4e5a-9cb0-5eee352a2b7a",Poppiesfishandchips,"",0.0,"United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:27.165,true
+"54c93987-aef5-4528-b4cc-ca9f5be5e501",Cadebyinn,"",0.0,United Kingdom,"","","","",2,0,0,0,2025-03-19 11:11:27.168,true
+"30fa77a9-d2a4-46b4-bef1-27fa9beb7589",Harvester,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:27.170,true
+"889f06ed-2f8c-4112-a865-a89602f5836c",Cosy Club,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:28.580,true
+c539f336-b77e-4501-bdbf-381f6624237e,ALL EAT,"",0.0,"3rd floor, Howard House, 32-34 High St, CR0 1YB Croydon United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:28.666,true
+"11059911-6904-4e97-932e-e00f9e738c94",Loch Fyne Seafood & Grill,"",0.0,"IP33 1QT United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:28.745,true
+ecc6365d-44db-4569-bbe3-af59b37ac3ba,Gokyuzurestaurant,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:28.790,true
+"2a421687-652d-49e5-81b5-a8b43c71b356",Ivy Tower Bridge,"",0.0,"SE1 2AA Tower bridge United Kingdom,","","","","",4,0,0,0,2025-03-19 11:11:28.816,true
+b79206f0-d798-467b-9363-913e1311fd08,Panoramic 34,"",0.0,"West Tower, Brook Street L3 9PJ Liverpool United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:28.851,true
+d5fb6867-a75a-46c8-9d15-a17d48c1e6e1,Denbies Wine Estate,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:28.871,true
+a713ab9b-0a4b-492d-a046-44af6a34940c,The Windmill Inn,"",0.0,"Nore Road 58 BS20 6JZ Portishead United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:28.882,true
+"240e91c9-5e9a-4eb0-909d-61e89f8067d9",Spicy Tadka,"",0.0,"RG21 7LS Basingstoke United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:28.893,true
+"5c09ead1-b0f7-4026-8cff-cc9d40042fa1",O'Neill's,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:28.904,true
+"8648f279-2907-4fdb-ab22-781225a0ae11","The Windmill, Clapham","",0.0,"Osiers Road 26 SW18 1NH London United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:28.913,true
+"079efa84-75c0-45f5-bd67-16bebdffc215",Black Swan Pub Restaurant,"",0.0,"RH11 9AJ Pease Pottage United Kingdom,","","","","",4,0,0,0,2025-03-19 11:11:28.920,true
+"7a1e2e0e-6153-497b-9430-15e32b0d2bac",Shop Trevaskisfarm,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:28.926,true
+"1f468ccd-778c-4cd3-8681-0d4e1214e2c3",Lucianos Restaurant,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:28.932,true
+f5d86d57-706a-4a33-ac4b-45f9fdf7ba4e,Sarsenstonespubfarnborough,"",0.0,"","","","","",3,0,0,0,2025-03-19 11:11:28.937,true
+"0df25e1f-207a-4e5e-8385-391173b84587",Wildtavern,"",0.0,"Elystan Street 2 SW3 3NS London United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:28.940,true
+"1813733c-3469-4b59-89a3-4118a8704eec",Fredwell,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:28.944,true
+"1dc8f5fc-1e50-425e-a7a4-55b3eee967e8",Kennedy's Of Goswell Rd.,"",0.0,"Goswell Road 186 EC1V 7DT London United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:28.947,true
+a5160f09-a5df-48c3-85f8-ca0d613d879a,Pearl Of Hong Kong,"",0.0,"162 Arbroath Road DD4 7PY Dundee United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:28.950,true
+"1ad28512-e3f1-4fb4-b7ba-5ff9501d170e",Pecoro,"",0.0,"","","","","",2,0,0,0,2025-03-19 11:11:28.954,true
+fd532e86-6964-4cdb-bf40-6ef89bcc1b09,Puccinis,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:28.957,true
+deb36407-4540-4ca2-b5a5-030376729503,Dogandpartridge,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:28.961,true
+"16c879d1-e3ec-4e34-b4e2-f038b51722d0",Park Hotel,"",0.0,"John Street 61 DD10 Montrose United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:28.964,true
+"7c14eacf-048b-4d98-99af-953ecd754aed",suffolkfoodhall.co.uk,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:28.966,true
+cb8eff4a-0f0a-4873-85c3-d83008e85a13,tigerbayshisha.co.uk,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:28.969,true
+"983dbff5-74a8-4526-b145-85879002899c",Crownandtrumpet,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:28.971,true
+"82b79d3a-8b13-405f-b6c7-b87d75d9de8f",Millerandcarter,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:28.973,true
+"3690cd1c-ede3-41a8-996d-87a86cb2fa02",Beefeater,"",0.0,"Dunstable United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:30.012,true
+"51fffbaa-b3bd-450c-b7a4-6c31497d5a0f",Franco Manca,"",0.0,"London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:30.659,true
+"417d24c1-665a-4897-a7c1-e4f2f4ff49c3",Wahaca,"",0.0,"Chandos Place 66 WC2N 4HG London United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:30.867,true
+"1be52046-4efd-472b-be42-d344e6b7664f",The Magpie Cafe,"",0.0,"Pier Road 14 YO21 3PU Whitby United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:30.903,true
+a0b11eb3-7ca8-4720-a649-e3e689ae83da,Bananatree,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:30.930,true
+"1b3aa459-8de6-4200-a949-2a0821ec1677",San Marino Restaurant,"",0.0,"138-142 Widnes Road Wa8 7ax Widnes United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:30.952,true
+"57442348-ff45-4c4b-9c9f-2d03313f8081",Chicken George,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:30.969,true
+"70ec57b6-841f-40a5-9fdd-76deac5d7eeb","Rushden Lakes, Northamptonshire","",0.0,"Saint James's Market 1 SW1Y 4AH London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:30.989,true
+"1aea37af-5cd0-45c2-9da8-284b309c0992",Firsttable,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:31.005,true
+"980a41e1-a70f-4e9f-b4ae-8043a568c02d",Shepherd Neame,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:31.017,true
+"1c14866a-10de-4624-9909-2b24e7707c6a",Eataly,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:31.032,true
+"90b19c48-9b77-4aa0-aa2e-4cc8a24193cf",Stripjointglasgow,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:31.039,true
+b812e595-9208-4c0d-9b42-31cfe49c164d,Quaysidewhitby,"",0.0,"United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:31.045,true
+e89c71cc-5537-4994-a6bf-bf6f73cfcf07,Chipwick,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:31.050,true
+"56dc2cce-5b6a-45ab-b99d-6ee496ac3bfa",The Hut,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:31.055,true
+"23f7355b-03ba-4218-b8e5-9bede202fb01",Demshish,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:31.060,true
+db0d97b2-d099-4175-ba75-0f6d66068a62,Magicspices Wallasey,"",0.0,"Seabank Road 225 CH45 1HE Wallasey United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:31.065,true
+bb8d8dd7-28c2-4273-a6c3-97c6e9a014b3,The Dancing Moose,"",0.0,"Station Road 28-30 BH14 8UB Poole United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:31.069,true
+"3f1bdcf7-044e-4e97-aa9a-0c2140c959af",Sheiks Nightclub,"",0.0,"The Esplanade PO21 1SY Bognor Regis United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:31.072,true
+"012e904d-aef1-43f6-879b-4c6272b2b34b",JRK Bros,"",0.0,"130 old street ec1v 9bd London United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:31.074,true
+ecf95799-c53b-4a30-81d7-72600c76d43c,Elibeautician,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:31.077,true
+ebef0fc1-98c1-459f-b2d4-b06010539f6d,Dundryinn,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:31.079,true
+f52ae21d-9b89-4ac5-8213-7be6eb3eaa9a,Kormasutra,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:31.081,true
+"49a798ec-a75a-49fa-a4ee-7e871dd6038b",Zus Eat,"",0.0,"Green Street 83 E7 8JF London United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:31.083,true
+"4689cd0e-3024-490b-8ab1-1090c872e667",Aromabuffet,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:31.085,true
+"8fcd0b43-c232-42b4-acc2-0bae83984fd3",Princewilliamhotel,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:31.087,true
+fad8dc87-bf31-414b-9179-b9ac60a7c184,Shambleslytham,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:31.089,true
+"628374ae-1f76-473b-8abd-2a9299ce11f4",Badshaindiancuisine,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:31.091,true
+d20ced7a-0cd3-4cb5-bb79-567b8d2ffbc6,riding.house,"",0.0,United Kingdom,"","","","",1,0,0,0,2025-03-19 11:11:31.093,true
+"7fea7f08-826c-4fc3-b043-7d76b8f0ee5c",Boujeerestaurantandbar,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:31.095,true
+fcc56464-d6d3-4253-9e43-96aa4e0efe1d,Queensgate Shopping,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:31.097,true
+"9ad71091-b053-45d9-8169-cfc3002dc089",wagamama,"",0.0,"Wardour Street 76 W1F 0UR London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:31.099,true
+"3bd915fc-4c58-4439-a815-becfc867bb24",The Ivy,"",0.0,"West Street 1-5 WC2H 9NQ London United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:31.644,true
+"0938f41d-43ab-455c-9ba1-21993238d1f3",Las Iguanas,"",0.0,"United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:31.952,true
+"1817a99d-778b-4e30-8148-4b9d0805e9b4",FAR's DRENG,"",0.0,"","","","","",2,0,0,0,2025-03-19 11:11:32.182,true
+"6f8e9749-cfd6-44b7-916d-dd90755392b1",Gretna Green,"",0.0,"DG16 5EA Gretna United Kingdom,","","","","",4,0,0,0,2025-03-19 11:11:32.187,true
+dcbedec0-b6f8-4d49-9781-4c59adcdc1bb,Elite Pubs,"",0.0,"","","","","",2,0,0,0,2025-03-19 11:11:32.280,true
+"44556d8e-5aa0-4783-93d8-306ee38ac9cd",Barburrito,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:32.524,true
+"994fdea3-fdd4-4eb9-b22c-21f9aedda37c",Cheatmeals,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:32.542,true
+"3f1b5209-5873-4ff2-824e-b8cf366a1514",White Hart Hotel,"",0.0,"Bailgate LN1 3AR Lincoln United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:32.555,true
+"718e7f2f-6552-45d8-bda0-a34474e00aa0",McMullen's Brewery,"",0.0,"","","","","",4,0,0,0,2025-03-19 11:11:32.566,true
+c451da5c-7fba-4c4f-aabf-ef6508e3b21e,Nardinis,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:32.575,true
+b43cc2fe-41b9-4c0a-800f-1d9dbad9da8f,Loch Lomond Arms,"",0.0,"Main Road G83 8NY Luss United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:32.584,true
+e46ba7a8-2ab5-48cd-b85f-9bffa924d46c,Sakonis,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:32.590,true
+e79f27ce-fc73-4914-a89f-ba57ca2fee9e,marugame.co.uk,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:32.597,true
+a5a528fc-6849-4e41-9114-d47371dede11,Parade Tearooms,"",0.0,"Parade Tearooms, Western Parade, Southsea, Portsmouth, Southsea PO5 3JF, United Kingdom","","","","",1,0,0,0,2025-03-19 11:11:32.603,true
+"5c04525f-c832-4750-bddc-e918a7925bd6",Dogandduckoutwood,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:32.608,true
+f929b287-48dd-40c2-909e-e485872027ef,Feathersatludlow,"",0.0,"","","","","",2,0,0,0,2025-03-19 11:11:32.614,true
+"711b5f6a-0aca-42ae-9f1e-a17bdad5dde5",GRANNY ANNIES,"",0.0,"Limavady Road BT47 6LS Londonderry United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:32.619,true
+f8b7a936-3995-4aa2-89d2-117302305295,Soldeli,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:32.624,true
+"721e6fbb-8ae9-4ca0-9bcb-41ca9578ccb6",White Hart Wroughton,"",0.0,"High Street SN4 9JX Wroughton United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:32.629,true
+"73610b4e-ad5a-4338-b33d-94f49161265f",Sefsteakhouse,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:32.633,true
+"119aa513-d856-4249-99fc-3de48977d964",Virgiliosrestaurant,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:32.637,true
+"269c9d53-97fb-4dba-9f11-f8b1b86852b3",Thai Moom,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:32.640,true
+ea2208d4-6dbe-4601-88a9-5aec1d823511,thebeestonsocial.com,"",0.0,United Kingdom,"","","","",1,0,0,0,2025-03-19 11:11:32.643,true
+"46b07ac3-dd71-418a-a545-5d1241b6aafa",Kazan,"",0.0,"Wilton Road 93-94 SW1V 1DW London United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:32.648,true
+b4e8a850-89a0-42b3-8441-be1697ef4e33,The Devonshire,"",0.0,"Rectory Road NG20 Mansfield United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:32.650,true
+"46f55151-47ad-400e-83c4-9961321cc788",Relax Innz,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:32.654,true
+db13263d-551f-4546-8f0e-e03bfeec9963,Amalfi,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:32.656,true
+"1b606d11-dcab-4d34-8d95-4b69eaccdc5e",Gazette,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:32.660,true
+b31a88c7-8ed8-4674-9dd6-4fc620871b11,Thewhitehorsecrostwick,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:32.663,true
+"6f7e16c8-92b3-4f55-813e-0e424c19987a",The Old Red Lion,"",0.0,"Linton Road CB21 4QF Cambridge United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:32.665,true
+"102e7d67-090f-491b-8dec-d3f319fd8656",Flames Stone,"",0.0,"Lichfield Street 11 ST15 Stone United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:32.668,true
+"69efb5f0-9346-4f6a-83f1-66f30c0eb595",LE Gavroche,"",0.0,"","","","","",2,0,0,0,2025-03-19 11:11:32.671,true
+e9b93b09-98d0-4549-a66b-c09a39b3490a,hillsbrecon.co.uk,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:32.673,true
+"84baa93a-5c55-42a5-8686-977b0697d5a1",Crown Carveries,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:32.676,true
+bdd7d0dd-7270-4c37-abac-8331eb6cd247,Therealchina,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:32.679,true
+"83917c37-868c-4e04-9b7e-de7c35d177e5",Nandos,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:32.682,true
+"6a585d22-6cd7-4a15-8fd2-c1b60d8b4595",Bistrot Pierre,"",0.0,"Milton Street 19 NG1 Nottingham United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:34.707,true
+"7819140e-1d70-4eba-bb69-0a15ac6c9df8",Wildwood,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:35.935,true
+"3dad29b1-83c1-4282-b4da-06bdd27659b8",Spaghetti House,"",0.0,"Cranbourn Street 24 WC2H 7AB London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:36.018,true
+"8a1eb19d-d81a-4998-8456-f47c1c8a4de8",Tampopo,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:36.042,true
+"23409ad6-0b2c-4c64-9d45-d590e109ef13","Swan, Shakespeare's Globe","",0.0,"21 New Globe Walk SE1 9DT London United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:36.057,true
+bbcf6f85-65f9-40ca-b0f8-c5357e72d2b2,Becketts Farm,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:36.070,true
+ffe3c89e-4c7e-468f-b114-8d7bc92defc0,Cocaiexpress,"",0.0,United Kingdom,"","","","",1,0,0,0,2025-03-19 11:11:36.080,true
+"33b41346-d41c-490c-8b29-becccc573d8d",The Ox,"",0.0,"Corn Street 43 BS1 1HT Bristol United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:36.087,true
+b488bc78-84f4-4984-80b8-92b54b9745e6,Viceroy Pakistani Indian Cuisine,"",0.0,"Tamworth Street 2b DE56 4ER Duffield United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:36.092,true
+cef2333d-2972-4feb-9446-9a6d27171fe2,Amaroneristorante,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:36.097,true
+"1bc4ac89-304a-4c42-8ba1-974bb4ed2f2d",La Piazzetta PF,"",0.0,"The Square GU32 3HJ United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:36.101,true
+"6633e585-2e8b-4bd7-8cbc-bc5aabc34314",Zen Durham,"",0.0,"Court Lane DH1 3JS Durham United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:36.105,true
+ee07bbbe-5e1c-43c2-a905-ee5eca9e1472,Brewers Fayre,"",0.0,"Dunstable United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:36.109,true
+"1fd29511-61ca-4e3b-86f3-fd1e9246e13a",Askitalian,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:36.976,true
+f467ff91-5178-44d5-90a1-e3a5602d6545,Intu,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:37.027,true
+b2c57d45-afa4-4ada-8816-50d4a20bd380,Nicholson's Pubs,"",0.0,"Queen Victoria Street 174 EC4V 4EG London United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:37.057,true
+"73484d5e-2831-429f-ba5d-11173c68992d",HaskinsGardenCentres,"",0.0,"United Kingdom,","","","","",4,0,0,0,2025-03-19 11:11:37.079,true
+f5f281d4-6960-4420-8279-030ddb30212b,Locksidesteakhouse,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:37.090,true
+"115470cc-683a-4892-8121-570b829f7265",Boisdale,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:37.101,true
+"1d7370e7-6696-49c7-8785-13e968df5aa1",Tayyabs,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:37.112,true
+"8494cefe-3113-43dc-be4e-ca44ae5051f6",Patchi Sweets,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:37.120,true
+f8553efc-447c-43c3-8a6d-dfcb2faac3cd,fradiavolopizzeria.com,"",0.0,United Kingdom,"","","","",1,0,0,0,2025-03-19 11:11:37.128,true
+"505d47e7-8adc-4124-8c9a-08ba395bd83c",Albert's Schloss,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:37.130,true
+edfc068f-854b-41cd-a60e-becdcbb311d6,Cawleyhotels,"",0.0,United Kingdom,"","","","",1,0,0,0,2025-03-19 11:11:37.135,true
+df7dfb14-0a63-448a-ac60-193aa014c731,royalchinagroup.co.uk,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:37.140,true
+"2baf0be1-dfe9-4283-8ff4-592cbb392196",The Turks Head,"",0.0,"Low Road IP13 6JG Hasketon United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:37.145,true
+"655ecfb9-5f07-449c-a9f0-6a6ecb184a1f",Watch House Cafe,"",0.0,"DT6 4EN West Bay United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:37.149,true
+"706086f1-efcd-47f7-b227-ea6f0b8d78c6",Tinseltown,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:37.153,true
+c4ae7449-c930-4940-8a1c-c84d5a155ad6,Fayre Square,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:37.156,true
+da66642a-bece-4394-95a4-a70d34664afe,Goldeneaglemansfield,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:37.160,true
+fd98a181-746b-4e1b-b13e-99c2a37a2e69,Shaka Zulu London,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:37.163,true
+"12838ba9-db0b-4a97-bdbf-876d8fa3a1f3","247vouchercodes","",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:37.166,true
+"8897c470-2192-4906-a156-25bb24951bd4",Greatukpubs,"",0.0,"Capability Green 500 LU1 Luton United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:37.170,true
+a316a7f1-8632-4e62-af79-71de39a96527,Bibendum,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:37.173,true
+c4de2152-f08d-4a3f-b9cb-bb60f32476a6,Teahousetheatre,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:37.175,true
+"716daaff-90b3-4074-bec5-8a12e0767d43",Ego Restaurants,"",0.0,"Saint George's Road 2 BL1 2EN Bolton United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:37.178,true
+"0f960740-51ca-4a0f-b345-025aa60d0bd3",Revolucion de Cuba,"",0.0,"Peter Street 11 M2 5QR Manchester United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:38.248,true
+"066053b6-701d-4d60-8ad3-e54ce518cb9a",Pepes,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:38.308,true
+a52e9caa-2269-425c-a0b2-5fc83fde847e,mood.nl,"",0.0,"Keizersgracht 6 5611 GD Eindhoven United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:38.349,true
+"7e8ea6f9-b219-49c6-a6e0-f6f552989e98",muffinbreak.co.uk,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:38.353,true
+"0eae4484-d898-45ca-b070-690038f0f7e6",Damon's UK,"",0.0,"Doddington Road 999 LN6 3SE Lincoln United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:38.378,true
+"58949aad-fef6-47fc-bf19-2a3b6c723799",Escapelounges,"",0.0,United Kingdom,"","","","",5,0,0,0,2025-03-19 11:11:38.412,true
+"41c890a1-fd56-4a8e-8d13-bd74df8d5fef",Haarathome,"",0.0,"","","","","",3,0,0,0,2025-03-19 11:11:38.429,true
+"4ac48f9a-4d37-4520-b37b-813cb682b630",Gills Fish and Chips,"",0.0,"Unit 12B, New York Way, Shiremoor NE27 0QF Newcastle Upon Tyne United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:38.444,true
+"235b8e8a-a407-4f9f-9d50-1f0c74cea17f",Hall & Woodhouse,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:38.454,true
+ecde0385-af49-475e-9212-ff7728b34606,Arrayessex,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:38.464,true
+fcebfc69-1f02-4cba-bd9c-fff0d89602ba,Cabana,"",0.0,"Lancashire Court 8 W1S 1EY London United Kingdom,","","","","",3,0,0,0,2025-03-19 11:11:38.475,true
+"62cf4545-98bd-401d-9af2-bc1f796af886",Barbeachgrill,"",0.0,United Kingdom,"","","","",1,0,0,0,2025-03-19 11:11:38.488,true
+"7b4fe857-e057-483e-804e-82795c92146d",Mysterydining,"",0.0,"Parsonage Lane BA1 1ER Bath United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:38.494,true
+"4501b5a7-a393-428d-9916-74ff766ce90b",TablePouncer,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:38.499,true
+f4797571-5c8e-44f5-a33f-f4223914bf93,Woodman Battersea,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:38.504,true
+"89623981-b1dc-4766-a53b-1cf796d902b9",Olio,"",0.0,"New London Road 37 CM2 0ND Chelmsford United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:38.508,true
+"068a9c83-73df-474f-a5cf-ee055ae63f47",Crust,"",0.0,"Bold Street 25 L1 4DN Liverpool United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:38.512,true
+a098beb5-3aac-4fa4-9c14-d9818026625d,Frankieandbennys,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:38.516,true
+"6d3b3220-4fcd-4470-ac68-5c79f78aa9ae",Zizzi Ristorante,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:39.199,true
+"13cc763b-22a0-4527-b6a3-682d381ab468",Prezzorestaurants,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:39.631,true
+"8f8ca7af-bdd9-40d5-8119-868d6dc67e4f",Beefeatergrill,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:39.907,true
+"8efef830-4486-44d5-99d4-d0ca17499270",Gourmet Burger Kitchen,"",0.0,"Lindsey Street 1 EC1A 9HP London United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:40.126,true
+"17d996db-eac2-4ab2-9db4-4d2c3b5583e2",Dixy Chicken,"",0.0,"Solihull United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:40.321,true
+e11d772c-1bbc-4f4f-9c1f-cbeb8aa6953b,Bella Italia,"",0.0,United Kingdom,"","","","",2,0,0,0,2025-03-19 11:11:40.470,true
+"1e1e9e61-422c-4950-9361-bed4707a783b",Cosmo Restaurants,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:40.608,true
+"30657f24-5fa0-456a-a961-e30b38b9a9dd",tomahawk-steakhouse.co.uk,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:40.701,true
+"036f8153-9535-4d4b-9157-4dee6a14e4b3",Jamaicablue,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:40.771,true
+"64f1575c-81af-402c-bd18-57c7d1466cb9",Busaba Eathai,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:40.818,true
+f2716646-49c4-46fd-ad69-00e5a93fa4b0,Chef and Brewer Collection,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:40.843,true
+"20380524-a541-426e-84c8-f5a586a64ddc",Nines Global Buffet,"",0.0,"Clifton Way 30 CB1 7DY Cambridge United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:40.861,true
+"8884674e-40fb-491d-8cff-56b0e8fe1fe7",Rocksalt,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:40.875,true
+"642f6cca-a07e-4277-a87b-53e7aaa40e8a",Gordon Ramsay,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:40.885,true
+a27b86f9-dfe8-4fc3-9a75-1fed4676e768,Burgerkingdelivers,"",0.0,"","","","","",2,0,0,0,2025-03-19 11:11:40.895,true
+"2f9591d5-8e5e-41c1-b94a-6135bcde9e21",Riddle & Finns,"",0.0,"Meeting House Lane 12B BN1 1HB Brighton United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:40.904,true
+c967dd20-d2b2-442f-936d-b5b61319add1,Benihana,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:40.910,true
+"36773cbf-e720-444f-80a2-2b1d87c685ce",Harry’s Bar,"",0.0,"Ironmonger Lane 17-20 EC2V 8EP London United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:40.916,true
+"5a8ef1b0-dba7-494f-805c-5a8b608cf245",bigmoesdiner.co.uk,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:40.921,true
+"45815a11-fc7e-4fa5-9cc6-4422fb03560a",The Hot Hut,"",0.0,"Deedes Street 76 ML6 9AF Airdrie United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:40.926,true
+"64abe960-c3ed-44b8-be64-4839d7b5cadc",Enish,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:11:40.930,true
+e10f686a-f251-4d24-8025-ea4bced5b8d1,Burgerbois,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:40.960,true
+"03d908ab-7ac9-4ef6-bf7f-306a92d2eb39",gloucesterservices.com,"",0.0,United Kingdom,"","","","",1,0,0,0,2025-03-19 11:11:40.992,true
+a4744768-2db2-4020-8d98-33e17b753bcc,Belushi's,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:41.012,true
+"60b1b302-b178-43dc-ae1e-d09910646f4a",Blue's Smokehouse,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:41.030,true
+"5e0d552c-e28d-48c0-a835-0900c1292955",Robinsons Brewery,"",0.0,"Lower Hillgate SK1 1JJ Stockport United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:41.048,true
+b926babb-afe0-4210-901f-4a5e89372a55,Redlionwestminster,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:41.061,true
+"5242ccfa-c0f2-459a-9cc0-a6cb682f02f0",FFD Catering Equipment,"",0.0,"Unit B2 The Rise, Moat Way LE9 8EY Barwell United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:41.072,true
+"7dff82f9-e274-409d-92f0-218caf2eb402",foodiesfestival.com,"",0.0,United Kingdom,"","","","",1,0,0,0,2025-03-19 11:11:41.081,true
+"69bd7478-a4a0-466d-a30f-bc79fc51a656",Sports Bar & Grill,"",0.0,"Melcombe Place NW1 United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:41.091,true
+b4b562b2-8707-4aea-a5e2-e6ac16ec114c,JD Wetherspoon,"",0.0,"168-172 Old Street, London EC1V 9BP England","","","","",1,0,0,0,2025-03-19 11:11:41.099,true
+"857b8e84-6600-43bf-b059-d63173a0fc9a",Stonehouserestaurants,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:41.798,true
+"9524df47-daf7-4bd1-81b0-4c8999961872",megans.co.uk,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:41.919,true
+"799935eb-7860-43c7-ac71-7056f0de57a8",Mumtaz,"",0.0,"Great Horton Road 386 BD7 Bradford United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:41.948,true
+"7c434ede-6c79-4752-9e9f-27dcc621f615",Wasabisushi,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:41.980,true
+"62cfd7f5-7d08-4921-96cd-df1b923df51d",Perfectpizza,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:41.990,true
+d2963d20-8db4-4b82-8253-1b7d2439ddda,Just Eats,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:41.998,true
+"51213863-6afe-4510-b92c-af7a9a98a930",YO! Sushi,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:42.005,true
+"54c850dd-fbf6-447f-a253-7da911724167",Marco Pierre White Restaurants,"",0.0,"Threadneedle Street 5 EC2R 8AY London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:42.264,true
+"30100856-1fdc-4516-9043-12a4a97b22cc",Whitbread,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:42.458,true
+"4e1e6510-c001-49da-ac59-b3199bdf9fd5",Caferouge,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:42.571,true
+b349ec14-16e4-4382-b1c2-a1a69a1d9a25,Byron,"",0.0,"Old Brompton Road 95 SW7 London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:42.659,true
+bd671d1a-b310-49ec-82ec-6851b38f1f7c,YOTEL,"",0.0,"13 George Street W1U 3QJ London United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:42.741,true
+"3dd8ac8b-4e53-4982-a849-751809076300",tacobell.co.uk,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:42.797,true
+"6945cf29-093b-4735-9fec-cc019e11ba9e",Fusionkitchen,"",0.0,"IF28, Threefield House, Threefield Lane, Southampton, SO14 3LP, UK. SO14 3LP Southampton United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:42.863,true
+"2169b1cf-a921-4325-9281-a55ba2dc6d5b",Fuller's,"",0.0,"Chiswick Mall W4 2PP London United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:42.898,true
+"67f41bb9-3ce8-462b-8e88-75cb5f876c88",Di Maggio's,"",0.0,"Royal Exchange Square 21 G1 3AJ Glasgow United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:42.922,true
+"95458c08-458a-42e7-a397-2d3a7c916a23",mammamiatheparty.co.uk,"",0.0,"United Kingdom,","","","","",2,0,0,0,2025-03-19 11:11:42.940,true
+"0885fc6f-a180-4a7f-bc51-b76813118daa",Kvickly,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:42.954,true
+a9186dc8-cf2e-4c38-a6c1-8827091b7b8a,Rinaldis,"",0.0,"Asdale Road WF2 7JE Wakefield United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:42.957,true
+"951e7873-0e7d-438c-84a0-876e595d1630",Spuntino,"",0.0,"Rupert Street 61 London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:42.969,true
+"1ef71d61-06cd-440e-bf54-f03ae0bfa344",JRC Global Buffet,"",0.0,"King's Road 1a SW19 1RH London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:42.974,true
+"123b5277-0afe-487f-ad0b-0d5f16acb308",The Shankly Hotel,"",0.0,"Victoria Street 60 L1 6JD Liverpool United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:43.074,true
+"7f324907-9b79-4bf5-acd2-fafbcf1c8fed",Jollibee,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:43.170,true
+afe96d83-8876-4ee1-8876-cd86a5420cda,Mattia Diner,"",0.0,"A303 BA22 8PJ Yeovil United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:43.236,true
+"8347e95f-f84a-46cd-a938-c48edda3991d",Quobpark,"",0.0,United Kingdom,"","","","",5,0,0,0,2025-03-19 11:11:43.283,true
+cf6b8957-c62d-4cda-bc01-2615f518e61d,IENS,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:43.317,true
+"2d89e5bc-53d4-4a90-8416-2780b6dbf1d7",Subway,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:43.344,true
+edeebdce-e47f-4d67-b748-7ebe74d31300,Burgerking,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:44.746,true
+"9686a890-4ff7-4447-9777-9d67865ad5b4",Weatherspoons,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:46.039,true
+d6138859-1a04-418f-a5f8-a67d561909c0,tebayservices.com,"",0.0,United Kingdom,"","","","",2,0,0,0,2025-03-19 11:11:46.263,true
+"45d3af48-2daa-4b0e-bd97-40c649a3f8f5",Leonrestaurants,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:46.288,true
+"54a97ea6-5d56-4bf6-a6c2-06d6c1c420c5",Eat Tokyo,"",0.0,"Old Compton Street 16 W1D 4TL London United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:46.409,true
+add9b0c5-f445-4411-8afe-235eb99d41bd,McDonald's UK,"",0.0,"11/59 High Road, East Finchley, London","","","","",1,0,0,0,2025-03-19 11:11:46.443,true
+"426390fb-5ede-4311-b4b6-d2ecb76b43c0",Jdwetherspoon,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:46.465,true
+"67fa96e8-a681-47f4-a97e-c4cdddbcf658",Hakkasan,"",0.0,"London United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:46.757,true
+"2745e698-8d19-4557-b7d9-90734de1b85e",Sushimania,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:46.781,true
+"401d7894-1bb6-489a-b398-02c835ac3724",Thefatpizza,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:46.803,true
+ab483218-65a4-4e96-95b2-e98e0b0632be,KFC,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:46.818,true
+"717c4929-9e7e-4e74-8e8f-0f4b07c9cb75",Coppa Club,"",0.0,"Thames Street RG4 6UT Sonning United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:50.734,true
+"117e826d-4720-4cae-aeb7-d9d10c2700ab",Tapas Revolution,"",0.0,"Empire Way 21 HA9 0PX Wembley United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:50.822,true
+"9d0d7a3e-3f3b-4b4e-893b-1d484e428273",Bookatable,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:50.852,true
+"3ce8616a-d290-4ed7-9035-c00140adef35",Mcdonalds,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:50.878,true
+"80f37685-7ba8-494e-a97a-2bd2a4620d1a",Gourmet Guide,"",0.0,"Stubbs' Gate ST5 1LU Newcastle United Kingdom,","","","","",5,0,0,0,2025-03-19 11:11:58.783,true
+"8c79c8f7-0f29-44eb-8baa-36d0c5e22ab6",Big John's,"",0.0,"","","","","",1,0,0,0,2025-03-19 11:11:59.271,true
+"9fe6aa94-be40-4547-8ebb-e5f614845c6d",Paya Cuisine,"",0.0,"691 High Road, North Finchely N12 0DA LONDON United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:59.364,true
+"1c797942-1489-4c42-8464-a7b9d5282777",Jaki Fish & Chip Shop's,"",0.0,"High Street 38 IV10 8SU Fortrose United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:59.418,true
+"69a18d8a-d64e-4853-901c-29c9fb7a7afc",Just Eat UK,"",0.0,"United Kingdom,","","","","",1,0,0,0,2025-03-19 11:11:59.584,true
+"930b8b5d-4398-45c8-978b-8bac69af3773",Brent Linen Hire,"",0.0,"32 St Davids Close HA9 9BT Wembley, London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:04.614,true
+e7d1342e-bfea-43f1-a45c-f17978dbd650,Zelman Meats,"",0.0,"Saint Anne's Court 2 W1F 0AZ London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:04.623,true
+ddfc4172-af6b-45dc-ab5a-8e118f7b5165,Fusion My Business,"",0.0,"IF28, Threefield House, Threefield Lane, Southampton SO14 3LP Southampton United Kingdom,","","","","",1,0,0,0,2025-03-19 11:12:04.630,true
+"7120c0ae-c48f-47ca-8e23-7c6e8421bafe",Babtooma,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:12:04.717,true
+"773b5af0-04da-4580-9ae1-3be9857746ea",The Willow Tree,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:12:04.726,true
+"612236dd-f3dd-4ae7-8f24-f4d596ff98f6",Paris House Restaurant in Woburn by Phil Fanning,"",0.0,"London Road MK17 9HT Milton Keynes United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:04.734,true
+"5b415752-2cf0-4747-8e6c-fb0aadb52565",The Tempest Arms,"",0.0,"BD23 3AY Elslack United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:04.740,true
+"9f951652-c368-447f-a80c-cf25d7310287",Patato,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:04.746,true
+"150255e6-c0e1-4329-828e-bbb9f75a4b86",Bagelking247,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:04.753,true
+"3af91bb6-500c-4336-946d-d96b496b7d8e",ThreeBrothersBurgers,"",0.0,"Welsh Back BS1 4AN Bristol United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:04.758,true
+b0d9c409-0703-4de5-8555-a1595c2c440d,Middletons,"",0.0,"Lynn Road PE32 1RH Middleton United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:04.764,true
+"0602d367-5bbc-45ec-9a31-3a3f8f247716",Bella Cosa Restaurant,"",0.0,"Drewry House, 213 Marsh Wall E14 9FJ London United Kingdom,","","","","",4,0,0,0,2025-03-19 11:12:04.815,true
+"50868773-14b8-420a-bc10-c770dc868421",Mumtazleeds,"",0.0,"","","","","",4,0,0,0,2025-03-19 11:12:04.835,true
+"74ccaab5-79cf-44d0-8fb1-df2860110025",Wentworthgardencentre,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:04.843,true
+"439a652b-3617-45fa-ab42-264762ef1b36",Cider Press Restaurant,"",0.0,"Rich's Cider Farm TA9 4RD Highbridge United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:04.852,true
+"883fc462-2896-4413-8e16-fe328d296def",Twig and Spoon Restaurant,"",0.0,"Ash Lane TN15 7EG New Ash Green United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:04.859,true
+"862b67be-719a-4d80-871a-01318f2956e0",Red Lion Cromer,"",0.0,"Brook Street NR27 9EY Cromer United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:04.867,true
+"0a49f8c9-c035-4ea6-ada1-f8539a8fdf3d",Bourton Hall,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:04.873,true
+"96c1efae-922f-4e9d-9d7f-fc06716f9422",AJ's,"",0.0,"George Street 554 AB25 3XL Aberdeen United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:04.881,true
+da74aeca-c399-44d6-afab-04ad2b6591fe,Bod Erw,"",0.0,"The Roe LL17 OLA St Asaph United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:04.888,true
+"5088a455-d88e-4385-866d-03e90b16bdaa",Sarakh,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:04.895,true
+"077ee1b9-ab0a-4e6e-a7fa-e9a453c131f6",Shiraz Restaurant,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:12:04.902,true
+f4f3e9dc-bb78-401c-bf30-9c43bd08689c,Dem Restaurant,"",0.0,"11 Central Hill SE19 1BG London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:04.909,true
+a6ee3392-cbb6-4591-b89e-855f7e0a6d87,Jashn Restaurant,"",0.0,"Whickham Bank NE16 4AJ Whickham United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:04.915,true
+"18d82ddc-6926-4f0f-93f7-c96c071c09a9",Grain Store,"",0.0,"Granary Square 1 N1C 4AA London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:04.921,true
+"3991377b-01b7-4fb1-8280-b72ff8e25291",J`s Sides Mains Desserts,"",0.0,"61 Gravelly Lane B23 6LR Birmingham, United Kingdom United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:04.928,true
+"2bb90f19-1cca-42ec-9df7-0ac0d0556472",Manhattan Bar & Grill,"",0.0,"Fenwick Street 17 L2 7LS Liverpool United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:04.933,true
+"6e470cef-a849-4ee2-87c8-583511283404",Belandthedragon,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:12:04.939,true
+d6cf0fa2-4173-4494-83d9-94b7429338f5,Royalkitchensidcup,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:12:04.945,true
+e0dfd94f-47a8-42aa-a0e4-64f33912d502,Thewhitehorse,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:12:04.950,true
+"4dcfff65-2fce-4c08-bbea-8850eb188936",Buffalo Greenwich,"",0.0,"","","","","",5,0,0,0,2025-03-19 11:12:04.955,true
+f06eef65-a2d1-436f-b9af-9d1a54d39364,Greyfriarscolchester,"",0.0,"High Street CO1 Colchester United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:04.960,true
+d8fd818c-f9f1-45ed-9afb-25eb262b2fef,Mosset Tavern,"",0.0,"Gordon Street IV36 1DY Forres United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:04.966,true
+b4117bbc-5e59-4638-a5a8-785e48d1db7f,Merry Harriers,"",0.0,"EX15 1SA Westcott United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:04.971,true
+c8a01b10-0a59-4b7b-9a0e-2081806fd75f,"The Cricketers Pub, Clavering","",0.0,"Wicken Road CB11 Saffron Walden United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:04.977,true
+"65592f21-5b78-4089-a232-ed7173bb3263",It's All Greek To Me,"",0.0,"Praed Street 101 W2 1NT London United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:04.983,true
+"52a1cabf-ef53-4827-bb5b-ae858012284d",Hotnjuicyshrimpldn,"",0.0,"United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:04.988,true
+"66d8ee91-6383-4cc9-aeac-d2eeecd3973c",Hopwood House,"",0.0,"Redditch Road B48 7RS Alvechurch United Kingdom,","","","","",5,0,0,0,2025-03-19 11:12:05.011,true
