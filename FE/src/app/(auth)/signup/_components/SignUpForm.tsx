@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState, useRef } from "react";
 import { IoEyeOff, IoEye } from "react-icons/io5";
-import { get_restaurant_names, signup, search_restaurant } from "@/service/api";
+import { get_restaurant_names, signup } from "@/service/api";
 import { useRouter } from "next/navigation";
 import { RestaurantResponseType } from "@/types/api";
 
@@ -219,67 +219,34 @@ export default function SignUpForm() {
       return;
     }
 
-    // If restaurant is from database, location is not required for validation
-    if (!isRestaurantFromDatabase && !modalForm.location.trim()) {
-      setModalErrors({
-        name: "",
-        location: "Location is required",
-        general: "",
-      });
-      return;
-    }
-
     try {
       setModalLoading(true);
 
-      if (isRestaurantFromDatabase) {
-        // If restaurant is from database and has a location, use existing restaurant
-        const existingRestaurant = restaurantList.find(
-          (r) =>
-            r.name.toLowerCase() === modalForm.name.toLowerCase() &&
-            (!modalForm.location ||
-              (r.location &&
-                r.location.toLowerCase() === modalForm.location.toLowerCase()))
-        );
-
-        if (existingRestaurant) {
-          setFormData((prev) => ({
-            ...prev,
-            restaurant_id: existingRestaurant.id,
-          }));
-          setShowModal(false);
-          resetModalState();
-          return;
-        }
-      }
-
-      // For new restaurants or database restaurants without matching location
-      const newRestaurant = await search_restaurant(
-        modalForm.name,
-        modalForm.location || "" // Use empty string if no location provided
+      const existingRestaurant = restaurantList.find(
+        (r) =>
+          r.name.toLowerCase() === modalForm.name.toLowerCase() &&
+          (!modalForm.location ||
+            !r.location ||
+            r.location.toLowerCase() === modalForm.location.toLowerCase())
       );
 
-      setRestaurantList((prev) => {
-        if (prev.some((r) => r.id === newRestaurant.id)) {
-          return prev;
-        }
-        return [...prev, newRestaurant];
-      });
+      if (existingRestaurant) {
+        setFormData((prev) => ({
+          ...prev,
+          restaurant_id: existingRestaurant.id,
+        }));
+        setShowModal(false);
+        resetModalState();
+        return;
+      }
 
-      setFormData((prev) => ({ ...prev, restaurant_id: newRestaurant.id }));
-      setShowModal(false);
-      resetModalState();
-    } catch (err) {
-      console.error("Search restaurant error:", err);
-      type ErrorWithMessage = { message?: string; detail?: string };
-      const errorObj = err as ErrorWithMessage;
-      const errorMessage =
-        typeof err === "string"
-          ? err
-          : errorObj.message ||
-            errorObj.detail ||
-            "Failed to search restaurant. Please try again.";
-      setModalErrors((prev) => ({ ...prev, general: errorMessage }));
+      // This demo only serves a fixed set of seeded restaurants — live
+      // lookups (SerpAPI + RAG indexing) stay off the public signup page.
+      setModalErrors((prev) => ({
+        ...prev,
+        general:
+          "This demo includes a preset list of restaurants. Please choose one from the dropdown above.",
+      }));
     } finally {
       setModalLoading(false);
     }
@@ -555,11 +522,7 @@ export default function SignUpForm() {
                 <button
                   type="submit"
                   className="flex-1 p-2 bg-[var(--button-theme)] text-white rounded-md hover:bg-[var(--button-theme)]/90 transition-colors disabled:opacity-50"
-                  disabled={
-                    modalLoading ||
-                    !modalForm.name.trim() ||
-                    (!isRestaurantFromDatabase && !modalForm.location.trim())
-                  }
+                  disabled={modalLoading || !modalForm.name.trim()}
                 >
                   {modalLoading ? "Sending..." : "Send"}
                 </button>
