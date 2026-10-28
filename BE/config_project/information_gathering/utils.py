@@ -65,7 +65,7 @@ def get_payment_failed_email_content(customer_email):
         <p>We were unable to process your latest subscription payment. Your plan is still active and we will retry the payment automatically over the next few days.</p>
         <p>Please make sure your card is valid and has sufficient funds. If the payment keeps failing, your subscription will be cancelled and your account moved to the Free tier.</p>
         <p>Thank you!</p> 
-        <p style="color: #a87b02; font-weight: bold; font-size: 18px; margin-top: 0;">Review munch</p>
+        <p style="color: #a87b02; font-weight: bold; font-size: 18px; margin-top: 0;">ReviewPulse</p>
     </body>
     </html>
     """
