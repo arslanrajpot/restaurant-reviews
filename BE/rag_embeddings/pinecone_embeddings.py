@@ -9,7 +9,19 @@ load_dotenv()
 
 PINECONE_API_KEY = os.environ.get("PINECONE_API_KEY")
 PINECONE_INDEX = os.environ.get("PINECONE_INDEX")
-EMBEDDING_MODEL = os.environ.get("EMBEDDING_MODEL")
+
+# Prefer the model bundled in the repo (local_models/) over a Hub download —
+# see ai_assistants/restaurant_reviews.py for why. Must match that module's
+# model so queries and stored vectors stay in the same embedding space.
+_LOCAL_EMBEDDING_MODEL = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+    "local_models", "all-MiniLM-L6-v2",
+)
+EMBEDDING_MODEL = (
+    _LOCAL_EMBEDDING_MODEL
+    if os.path.isdir(_LOCAL_EMBEDDING_MODEL)
+    else os.environ.get("EMBEDDING_MODEL")
+)
 
 
 class PineconeEmbeddings:
