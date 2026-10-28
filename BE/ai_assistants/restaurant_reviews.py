@@ -6,7 +6,6 @@ from langchain_pinecone import PineconeVectorStore
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.memory import ConversationBufferMemory
 from langchain_core.messages import SystemMessage, HumanMessage
-from langchain_huggingface import HuggingFaceEmbeddings
 from dotenv import load_dotenv
 from fastapi import HTTPException
 from faq.services import render_faq_prompt
@@ -32,7 +31,21 @@ EMBEDDING_MODEL = (
     if os.path.isdir(_LOCAL_EMBEDDING_MODEL)
     else os.environ.get("EMBEDDING_MODEL")
 )
-embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
+
+_embeddings = None
+
+
+def get_embeddings():
+    """Load the embedding model lazily, on first real use, rather than at
+    import time. Importing/loading it eagerly means it runs during `uvicorn`
+    startup, before the app has bound to its port — on a resource-constrained
+    host that can be slow enough to blow past the platform's port-detection
+    deadline, which looks like a silent hang with no error anywhere."""
+    global _embeddings
+    if _embeddings is None:
+        from langchain_huggingface import HuggingFaceEmbeddings
+        _embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
+    return _embeddings
 
 
 class RestaurantAssistant:
@@ -76,7 +89,7 @@ class RestaurantAssistant:
     def setup_vectorstore(self):
         return PineconeVectorStore(
             index=self.pc.Index(PINECONE_INDEX),
-            embedding=embeddings,
+            embedding=get_embeddings(),
             text_key="text"
         )
 

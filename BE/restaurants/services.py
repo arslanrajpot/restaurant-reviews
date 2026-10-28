@@ -2,7 +2,6 @@ from fastapi import HTTPException
 from restaurants import repository
 from restaurants.schema import RestaurantResponse, RestaurantDataCaptureResponse, RestaurantLocationResponse
 from config_project.information_gathering.search_restaurant import search_restaurant_for_api
-from rag_embeddings.pinecone_embeddings import PineconeEmbeddings
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from config_project.information_gathering.utils import store_competitor_data
 from uuid import UUID
@@ -98,6 +97,11 @@ def capture_restaurant_data(restaurant_name: str, location: str) -> RestaurantDa
 
         # Store main restaurant in database 
         stored_restaurant = repository.create_restaurant_from_search(main_restaurant_data, main_reviews)
+
+        # Imported here, not at module level: this pulls in sentence_transformers
+        # (and torch), which should only load on first real use, not at app
+        # startup — see ai_assistants/restaurant_reviews.get_embeddings().
+        from rag_embeddings.pinecone_embeddings import PineconeEmbeddings
 
         # Initialize Pinecone uploader
         pinecone_uploader = PineconeEmbeddings()
