@@ -27,8 +27,8 @@ class Settings(BaseSettings):
     # Extra allowed frontend origins, comma separated (e.g. "http://localhost:3000,https://www.example.com")
     CORS_ORIGINS: str = ""
     
-    # OpenAI Settings
-    OPENAI_API_KEY: str
+    # Gemini Settings
+    GOOGLE_API_KEY: str
     
     # Pinecone Settings
     PINECONE_API_KEY: str

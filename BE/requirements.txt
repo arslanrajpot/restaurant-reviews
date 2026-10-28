@@ -1,9 +1,11 @@
 requests==2.32.3
 pydantic==2.10.6
+pydantic-settings
 fastapi
 python-dotenv==1.0.1
 langchain==0.3.18
-langchain-openai==0.3.4
+langchain-google-genai==2.1.12
+langchain-core<1.0.0
 langchain-community===0.3.17
 langchain-huggingface==0.2.0
 langchain-pinecone==0.2.2
@@ -17,7 +19,7 @@ sqlalchemy>=2.0,<2.1  # 2.1 defaults postgresql:// to psycopg 3, which is not in
 psycopg2-binary
 pymysql
 passlib
-bcrypt
+bcrypt==4.0.1  # passlib 1.7.4's self-test breaks on bcrypt>=4.1
 PyJWT
 pydantic[email]
 uvicorn[standard]

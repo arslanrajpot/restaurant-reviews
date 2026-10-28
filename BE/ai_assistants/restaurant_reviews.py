@@ -3,11 +3,9 @@ import time
 from typing import Dict, List, Optional
 from pinecone import Pinecone
 from langchain_pinecone import PineconeVectorStore
-from langchain_openai import ChatOpenAI
-from langchain.agents import Tool, AgentExecutor, OpenAIFunctionsAgent
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.memory import ConversationBufferMemory
-from langchain_core.prompts import MessagesPlaceholder
-from langchain_core.messages import SystemMessage
+from langchain_core.messages import SystemMessage, HumanMessage
 from langchain_huggingface import HuggingFaceEmbeddings
 from dotenv import load_dotenv
 from fastapi import HTTPException
@@ -30,23 +28,29 @@ class RestaurantAssistant:
         self.pc = Pinecone(api_key=PINECONE_API_KEY)
         self.chat_model = self.setup_chat_model()
         self.vectorstore = self.setup_vectorstore()
+        self.restaurant_context = services.fetch_restaurant_context(restaurant_id)
+        self.restaurant_name = self._extract_restaurant_name(self.restaurant_context)
         self.retriever = self.setup_retriever()
         self.memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
         self.load_history(history or [])
-        self.agent = None
-        self.restaurant_context = services.fetch_restaurant_context(restaurant_id)
         self.user_feedback_context = user_feedback_context
-        self.initialize_agent()
+        self.system_message = self.build_system_message()
+
+    @staticmethod
+    def _extract_restaurant_name(restaurant_context: str) -> Optional[str]:
+        for line in restaurant_context.splitlines():
+            if line.startswith("Restaurant Name:"):
+                return line.split(":", 1)[1].strip()
+        return None
     
 
     @staticmethod
     def setup_chat_model():
-        return ChatOpenAI(
-            model_name="gpt-4o",
-            streaming=True,
+        return ChatGoogleGenerativeAI(
+            model="gemini-3.5-flash-lite",
             temperature=0.3,
             top_p=0.4,
-            max_tokens=1000
+            max_output_tokens=1000
         )
 
     def load_history(self, history: List[Dict]):
@@ -65,7 +69,13 @@ class RestaurantAssistant:
         )
 
     def setup_retriever(self):
-        return self.vectorstore.as_retriever(search_kwargs={"k": 10})
+        # Without this filter, retrieval searches the whole Pinecone index —
+        # which also holds the onboarded competitors — so results bleed
+        # across restaurants. Scope every search to this restaurant only.
+        search_kwargs = {"k": 10}
+        if self.restaurant_name:
+            search_kwargs["filter"] = {"restaurant_name": self.restaurant_name}
+        return self.vectorstore.as_retriever(search_kwargs=search_kwargs)
 
     def query_vectorstore(self, query: str) -> str:
         start_time = time.time()
@@ -75,41 +85,27 @@ class RestaurantAssistant:
         print(f"Vector store query time: {elapsed_time:.2f} seconds")
         return response
 
-    def initialize_agent(self):
-        """Initialize single agent with both tools"""
-        tools = [
-            Tool(
-                name="restaurant_database",
-                func=self.query_vectorstore,
-                description="Use this tool first to search the verified UK restaurant database. "
-                            "It provides detailed restaurant information, including reviews, ratings, popular dishes, "
-                            "and location details. Always check this database before considering other sources."
-            ),
-            Tool(
-                name="general_search",
-                func=lambda q: self.chat_model.invoke(q).content,
-                description="Use this tool only if the restaurant database lacks sufficient information. "
-                            "It helps find recent reviews, current status, or additional details about UK restaurants."
-            )
-        ]
-
-        system_message = SystemMessage(
-            content=f"""You are a UK restaurant information specialist with access to two tools:
-            1. A verified restaurant database (primary source)
-            2. A general search capability (backup source)
+    def build_system_message(self) -> SystemMessage:
+        """Build the system prompt. Retrieval always runs first (in get_response),
+        so the model is simply given the retrieved context plus its own general
+        knowledge as a fallback — no agentic tool-calling required."""
+        return SystemMessage(
+            content=f"""You are a restaurant information specialist. For every query you are given:
+            1. Context retrieved from a verified restaurant database (primary source)
+            2. Your own general knowledge (backup source, used only if the database context is insufficient)
 
             Follow these steps strictly for EVERY query:
 
-            1. Always check the verified restaurant database first for information.
-            2. Use a general search only if the database lacks sufficient details.
+            1. Always rely on the verified restaurant database context first.
+            2. Fall back on general knowledge only if that context lacks sufficient details.
             3. Combine both sources seamlessly (without mentioning them).
             4. Stick strictly to the user's query (do not add extra details).
             5. Summarize key points from multiple reviews where possible
 
 
             Guidelines:
-            - Only provide information about UK restaurants(never include restaurants outside the UK) 
-            - Find the most relevant information about [restaurant name] in [city, UK] regarding [specific query].
+            - Only provide information about restaurants that are present in the verified restaurant database for this conversation.
+            - Find the most relevant information about [restaurant name] in [city] regarding [specific query].
             - If the user asks about comparison, automatically fetch nearby restaurants and rank them by overall rating
             - Respond ONLY to the question asked (DO NOT include extra restaurant details if they are not relevant)
             - Never mention ambiance, decor, or service unless explicitly asked
@@ -142,27 +138,7 @@ class RestaurantAssistant:
             - Format the response as Markdown, avoiding unnecessary blank lines
 
             Important Note:
-            NEVER mention which tool or source provided the information."""
-        )
-
-        prompt = OpenAIFunctionsAgent.create_prompt(
-            system_message=system_message,
-            extra_prompt_messages=[MessagesPlaceholder(variable_name="chat_history")]
-        )
-
-        agent = OpenAIFunctionsAgent(
-            llm=self.chat_model,
-            tools=tools,
-            prompt=prompt
-        )
-
-        self.agent = AgentExecutor.from_agent_and_tools(
-            agent=agent,
-            tools=tools,
-            memory=self.memory,
-            verbose=False,
-            handle_parsing_errors=True,
-            max_iterations=3
+            NEVER mention which source provided the information."""
         )
 
     def format_query_with_context(self, query: str) -> str:
@@ -171,10 +147,21 @@ class RestaurantAssistant:
     async def get_response(self, query: str) -> Dict:
         start_time = time.time()
         # Errors propagate so the caller can report them (and not charge the user for a message)
-        result = await self.agent.ainvoke({
-            "input": self.format_query_with_context(query),
-        })
-        response = result['output'] if isinstance(result, dict) else str(result)
+        retrieved_context = self.query_vectorstore(query)
+        human_content = (
+            f"Verified restaurant database context:\n{retrieved_context or '(no matching results found)'}"
+            f"\n\n{self.format_query_with_context(query)}"
+        )
+        messages = (
+            [self.system_message]
+            + list(self.memory.chat_memory.messages)
+            + [HumanMessage(content=human_content)]
+        )
+        ai_message = await self.chat_model.ainvoke(messages)
+        response = ai_message.content
+
+        self.memory.chat_memory.add_user_message(query)
+        self.memory.chat_memory.add_ai_message(response)
 
         return {
             "response": response,
