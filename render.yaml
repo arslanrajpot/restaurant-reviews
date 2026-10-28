@@ -1,0 +1,49 @@
+services:
+  - type: web
+    name: review-munch-backend
+    runtime: python
+    plan: free
+    rootDir: BE
+    buildCommand: pip install -r requirements.txt
+    startCommand: alembic upgrade head && python -m faq.seed && uvicorn app:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.15
+      - key: POSTGRES_CONNECTION_URI
+        sync: false
+      - key: JWT_SECRET_KEY
+        sync: false
+      - key: JWT_ALGORITHM
+        value: HS256
+      - key: ACCESS_TOKEN_EXPIRE_MINUTES
+        value: "1440"
+      - key: BASE_URL
+        sync: false
+      - key: CORS_ORIGINS
+        sync: false
+      - key: GOOGLE_API_KEY
+        sync: false
+      - key: PINECONE_API_KEY
+        sync: false
+      - key: PINECONE_INDEX
+        value: review-munch
+      - key: EMBEDDING_MODEL
+        value: sentence-transformers/all-MiniLM-L6-v2
+      - key: SERPAPI_API_KEY
+        sync: false
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: STRIPE_WEBHOOK_SECRET
+        sync: false
+      - key: PRO_PRICE_ID
+        sync: false
+      - key: PREMIUM_PRICE_ID
+        sync: false
+      - key: SMTP_HOST
+        value: smtp.gmail.com
+      - key: SMTP_PORT
+        value: "587"
+      - key: SMTP_EMAIL
+        sync: false
+      - key: SMTP_PASSWORD
+        sync: false
