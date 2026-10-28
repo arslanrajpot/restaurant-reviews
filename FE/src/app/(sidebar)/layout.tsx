@@ -42,7 +42,7 @@ const SidebarLayout = ({
         </div>
       )}
 
-      <div className={`flex-1 ${isAuthPage ? 'bg-gray-100' : 'bg-[#F1F5FF]'} min-h-screen`}>
+      <div className={`flex-1 ${isAuthPage ? 'bg-gray-100' : 'bg-gray-50'} min-h-screen`}>
         <Header />
         {NavbarPages && <Navbar />}
         <div className={`flex-1 p-6 bg-white rounded-lg ${NavbarPages ? 'h-[80vh] mx-6' : 'h-[85vh] mx-6 mt-6'}`}>

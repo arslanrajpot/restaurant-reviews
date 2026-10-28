@@ -74,7 +74,7 @@ const Welcome = ({ setMessage, title, title_message }: Props) => {
   return (
     <>
       <h1 className="text-lg font-semibold mb-2 text-black">{title}</h1>
-      <p className={'text-gray-600 flex w-[600px] mb-5'}>{title_message}</p>
+      <p className={'text-gray-600 flex max-w-2xl mb-5'}>{title_message}</p>
       <div className="relative w-full max-w-4xl bg-white">
         <ChatInput setMessage={setMessage}/>
       </div>

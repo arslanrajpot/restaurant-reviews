@@ -25,7 +25,7 @@ const ChildQuestions = ({ items, onChildQuestionClick }: Props) => {
   };
 
   return (
-    <div className="mt-4 p-4 rounded-lg border" style={{ backgroundColor: '#f7faff', borderColor: '#e5eeff' }}>
+    <div className="mt-4 p-4 rounded-lg border" style={{ backgroundColor: '#F4F8F9', borderColor: '#D8E6E8' }}>
 
       {/* Row with arrow aligned to the right */}
       <div className="flex items-center">
@@ -37,8 +37,8 @@ const ChildQuestions = ({ items, onChildQuestionClick }: Props) => {
               key={child.id}
               onClick={() => onChildQuestionClick(child.title, child.id)}
               className={`${showAll ? 'min-w-[280px]' : 'flex-1'} inline-flex items-center text-left p-3 rounded-md border transition-colors duration-200 text-sm bg-white`}
-              style={{ borderColor: '#e5eeff', color: '#111827' }}
-              onMouseOver={(e) => { (e.currentTarget.style.backgroundColor = '#f2f6ff'); }}
+              style={{ borderColor: '#D8E6E8', color: '#111827' }}
+              onMouseOver={(e) => { (e.currentTarget.style.backgroundColor = '#EAF2F3'); }}
               onMouseOut={(e) => { (e.currentTarget.style.backgroundColor = 'white'); }}
             >
               <div className="font-medium">
@@ -52,7 +52,7 @@ const ChildQuestions = ({ items, onChildQuestionClick }: Props) => {
           <button
             onClick={() => setShowAll(true)}
             className="ml-2 p-1"
-            style={{ color: '#1e40af' }}
+            style={{ color: 'var(--color-theme)' }}
             aria-label="Show more related questions"
             title="Show more"
           >

@@ -98,7 +98,7 @@ const ChatInput = ({ setMessage, message }: Props) => {
         value={inputValue}
         onChange={handleChange}
         onKeyDown={handleKeyDown}
-        className="w-full p-4 pl-5 rounded-lg border border-gray-300 focus:outline-none text-black focus:ring-2 focus:ring-[black] resize-none"
+        className="w-full p-4 pl-5 rounded-lg border border-gray-300 focus:outline-none text-black focus:ring-2 focus:ring-[var(--button-theme)]/40 resize-none"
         style={{
           height: height,
           overflowY: "auto",
@@ -108,7 +108,7 @@ const ChatInput = ({ setMessage, message }: Props) => {
       <FaPaperPlane
         onClick={sendMessage}
         className={`absolute right-3 top-1/2 transform -translate-y-1/2 ${
-          isProgress ? "text-gray-300 cursor-pointer" : "text-gray-500 cursor-pointer hover:text-[#5A87F8]"
+          isProgress ? "text-gray-300 cursor-pointer" : "text-gray-500 cursor-pointer hover:text-[var(--button-theme)]"
         }`}
       />
     </div>

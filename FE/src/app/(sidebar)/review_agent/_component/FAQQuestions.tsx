@@ -85,7 +85,7 @@ const FAQQuestions = ({ onQuestionClick }: Props) => {
         <div className="mt-4 text-center">
           <button
             onClick={() => setShowAll(true)}
-            className="text-grey-600 hover:text-blue-1000 text-sm font-medium underline"
+            className="text-gray-600 hover:text-[var(--button-theme)] text-sm font-medium underline"
           >
             Show more
           </button>

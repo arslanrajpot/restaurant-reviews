@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from "recharts";
 import { get_restaurant_data } from "@/service/api";
 import {RestaurantDataResponse} from "@/types/api";
+import { MdOutlineStorefront, MdOutlineRateReview, MdOutlineRestaurantMenu } from "react-icons/md";
+import { FaStar } from "react-icons/fa";
 
 export default function Home() {
   const [data, setData] = useState<RestaurantDataResponse | null>(null);
@@ -36,7 +38,7 @@ export default function Home() {
     fetch_data();
   }, []);
 
-  const COLORS = ["#FF4D4D", "#FF8042", "#FFBB28", "#00C49F", "#0088FE"];
+  const COLORS = ["#C0392B", "#D98F30", "var(--button-theme)", "#4C8C96", "var(--color-theme)"];
 
   if (loading) {
     return (
@@ -54,28 +56,31 @@ export default function Home() {
     );
   }
 
+  const statCards = [
+    { label: "Restaurant Name", value: data.restaurant_name, icon: MdOutlineStorefront },
+    { label: "Total Public Reviews", value: data.total_review_counts, icon: MdOutlineRateReview },
+    { label: "Average Rating", value: `${data.overall_rating} / 5`, icon: FaStar },
+    { label: "Top Rated Item", value: data.cuisine === "NaN" ? "-" : data.cuisine, icon: MdOutlineRestaurantMenu },
+  ];
+
   return (
-    <div className="flex w-full h-[70vh] p-6 gap-6">
-      <div className="flex flex-col gap-6 w-[60%]">
-        <div className="bg-white rounded-2xl p-6">
-          <h2 className="text-xl font-semibold text-gray-700">Restaurant Name</h2>
-          <p className="text-3xl font-bold mt-2">{data.restaurant_name}</p>
-        </div>
-        <div className="bg-white shadow-md rounded-2xl p-6">
-          <h2 className="text-xl font-semibold text-gray-700">Total Public Reviews</h2>
-          <p className="text-3xl font-bold mt-2">{data.total_review_counts}</p>
-        </div>
-        <div className="bg-white shadow-md rounded-2xl p-6">
-          <h2 className="text-xl font-semibold text-gray-700">Average Rating</h2>
-          <p className="text-3xl font-bold mt-2">{data.overall_rating} ⭐</p>
-        </div>
-        <div className="bg-white shadow-md rounded-2xl p-6">
-          <h2 className="text-xl font-semibold text-gray-700">Top Rated Item</h2>
-          <p className="text-3xl font-bold mt-2">{data.cuisine == "NaN" ? "-" : data.cuisine}</p>
-        </div>
+    <div className="flex flex-col xl:flex-row w-full min-h-[70vh] p-6 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 xl:w-[55%]">
+        {statCards.map(({ label, value, icon: Icon }) => (
+          <div
+            key={label}
+            className="bg-white shadow-md rounded-2xl p-6 flex flex-col gap-3 hover:shadow-lg transition-shadow"
+          >
+            <div className="w-10 h-10 flex items-center justify-center rounded-xl bg-[var(--color-theme)]/10">
+              <Icon className="text-xl" style={{ color: "var(--color-theme)" }} />
+            </div>
+            <h2 className="text-sm font-medium text-gray-500">{label}</h2>
+            <p className="text-2xl font-bold truncate" style={{ color: "var(--button-theme)" }}>{value}</p>
+          </div>
+        ))}
       </div>
 
-      <div className="w-full bg-white shadow-md rounded-2xl p-6 flex flex-col items-center justify-center">
+      <div className="xl:w-[45%] bg-white shadow-md rounded-2xl p-6 flex flex-col items-center justify-center">
         <h2 className="text-xl font-semibold text-gray-700 mb-4">Ratings Breakdown</h2>
         <ResponsiveContainer width="100%" height={420}>
           <PieChart>

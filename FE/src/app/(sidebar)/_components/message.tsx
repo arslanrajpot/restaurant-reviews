@@ -27,7 +27,7 @@ const Message = ({ sender, text, loading, question, userId }: MessageProps) => {
       <div className="flex flex-col max-w-xl space-y-2">
          <div
           className={`p-3 rounded-lg ${
-            sender === "user" ? "bg-black text-white" : "bg-[#F1F5FF] text-black"
+            sender === "user" ? "bg-[var(--color-theme)] text-white" : "bg-gray-100 text-black"
           }`}
           style={{ whiteSpace: "pre-line" }}
         >
