@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Review Munch",
-  description: "Ask me about any UK restaurant and I’ll dish out what people are saying",
+  title: "ReviewPulse",
+  description: "Ask me about any restaurant and I’ll dish out what people are saying",
 };
 
 export default function RootLayout({

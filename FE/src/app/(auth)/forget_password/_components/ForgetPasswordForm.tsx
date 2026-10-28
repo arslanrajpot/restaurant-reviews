@@ -3,8 +3,7 @@
 import React, { useState } from "react";
 import {forget_password} from "@/service/api";
 import {useRouter} from "next/navigation";
-import Image from "next/image";
-import logoImage from "@/assets/images/logo.png";
+import Logo from "@/components/Logo";
 
 
 export default function ForgetPasswordForm() {
@@ -67,13 +66,7 @@ export default function ForgetPasswordForm() {
           <div className="w-full lg:w-2/3 h-full flex justify-center bg-white flex-col px-6 sm:px-10 md:px-16 lg:pl-20 py-12">
               <div className="w-full max-w-lg space-y-6">
                   <div className="flex justify-center items-center">
-                    <Image
-                      src={logoImage}
-                      alt="Review Munch Logo"
-                      width={200} // set appropriate width
-                      height={80} // set appropriate height
-                      className="w-50"
-                    />
+                    <Logo className="w-50" />
               </div>
               <h2 className="text-2xl text-gray-900">
                 Forget Password?

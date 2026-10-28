@@ -4,8 +4,7 @@ import React, { useState } from "react";
 import { IoEyeOff, IoEye } from "react-icons/io5";
 import {useRouter, useSearchParams} from "next/navigation";
 import {reset_password} from "@/service/api";
-import Image from "next/image";
-import logoImage from "@/assets/images/logo.png";
+import Logo from "@/components/Logo";
 
 export default function ResetPasswordForm() {
   const [formData, setFormData] = useState({
@@ -88,13 +87,7 @@ export default function ResetPasswordForm() {
     <div className="w-full lg:w-2/3 h-full flex justify-center bg-white flex-col px-6 sm:px-10 md:px-16 lg:pl-20 py-12">
       <div className="w-full max-w-lg space-y-6">
         <div className="flex justify-center items-center">
-            <Image
-              src={logoImage}
-              alt="Review Munch Logo"
-              width={200}
-              height={80}
-              className="w-50"
-            />
+            <Logo className="w-50" />
         </div>
         <h2 className="text-2xl text-gray-900">Reset your password</h2>
         <p className="text-gray-600">Enter a new password to reset your account.</p>

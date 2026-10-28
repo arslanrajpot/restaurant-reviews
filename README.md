@@ -1,8 +1,8 @@
-# 🥡 Review Munch
+# 💬 ReviewPulse
 
 **AI-powered review intelligence for restaurant owners.**
 
-Review Munch turns public customer reviews into actionable insight. Owners ask questions in plain English, such as *"What do customers complain about most?"* or *"How do we compare with Italian restaurants nearby?"*, and get answers grounded in real reviews of their restaurant and its local competitors.
+ReviewPulse turns public customer reviews into actionable insight. Owners ask questions in plain English, such as *"What do customers complain about most?"* or *"How do we compare with Italian restaurants nearby?"*, and get answers grounded in real reviews of their restaurant and its local competitors.
 
 > Designed, architected and built end to end by **[Arslan Rajpot](https://github.com/arslanrajpot)**: system design, AI/RAG pipeline, backend, payments, frontend, security and deployment.
 

@@ -5,7 +5,7 @@ import Welcome from "@/app/(sidebar)/_components/welcome";
 import ChatModal from "@/app/(sidebar)/review_agent/_component/chatModal";
 import { FAQNode } from "@/types/api";
 
-const ReviewMunch = () => {
+const ReviewPulse = () => {
   const [messages, setMessages] = useState<{ userMessage: string, agentMessage: string, loading: boolean, children?: FAQNode[] }[]>([]);
 
   return (
@@ -15,7 +15,7 @@ const ReviewMunch = () => {
           <Welcome
               setMessage={setMessages}
               title={"Craving some insights? I’m your food-savvy assistant!"}
-              title_message={" Ask me about any UK restaurant and I’ll dish out what people are saying — from food quality and service to vibe and ambience.\n" +
+              title_message={" Ask me about your restaurant and I’ll dish out what people are saying — from food quality and service to vibe and ambience.\n" +
                   " Want to compare places before making a reservation? I’ve got you.\n" +
                   " Just type the restaurant’s name or your food curiosity below, and I’ll serve the scoop!"}
           />
@@ -27,4 +27,4 @@ const ReviewMunch = () => {
   );
 };
 
-export default ReviewMunch;
+export default ReviewPulse;

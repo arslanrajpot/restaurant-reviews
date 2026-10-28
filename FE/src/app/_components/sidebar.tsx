@@ -5,8 +5,7 @@ import { IoMdExit } from "react-icons/io";
 import { RiSettingsLine } from "react-icons/ri";
 import { IoHomeOutline } from "react-icons/io5";
 import {usePathname, useRouter} from "next/navigation";
-import Image from "next/image";
-import logoImage from "@/assets/images/logo.png";
+import Logo from "@/components/Logo";
 
 
 const Sidebar = () => {
@@ -31,13 +30,7 @@ const Sidebar = () => {
     <div className="w-64 pl-4 pr-4 bg-[var(--color-theme)] text-white transition-all duration-300 h-screen overflow-hidden flex flex-col">
       <nav className="flex-grow mt-[50px]">
         <div className="flex justify-center items-center">
-          <Image
-            src={logoImage}
-            alt="Review Munch Logo"
-            width={200} // set appropriate width
-            height={80} // set appropriate height
-            className="w-35"
-          />
+          <Logo variant="light" className="w-35" />
         </div>
         <div className="flex flex-col justify-center items-center mt-[50px]">
           <ul className="w-full">

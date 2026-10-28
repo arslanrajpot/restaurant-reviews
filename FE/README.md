@@ -1,6 +1,6 @@
-# 🥡 Review Munch: Frontend
+# 💬 ReviewPulse: Frontend
 
-Next.js web app for [Review Munch](../README.md): authentication, the AI review assistant, the analytics dashboard, and subscription management.
+Next.js web app for [ReviewPulse](../README.md): authentication, the AI review assistant, the analytics dashboard, and subscription management.
 
 ## 🛠️ Tech Stack
 

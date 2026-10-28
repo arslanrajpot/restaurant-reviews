@@ -5,6 +5,7 @@ import { IoEyeOff, IoEye } from "react-icons/io5";
 import { get_restaurant_names, signup } from "@/service/api";
 import { useRouter } from "next/navigation";
 import { RestaurantResponseType } from "@/types/api";
+import Logo from "@/components/Logo";
 
 export default function SignUpForm() {
   const [formData, setFormData] = useState({
@@ -532,7 +533,10 @@ export default function SignUpForm() {
         </div>
       )}
       <div className="w-full lg:w-2/3 h-full flex justify-center bg-white flex-col px-6 sm:px-10 md:px-16 lg:pl-20 py-12">
-        <div className="w-full max-w-lg space-y-6">
+        <div className="w-full max-w-lg space-y-6 mx-auto lg:mx-0">
+          <div className="flex justify-center items-center lg:justify-start">
+            <Logo className="w-50" />
+          </div>
           <h2 className="text-2xl text-gray-900">Sign Up</h2>
           <p className="text-gray-600 mt-[-20px]">
             Enter your credentials to create an account

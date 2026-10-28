@@ -1,6 +1,6 @@
-# 🥡 Review Munch: Backend API
+# 💬 ReviewPulse: Backend API
 
-FastAPI service behind [Review Munch](../README.md). It handles authentication, restaurant onboarding and data collection, the RAG-powered AI assistant, the guided question library, and Stripe subscription billing.
+FastAPI service behind [ReviewPulse](../README.md). It handles authentication, restaurant onboarding and data collection, the RAG-powered AI assistant, the guided question library, and Stripe subscription billing.
 
 ## 🛠️ Tech Stack
 
@@ -49,7 +49,7 @@ FastAPI service behind [Review Munch](../README.md). It handles authentication, 
 
 | Variable | Required | Description |
 |---|---|---|
-| `POSTGRES_CONNECTION_URI` | ✅ | e.g. `postgresql://user:pass@localhost:5432/review_munch` |
+| `POSTGRES_CONNECTION_URI` | ✅ | e.g. `postgresql://user:pass@localhost:5432/reviewpulse` |
 | `JWT_SECRET_KEY` | ✅ | Long random string used to sign tokens |
 | `JWT_ALGORITHM` | | Default `HS256` |
 | `ACCESS_TOKEN_EXPIRE_MINUTES` | | Default `1440` (24h) |
