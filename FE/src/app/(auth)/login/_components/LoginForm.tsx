@@ -80,7 +80,7 @@ export default function LoginForm() {
             <input
               type="email"
               className={`outline-[var(--button-theme)]/40 w-full p-2 mt-1 text-black border rounded-md focus:ring ${
-                errors.email ? "border-red-500 bg-red-100 focus:ring-red-300" : "border-gray-300 focus:ring-blue-300"
+                errors.email ? "border-red-500 bg-red-100 focus:ring-red-300" : "border-gray-300 focus:ring-[var(--button-theme)]/30"
               }`}
               placeholder="Enter your email"
               name="email"
@@ -97,7 +97,7 @@ export default function LoginForm() {
                 type={showPassword ? "text" : "password"}
                 name="password"
                 className={`outline-[var(--button-theme)]/40 w-full p-2 mt-1 text-black border rounded-md focus:ring pr-10 ${
-                  errors.password ? "border-red-500 bg-red-100 focus:ring-red-300" : "border-gray-300 focus:ring-blue-300"
+                  errors.password ? "border-red-500 bg-red-100 focus:ring-red-300" : "border-gray-300 focus:ring-[var(--button-theme)]/30"
                 }`}
                 placeholder="Enter your password"
                 value={formData.password}

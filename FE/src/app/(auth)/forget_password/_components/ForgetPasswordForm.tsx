@@ -80,7 +80,7 @@ export default function ForgetPasswordForm() {
                   <input
                     type="email"
                     className={`outline-[var(--button-theme)]/40 w-full p-2 mt-1 text-black border rounded-md focus:ring ${
-                    errors ? "border-red-500 bg-red-100 focus:ring-red-300" : "border-gray-300 focus:ring-blue-300"
+                    errors ? "border-red-500 bg-red-100 focus:ring-red-300" : "border-gray-300 focus:ring-[var(--button-theme)]/30"
                     }`}
                     placeholder="Enter your email"
                     name="email"

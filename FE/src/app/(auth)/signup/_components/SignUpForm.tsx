@@ -547,7 +547,7 @@ export default function SignUpForm() {
               <label className="block text-gray-700">Full Name</label>
               <input
                 type="text"
-                className="outline-[var(--button-theme)]/40 w-full p-2 mb-4 mt-1 text-black border border-[#D9D9D9] rounded-md focus:ring focus:ring-blue-300"
+                className="outline-[var(--button-theme)]/40 w-full p-2 mb-4 mt-1 text-black border border-[#D9D9D9] rounded-md focus:ring focus:ring-[var(--button-theme)]/30"
                 placeholder="Enter your full name"
                 name="name"
                 required={true}
@@ -559,7 +559,7 @@ export default function SignUpForm() {
               <label className="block text-gray-700">Email</label>
               <input
                 type="email"
-                className="outline-[var(--button-theme)]/40 w-full p-2 mb-4 mt-1 text-black border border-[#D9D9D9] rounded-md focus:ring focus:ring-blue-300"
+                className="outline-[var(--button-theme)]/40 w-full p-2 mb-4 mt-1 text-black border border-[#D9D9D9] rounded-md focus:ring focus:ring-[var(--button-theme)]/30"
                 placeholder="Enter your email"
                 name="email"
                 required={true}
@@ -571,7 +571,7 @@ export default function SignUpForm() {
               <label className="block text-gray-700">Phone Number</label>
               <input
                 type="text"
-                className="outline-[var(--button-theme)]/40 w-full p-2 mb-4 mt-1 text-black border border-[#D9D9D9] rounded-md focus:ring focus:ring-blue-300"
+                className="outline-[var(--button-theme)]/40 w-full p-2 mb-4 mt-1 text-black border border-[#D9D9D9] rounded-md focus:ring focus:ring-[var(--button-theme)]/30"
                 placeholder="Enter your phone number"
                 name="phone_number"
                 required={true}
@@ -583,7 +583,7 @@ export default function SignUpForm() {
               <label className="block text-gray-700">Restaurant</label>
               <div
                 onClick={() => setShowModal(true)}
-                className="outline-[var(--button-theme)]/40 w-full p-2 mb-4 mt-1 text-gray-500 border border-[#D9D9D9] rounded-md focus:ring focus:ring-blue-300 cursor-pointer hover:bg-gray-50 transition-colors"
+                className="outline-[var(--button-theme)]/40 w-full p-2 mb-4 mt-1 text-gray-500 border border-[#D9D9D9] rounded-md focus:ring focus:ring-[var(--button-theme)]/30 cursor-pointer hover:bg-gray-50 transition-colors"
               >
                 {formData.restaurant_id
                   ? restaurantList.find((r) => r.id === formData.restaurant_id)
@@ -598,7 +598,7 @@ export default function SignUpForm() {
                   <input
                     type={showPassword ? "text" : "password"}
                     name="password"
-                    className="outline-[var(--button-theme)]/40 w-full p-2 mb-3 text-black border border-[#D9D9D9] rounded-md focus:ring focus:ring-blue-300"
+                    className="outline-[var(--button-theme)]/40 w-full p-2 mb-3 text-black border border-[#D9D9D9] rounded-md focus:ring focus:ring-[var(--button-theme)]/30"
                     placeholder="Enter your password"
                     required={true}
                     value={formData.password}
@@ -629,7 +629,7 @@ export default function SignUpForm() {
                   <input
                     type={showConfirmPassword ? "text" : "password"}
                     name="confirmed_password"
-                    className="outline-[var(--button-theme)]/40 w-full p-2 mb-3 text-black border border-[#D9D9D9] rounded-md focus:ring focus:ring-blue-300"
+                    className="outline-[var(--button-theme)]/40 w-full p-2 mb-3 text-black border border-[#D9D9D9] rounded-md focus:ring focus:ring-[var(--button-theme)]/30"
                     placeholder="Enter your password"
                     required={true}
                     value={confirmed}

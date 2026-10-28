@@ -101,7 +101,7 @@ export default function ResetPasswordForm() {
                 type={showPassword ? "text" : "password"}
                 name="password"
                 className={`outline-[var(--button-theme)]/40 w-full p-2 mt-1 text-black border rounded-md focus:ring pr-10 ${
-                  errors.password ? "border-red-500 bg-red-100 focus:ring-red-300" : "border-gray-300 focus:ring-blue-300"
+                  errors.password ? "border-red-500 bg-red-100 focus:ring-red-300" : "border-gray-300 focus:ring-[var(--button-theme)]/30"
                 }`}
                 placeholder="Enter your password"
                 value={formData.password}
@@ -139,7 +139,7 @@ export default function ResetPasswordForm() {
                 type={showConfirmedPassword ? "text" : "password"}
                 name="confirmed_password"
                 className={`outline-[var(--button-theme)]/40 w-full p-2 mt-1 text-black border rounded-md focus:ring pr-10 ${
-                  errors.confirmed_password ? "border-red-500 bg-red-100 focus:ring-red-300" : "border-gray-300 focus:ring-blue-300"
+                  errors.confirmed_password ? "border-red-500 bg-red-100 focus:ring-red-300" : "border-gray-300 focus:ring-[var(--button-theme)]/30"
                 }`}
                 placeholder="Confirm your password"
                 value={formData.confirmed_password}
