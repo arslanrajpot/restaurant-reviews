@@ -88,6 +88,22 @@ export default function SignUpForm() {
     setIsRestaurantFromDatabase(false);
   };
 
+  const getUniqueRestaurants = (filterText?: string) => {
+    const lowerFilter = filterText?.trim().toLowerCase();
+    return restaurantList.reduce((acc: RestaurantResponseType[], current) => {
+      const exists = acc.find(
+        (item) => item.name.toLowerCase() === current.name.toLowerCase()
+      );
+      if (
+        !exists &&
+        (!lowerFilter || current.name.toLowerCase().includes(lowerFilter))
+      ) {
+        acc.push(current);
+      }
+      return acc;
+    }, []);
+  };
+
   const handleRestaurantNameChange = (
     e: React.ChangeEvent<HTMLInputElement>
   ) => {
@@ -102,28 +118,9 @@ export default function SignUpForm() {
     setModalForm((prev) => ({ ...prev, location: "" }));
     setIsRestaurantFromDatabase(false);
 
-    if (value.trim()) {
-      const uniqueRestaurants = restaurantList.reduce(
-        (acc: RestaurantResponseType[], current) => {
-          const exists = acc.find(
-            (item) => item.name.toLowerCase() === current.name.toLowerCase()
-          );
-          if (
-            !exists &&
-            current.name.toLowerCase().includes(value.toLowerCase())
-          ) {
-            acc.push(current);
-          }
-          return acc;
-        },
-        []
-      );
-      setSearchResults(uniqueRestaurants);
-      setShowDropdown(uniqueRestaurants.length > 0);
-    } else {
-      setSearchResults([]);
-      setShowDropdown(false);
-    }
+    const uniqueRestaurants = getUniqueRestaurants(value);
+    setSearchResults(uniqueRestaurants);
+    setShowDropdown(uniqueRestaurants.length > 0);
 
     if (value.trim()) {
       const lowerValue = value.toLowerCase();
@@ -352,12 +349,16 @@ export default function SignUpForm() {
                   value={modalForm.name}
                   onChange={handleRestaurantNameChange}
                   onFocus={() => {
-                    if (modalForm.name.trim() && searchResults.length > 0) {
+                    const uniqueRestaurants = getUniqueRestaurants(
+                      modalForm.name
+                    );
+                    if (uniqueRestaurants.length > 0) {
+                      setSearchResults(uniqueRestaurants);
                       setShowDropdown(true);
                     }
                   }}
                   className="w-full p-2 border rounded-md focus:ring focus:outline-none"
-                  placeholder="Enter Restaurant Name "
+                  placeholder="Click to see available restaurants"
                   disabled={modalLoading}
                   autoComplete="off"
                 />
