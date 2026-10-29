@@ -2,7 +2,7 @@ import os
 import pandas as pd
 from dotenv import load_dotenv
 from pinecone import Pinecone, ServerlessSpec
-from sentence_transformers import SentenceTransformer
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
 # Load environment variables
 load_dotenv()
@@ -10,27 +10,21 @@ load_dotenv()
 PINECONE_API_KEY = os.environ.get("PINECONE_API_KEY")
 PINECONE_INDEX = os.environ.get("PINECONE_INDEX")
 
-# Prefer the model bundled in the repo (local_models/) over a Hub download —
-# see ai_assistants/restaurant_reviews.py for why. Must match that module's
-# model so queries and stored vectors stay in the same embedding space.
-_LOCAL_EMBEDDING_MODEL = os.path.join(
-    os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-    "local_models", "all-MiniLM-L6-v2",
-)
-EMBEDDING_MODEL = (
-    _LOCAL_EMBEDDING_MODEL
-    if os.path.isdir(_LOCAL_EMBEDDING_MODEL)
-    else os.environ.get("EMBEDDING_MODEL")
-)
+# Hosted embeddings (Gemini) replace the old local sentence-transformers model:
+# that model pulled in PyTorch, which was pushing memory past Render's free-tier
+# 512MB limit and causing the process to be OOM-killed under load.
+EMBEDDING_MODEL = "models/gemini-embedding-001"
+EMBEDDING_DIMENSION = 3072
 
 
 class PineconeEmbeddings:
     def __init__(self):
         self.index_name = PINECONE_INDEX
-        self.embedding_model = EMBEDDING_MODEL
         self.pc = Pinecone(api_key=PINECONE_API_KEY)
         self.index = self._initialize_pinecone()
-        self.model = SentenceTransformer(self.embedding_model)
+        # task_type="retrieval_document" tunes the embedding for stored content;
+        # queries use task_type="retrieval_query" (see ai_assistants/restaurant_reviews.py)
+        self.model = GoogleGenerativeAIEmbeddings(model=EMBEDDING_MODEL, task_type="retrieval_document")
         self.max_tokens = 256
 
     def _initialize_pinecone(self):
@@ -38,7 +32,7 @@ class PineconeEmbeddings:
             print("Creating Pinecone index...")
             self.pc.create_index(
                 name=self.index_name,
-                dimension=384,  # Dimension for all-MiniLM-L6-v2
+                dimension=EMBEDDING_DIMENSION,
                 metric="cosine",
                 spec=ServerlessSpec(cloud='aws', region='us-east-1')
             )
@@ -82,7 +76,7 @@ class PineconeEmbeddings:
         return chunks
 
     def generate_embedding(self, text):
-        return self.model.encode(text).tolist()
+        return self.model.embed_query(text)
 
     def process_and_upload(self, csv_file_path, batch_size=200):
         data = self.read_csv(csv_file_path)

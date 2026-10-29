@@ -98,9 +98,6 @@ def capture_restaurant_data(restaurant_name: str, location: str) -> RestaurantDa
         # Store main restaurant in database 
         stored_restaurant = repository.create_restaurant_from_search(main_restaurant_data, main_reviews)
 
-        # Imported here, not at module level: this pulls in sentence_transformers
-        # (and torch), which should only load on first real use, not at app
-        # startup — see ai_assistants/restaurant_reviews.get_embeddings().
         from rag_embeddings.pinecone_embeddings import PineconeEmbeddings
 
         # Initialize Pinecone uploader

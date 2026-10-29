@@ -33,7 +33,6 @@ class Settings(BaseSettings):
     # Pinecone Settings
     PINECONE_API_KEY: str
     PINECONE_INDEX: str
-    EMBEDDING_MODEL: str
     
     # SerpAPI Settings
     SERPAPI_API_KEY: str

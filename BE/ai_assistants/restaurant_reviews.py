@@ -4,7 +4,7 @@ import time
 from typing import Dict, List, Optional
 from pinecone import Pinecone
 from langchain_pinecone import PineconeVectorStore
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
 from langchain.memory import ConversationBufferMemory
 from langchain_core.messages import SystemMessage, HumanMessage
 from dotenv import load_dotenv
@@ -18,34 +18,23 @@ load_dotenv()
 
 PINECONE_API_KEY = os.environ.get("PINECONE_API_KEY")
 PINECONE_INDEX = os.environ.get("PINECONE_INDEX")
-huggingface_token = os.environ.get("HUGGINGFACEHUB_API_TOKEN")
 
-# Prefer the model bundled in the repo (local_models/) over a Hub download:
-# on free-tier hosts the first-boot download can take long enough to blow
-# past the platform's port-detection deadline, which looks like a silent hang.
-_LOCAL_EMBEDDING_MODEL = os.path.join(
-    os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-    "local_models", "all-MiniLM-L6-v2",
-)
-EMBEDDING_MODEL = (
-    _LOCAL_EMBEDDING_MODEL
-    if os.path.isdir(_LOCAL_EMBEDDING_MODEL)
-    else os.environ.get("EMBEDDING_MODEL")
-)
+# Hosted embeddings (Gemini), replacing a local sentence-transformers/PyTorch
+# model: that model's memory footprint was pushing the process past Render's
+# free-tier 512MB limit and getting it OOM-killed under load. Must match the
+# model used in rag_embeddings/pinecone_embeddings.py (ingestion) so queries
+# and stored vectors stay in the same embedding space.
+EMBEDDING_MODEL = "models/gemini-embedding-001"
 
 _embeddings = None
 
 
 def get_embeddings():
-    """Load the embedding model lazily, on first real use, rather than at
-    import time. Importing/loading it eagerly means it runs during `uvicorn`
-    startup, before the app has bound to its port — on a resource-constrained
-    host that can be slow enough to blow past the platform's port-detection
-    deadline, which looks like a silent hang with no error anywhere."""
+    """task_type="retrieval_query" tunes the embedding for search queries;
+    ingestion uses task_type="retrieval_document" (see pinecone_embeddings.py)."""
     global _embeddings
     if _embeddings is None:
-        from langchain_huggingface import HuggingFaceEmbeddings
-        _embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
+        _embeddings = GoogleGenerativeAIEmbeddings(model=EMBEDDING_MODEL, task_type="retrieval_query")
     return _embeddings
 
 

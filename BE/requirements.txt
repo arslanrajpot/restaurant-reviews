@@ -7,12 +7,10 @@ langchain==0.3.18
 langchain-google-genai==2.1.12
 langchain-core<1.0.0
 langchain-community===0.3.17
-langchain-huggingface==0.2.0
 langchain-pinecone==0.2.2
 pandas==2.2.3
 pillow==11.1.0
 pinecone==5.4.2
-sentence-transformers==3.4.1
 google_search_results==2.4.2
 alembic
 sqlalchemy>=2.0,<2.1  # 2.1 defaults postgresql:// to psycopg 3, which is not installed
