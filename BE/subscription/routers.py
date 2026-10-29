@@ -75,7 +75,6 @@ async def create_checkout_session(request: Request, current_user: User = Depends
 
     try:
         session = stripe.checkout.Session.create(
-            payment_method_types=['card'],
             mode='subscription',
             metadata={'customer_email': current_user.email},
             line_items=[{'price': price_id, 'quantity': 1}],

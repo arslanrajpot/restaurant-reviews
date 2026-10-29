@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import loginImage from "@/assets/images/login_image.jpg";
 import { changePlan, createCheckoutSession, get_user_data } from "@/service/api";
 
@@ -18,7 +19,7 @@ const plans = [
     ],
     id: "pro",
     popular: false,
-    priceId: "price_1RoheuQPh3u6u99AxKoRNgVZ",
+    priceId: "price_1UVzaUICRPR7SaTJ4tiM6M5R",
     tier: "PRO",
   },
   {
@@ -33,7 +34,7 @@ const plans = [
     ],
     id: "premium",
     popular: true,
-    priceId: "price_1Rohn6QPh3u6u99AYY8A5SEg",
+    priceId: "price_1UVzaVICRPR7SaTJxxsFOq3M",
     tier: "PREMIUM",
   }
 ];
@@ -41,6 +42,7 @@ const plans = [
 const TIER_RANK: Record<string, number> = { FREE: 0, PRO: 1, PREMIUM: 2 };
 
 const SubscriptionPage = () => {
+  const router = useRouter();
   const [showSubscribedModal, setShowSubscribedModal] = useState(false);
 
   const handleSubscribe = async (plan: typeof plans[0]) => {
@@ -145,6 +147,12 @@ const SubscriptionPage = () => {
             </div>
           ))}
         </div>
+        <button
+          onClick={() => router.push("/review_agent")}
+          className="mt-8 text-gray-500 hover:text-[var(--button-theme)] text-sm underline underline-offset-2 transition-colors"
+        >
+          Continue with Free plan
+        </button>
         {/* Modal for already subscribed */}
         {showSubscribedModal && (
           <div className="fixed inset-0 flex items-center justify-center bg-opacity-40 backdrop-blur-sm z-50">
