@@ -6,7 +6,7 @@ from datetime import datetime
 from users.model import Tier
 
 TIER_MESSAGE_LIMITS = {
-    Tier.FREE: 0,
+    Tier.FREE: 10,
     Tier.PRO: 100,
     Tier.PREMIUM: 350,
 }

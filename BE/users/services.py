@@ -1,6 +1,7 @@
 from users.schema import SignupRequest
 from fastapi import HTTPException
 from users import repository
+from users.repository import TIER_MESSAGE_LIMITS
 from users.utils import (
     get_password_hash,
     create_access_token,
@@ -11,7 +12,7 @@ from users.utils import (
     create_reset_token,
     get_user_from_reset_token,
 )
-from users.model import User
+from users.model import User, Tier
 
 
 def signup_user(user_data: SignupRequest) -> User:
@@ -25,6 +26,9 @@ def signup_user(user_data: SignupRequest) -> User:
     password = get_password_hash(user_data.password)
     user_payload = user_data.dict()
     user_payload["password"] = password
+    # New accounts default to the FREE tier, which otherwise leaves them with
+    # the DB column's default of 0 messages and no way to try the product.
+    user_payload["message_count"] = TIER_MESSAGE_LIMITS[Tier.FREE]
     user = repository.create_user(user_payload)
     access_token = create_access_token(data={"sub": user.email})
 
