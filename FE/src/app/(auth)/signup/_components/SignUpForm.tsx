@@ -696,21 +696,7 @@ export default function SignUpForm() {
                 onChange={handleCheckboxChange}
               />
               <label htmlFor="terms" className="text-gray-700 text-sm">
-                I agree to{" "}
-                <a
-                  href="#"
-                  className="text-[var(--button-theme)] hover:underline"
-                >
-                  Terms of Services
-                </a>{" "}
-                and{" "}
-                <a
-                  href="#"
-                  className="text-[var(--button-theme)] hover:underline"
-                >
-                  Privacy Policy
-                </a>
-                .
+                I agree to the Terms of Service and Privacy Policy.
               </label>
             </div>
             <button

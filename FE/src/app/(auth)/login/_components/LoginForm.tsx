@@ -114,12 +114,6 @@ export default function LoginForm() {
             {errors.password ? <p className="text-red-500 text-sm mt-1">{errors.password}</p> : <p className="invisible">Error</p>}
           </div>
 
-          <div className="text-right text-[var(--button-theme)] mt-[-15px]">
-            <a href="/forget_password" className="text-sm">
-              Forgot password?
-            </a>
-          </div>
-
           <button
               className="w-full p-2 mt-10 bg-[var(--button-theme)] text-white rounded-full hover:bg-[var(--button-theme)]/80 cursor-pointer disabled:bg-gray-300 disabled:cursor-not-allowed"
               disabled={isButtonDisabled}
