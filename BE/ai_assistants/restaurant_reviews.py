@@ -1,3 +1,4 @@
+import asyncio
 import os
 import time
 from typing import Dict, List, Optional
@@ -48,11 +49,29 @@ def get_embeddings():
     return _embeddings
 
 
+_vectorstore = None
+
+
+def get_vectorstore() -> PineconeVectorStore:
+    """Build the Pinecone client/index/vectorstore once and reuse it for every
+    message. These used to be rebuilt from scratch per chat message, each
+    paying for a fresh Pinecone connection on top of blocking the single
+    request-handling thread for the duration."""
+    global _vectorstore
+    if _vectorstore is None:
+        pc = Pinecone(api_key=PINECONE_API_KEY)
+        _vectorstore = PineconeVectorStore(
+            index=pc.Index(PINECONE_INDEX),
+            embedding=get_embeddings(),
+            text_key="text",
+        )
+    return _vectorstore
+
+
 class RestaurantAssistant:
     def __init__(self, restaurant_id: str, user_feedback_context: str='', history: Optional[List[Dict]] = None):
-        self.pc = Pinecone(api_key=PINECONE_API_KEY)
         self.chat_model = self.setup_chat_model()
-        self.vectorstore = self.setup_vectorstore()
+        self.vectorstore = get_vectorstore()
         self.restaurant_context = services.fetch_restaurant_context(restaurant_id)
         self.restaurant_name = self._extract_restaurant_name(self.restaurant_context)
         self.retriever = self.setup_retriever()
@@ -85,13 +104,6 @@ class RestaurantAssistant:
                 self.memory.chat_memory.add_user_message(entry["content"])
             else:
                 self.memory.chat_memory.add_ai_message(entry["content"])
-
-    def setup_vectorstore(self):
-        return PineconeVectorStore(
-            index=self.pc.Index(PINECONE_INDEX),
-            embedding=get_embeddings(),
-            text_key="text"
-        )
 
     def setup_retriever(self):
         # Without this filter, retrieval searches the whole Pinecone index —
@@ -171,8 +183,10 @@ class RestaurantAssistant:
 
     async def get_response(self, query: str) -> Dict:
         start_time = time.time()
-        # Errors propagate so the caller can report them (and not charge the user for a message)
-        retrieved_context = self.query_vectorstore(query)
+        # Errors propagate so the caller can report them (and not charge the user for a message).
+        # query_vectorstore is a blocking network call to Pinecone; run it off the event
+        # loop thread so it doesn't freeze every other in-flight request on this process.
+        retrieved_context = await asyncio.to_thread(self.query_vectorstore, query)
         human_content = (
             f"Verified restaurant database context:\n{retrieved_context or '(no matching results found)'}"
             f"\n\n{self.format_query_with_context(query)}"

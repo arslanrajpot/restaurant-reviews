@@ -1,3 +1,4 @@
+import asyncio
 from fastapi import FastAPI, HTTPException, Depends
 from pydantic import BaseModel
 from typing import Optional, Dict, List
@@ -95,7 +96,11 @@ async def send_message(input: ChatRequest, current_user: User = Depends(get_curr
 
     try:
         feedback_context = get_user_feedback_context(str(current_user.id))
-        restaurant_assistant = RestaurantAssistant(
+        # Construction does a blocking DB query plus (on first use) a blocking Pinecone
+        # connection; run it off the event loop thread so one slow chat request doesn't
+        # freeze every other in-flight request (including unrelated endpoints) on this process.
+        restaurant_assistant = await asyncio.to_thread(
+            RestaurantAssistant,
             restaurant_id=current_user.restaurant_id,
             user_feedback_context=feedback_context,
             history=chat_history[-MAX_CONTEXT_MESSAGES:],
