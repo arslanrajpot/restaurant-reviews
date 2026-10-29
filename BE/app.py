@@ -55,6 +55,9 @@ chat_histories: Dict[str, List[Dict]] = {}
 MAX_CONTEXT_MESSAGES = 20
 # How many messages are kept per user in memory
 MAX_STORED_MESSAGES = 100
+# Hard ceiling on a single chat request, so a stalled Gemini/Pinecone call fails
+# fast with a clear error instead of hanging indefinitely
+CHAT_TIMEOUT_SECONDS = 45
 
 class ChatResponse(BaseModel):
     content: str
@@ -99,22 +102,30 @@ async def send_message(input: ChatRequest, current_user: User = Depends(get_curr
         # Construction does a blocking DB query plus (on first use) a blocking Pinecone
         # connection; run it off the event loop thread so one slow chat request doesn't
         # freeze every other in-flight request (including unrelated endpoints) on this process.
-        restaurant_assistant = await asyncio.to_thread(
-            RestaurantAssistant,
-            restaurant_id=current_user.restaurant_id,
-            user_feedback_context=feedback_context,
-            history=chat_history[-MAX_CONTEXT_MESSAGES:],
+        # A hard ceiling (CHAT_TIMEOUT_SECONDS) around both steps means a stalled network
+        # call to Pinecone/Gemini fails fast with a clear error instead of hanging indefinitely.
+        restaurant_assistant = await asyncio.wait_for(
+            asyncio.to_thread(
+                RestaurantAssistant,
+                restaurant_id=current_user.restaurant_id,
+                user_feedback_context=feedback_context,
+                history=chat_history[-MAX_CONTEXT_MESSAGES:],
+            ),
+            timeout=CHAT_TIMEOUT_SECONDS,
         )
         # Open a DB session only when needed (e.g., for FAQ-specific queries)
         db = None
         try:
             if input.is_specific:
                 db = SessionLocal()
-            response = await restaurant_assistant.on_message(
-                message=input.message,
-                is_specific=input.is_specific or False,
-                faq_id=input.faq_id,
-                db=db
+            response = await asyncio.wait_for(
+                restaurant_assistant.on_message(
+                    message=input.message,
+                    is_specific=input.is_specific or False,
+                    faq_id=input.faq_id,
+                    db=db
+                ),
+                timeout=CHAT_TIMEOUT_SECONDS,
             )
         finally:
             if db is not None:
@@ -137,6 +148,10 @@ async def send_message(input: ChatRequest, current_user: User = Depends(get_curr
 
         return {"response": response, "status_code": 200, "remaining_messages": remaining_messages, "used_faq_id": input.faq_id if input.is_specific else None, "children": children}
     
+    except asyncio.TimeoutError:
+        refund_message(current_user.id)
+        print(f"Error: chat request timed out after {CHAT_TIMEOUT_SECONDS}s")
+        raise HTTPException(status_code=504, detail="The assistant took too long to respond. Please try again. Your message was not counted.")
     except Exception as e:
         refund_message(current_user.id)
         print(f"Error: {str(e)}")

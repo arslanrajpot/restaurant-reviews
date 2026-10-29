@@ -90,11 +90,16 @@ class RestaurantAssistant:
 
     @staticmethod
     def setup_chat_model():
+        # Without an explicit timeout this defaults to None (no timeout) with up to
+        # 6 retries, so a single stalled network call can hang the request for many
+        # minutes with nothing visibly wrong. Bound it so failures surface quickly.
         return ChatGoogleGenerativeAI(
             model="gemini-3.5-flash-lite",
             temperature=0.3,
             top_p=0.4,
-            max_output_tokens=1000
+            max_output_tokens=1000,
+            timeout=30,
+            max_retries=2,
         )
 
     def load_history(self, history: List[Dict]):
