@@ -26,9 +26,7 @@ services:
       - key: PINECONE_API_KEY
         sync: false
       - key: PINECONE_INDEX
-        value: review-munch
-      - key: EMBEDDING_MODEL
-        value: sentence-transformers/all-MiniLM-L6-v2
+        value: review-munch-gemini
       - key: SERPAPI_API_KEY
         sync: false
       - key: STRIPE_SECRET_KEY
