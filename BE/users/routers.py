@@ -1,7 +1,9 @@
+from datetime import datetime
 from fastapi import APIRouter, Depends
 
 from users import services
-from users.model import User
+from users.model import User, Tier
+from users.repository import FREE_DAILY_MESSAGE_LIMIT
 from users.schema import SignupRequest, LoginRequest, ResetPasswordRequest, ChangePasswordRequest, UserResponse
 from users.utils import get_current_user
 
@@ -30,6 +32,13 @@ def login(request: LoginRequest) -> dict:
 
 @router.get("/protected/")
 def protected(current_user: User = Depends(get_current_user)):
+    daily_messages_remaining = None
+    if current_user.tier == Tier.FREE and not current_user.is_subscribed:
+        if current_user.daily_message_reset_date == datetime.utcnow().date():
+            daily_messages_remaining = FREE_DAILY_MESSAGE_LIMIT - current_user.daily_message_count
+        else:
+            daily_messages_remaining = FREE_DAILY_MESSAGE_LIMIT
+
     return UserResponse(
         id=current_user.id,
         name=current_user.name,
@@ -39,6 +48,7 @@ def protected(current_user: User = Depends(get_current_user)):
         tier=current_user.tier,
         message_count=current_user.message_count,
         is_subscribed=current_user.is_subscribed,
+        daily_messages_remaining=daily_messages_remaining,
     )
 
 

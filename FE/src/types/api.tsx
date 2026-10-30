@@ -36,6 +36,7 @@ export type UserDataType = {
     tier: string;
     message_count: number;
     is_subscribed: boolean;
+    daily_messages_remaining: number | null;
 }
 
 export type LoginResponse = {

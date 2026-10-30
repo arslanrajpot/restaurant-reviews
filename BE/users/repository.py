@@ -1,5 +1,5 @@
 from typing import Optional
-from sqlalchemy import update, func
+from sqlalchemy import update, func, or_
 from database import SessionLocal
 from users.model import User
 from datetime import datetime
@@ -10,6 +10,10 @@ TIER_MESSAGE_LIMITS = {
     Tier.PRO: 100,
     Tier.PREMIUM: 350,
 }
+
+# FREE-tier users get a small daily allowance instead of drawing from the
+# lifetime TIER_MESSAGE_LIMITS pool (see reserve_free_daily_message below).
+FREE_DAILY_MESSAGE_LIMIT = 5
 
 
 def get_user_by_email(email: str):
@@ -98,3 +102,40 @@ def refund_message(user_id) -> None:
         db.commit()
 
 
+def reserve_free_daily_message(user_id) -> Optional[int]:
+    """
+    Atomically take one message from today's FREE-tier allowance, rolling the
+    counter over to 0 first if it was last reset on an earlier day.
+    Returns the remaining count for today, or None if today's allowance is used up.
+    """
+    today = datetime.utcnow().date()
+    with SessionLocal() as db:
+        db.execute(
+            update(User)
+            .where(
+                User.id == user_id,
+                or_(User.daily_message_reset_date == None, User.daily_message_reset_date < today),  # noqa: E711
+            )
+            .values(daily_message_count=0, daily_message_reset_date=today)
+        )
+        new_count = db.execute(
+            update(User)
+            .where(User.id == user_id, User.daily_message_count < FREE_DAILY_MESSAGE_LIMIT)
+            .values(daily_message_count=User.daily_message_count + 1)
+            .returning(User.daily_message_count)
+        ).scalar_one_or_none()
+        db.commit()
+    if new_count is None:
+        return None
+    return FREE_DAILY_MESSAGE_LIMIT - new_count
+
+
+def refund_free_daily_message(user_id) -> None:
+    """Give back a message taken by reserve_free_daily_message when answering failed"""
+    with SessionLocal() as db:
+        db.execute(
+            update(User)
+            .where(User.id == user_id, User.daily_message_count > 0)
+            .values(daily_message_count=User.daily_message_count - 1)
+        )
+        db.commit()

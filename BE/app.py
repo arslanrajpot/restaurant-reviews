@@ -13,7 +13,14 @@ from ai_assistants.restaurant_reviews import RestaurantAssistant
 from users.utils import get_current_user
 from restaurants.services import get_user_feedback_context
 from subscription.routers import router as stripe_router
-from users.repository import reserve_message, refund_message
+from users.model import Tier
+from users.repository import (
+    reserve_message,
+    refund_message,
+    reserve_free_daily_message,
+    refund_free_daily_message,
+    FREE_DAILY_MESSAGE_LIMIT,
+)
 from scheduler import start_scheduler, stop_scheduler
 from faq.routers import router as faq_router
 from database import SessionLocal
@@ -86,16 +93,28 @@ async def start_chat(current_user: User = Depends(get_current_user)):
 async def send_message(input: ChatRequest, current_user: User = Depends(get_current_user)):
     chat_history = chat_histories.setdefault(str(current_user.id), [])
 
-    # Take one message from the allowance up front (atomic, so parallel requests can't overspend);
-    # it is refunded below if answering fails
-    remaining_messages = reserve_message(current_user.id)
-    if remaining_messages is None:
-        if current_user.is_subscribed:
+    # FREE-tier users draw from a small daily allowance instead of the lifetime
+    # pool paid tiers use, so a demo user always has messages again tomorrow
+    # rather than being locked out forever once message_count hits 0.
+    is_free_tier = current_user.tier == Tier.FREE and not current_user.is_subscribed
+    if is_free_tier:
+        remaining_messages = reserve_free_daily_message(current_user.id)
+        if remaining_messages is None:
+            raise HTTPException(
+                status_code=403,
+                detail=(
+                    f"You've reached today's free limit of {FREE_DAILY_MESSAGE_LIMIT} messages. "
+                    "Subscribe for unlimited access, or come back tomorrow when your free messages reset."
+                ),
+            )
+    else:
+        # Take one message from the allowance up front (atomic, so parallel requests can't overspend);
+        # it is refunded below if answering fails
+        remaining_messages = reserve_message(current_user.id)
+        if remaining_messages is None:
             limit_message = ("You've used all messages for this billing period. "
                              "Upgrade your plan or wait for your next renewal.")
-        else:
-            limit_message = "Your message limit is reached, please purchase a plan."
-        return {"response": limit_message, "status_code": 403}
+            return {"response": limit_message, "status_code": 403}
 
     try:
         feedback_context = get_user_feedback_context(str(current_user.id))
@@ -149,11 +168,11 @@ async def send_message(input: ChatRequest, current_user: User = Depends(get_curr
         return {"response": response, "status_code": 200, "remaining_messages": remaining_messages, "used_faq_id": input.faq_id if input.is_specific else None, "children": children}
     
     except asyncio.TimeoutError:
-        refund_message(current_user.id)
+        refund_free_daily_message(current_user.id) if is_free_tier else refund_message(current_user.id)
         print(f"Error: chat request timed out after {CHAT_TIMEOUT_SECONDS}s")
         raise HTTPException(status_code=504, detail="The assistant took too long to respond. Please try again. Your message was not counted.")
     except Exception as e:
-        refund_message(current_user.id)
+        refund_free_daily_message(current_user.id) if is_free_tier else refund_message(current_user.id)
         print(f"Error: {str(e)}")
         raise HTTPException(status_code=500, detail="Sorry, something went wrong while answering. Your message was not counted.")
 

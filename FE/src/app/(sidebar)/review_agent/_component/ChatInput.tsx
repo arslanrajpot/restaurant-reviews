@@ -13,9 +13,10 @@ interface MessageType {
 interface Props {
   setMessage: (p: (prev: MessageType[]) => MessageType[]) => void;
   message?: MessageType[];
+  onLimitReached?: (message: string) => void;
 }
 
-const ChatInput = ({ setMessage, message }: Props) => {
+const ChatInput = ({ setMessage, message, onLimitReached }: Props) => {
   const [inputValue, setInputValue] = useState(""); // State to hold the input value
   const [height, setHeight] = useState(56); // Dynamic height for the textarea
   const [isProgress, setIsProgress] = useState(false); // Track if a message is processing
@@ -68,15 +69,22 @@ const ChatInput = ({ setMessage, message }: Props) => {
 
     } catch (error) {
       console.error("Error fetching response:", error);
+      const { status, message: errorMessage } = (error as { status?: number; message?: string }) || {};
+      const isLimitReached = status === 403 && typeof errorMessage === "string";
       setMessage(prev => {
         const updatedMessages = [...prev];
         updatedMessages[updatedMessages.length - 1] = {
           ...updatedMessages[updatedMessages.length - 1],
-          agentMessage: "i am sorry, but i am not able to answer your question. please try again later.",
+          agentMessage: isLimitReached
+            ? errorMessage!
+            : "i am sorry, but i am not able to answer your question. please try again later.",
           loading: false,
         };
         return updatedMessages;
       });
+      if (isLimitReached) {
+        onLimitReached?.(errorMessage!);
+      }
     } finally {
       setIsProgress(false);
     }

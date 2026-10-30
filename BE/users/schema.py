@@ -1,3 +1,4 @@
+from typing import Optional
 from pydantic import EmailStr, BaseModel
 from users.model import Tier
 from uuid import UUID
@@ -34,4 +35,6 @@ class UserResponse(BaseModel):
     tier: Tier
     message_count: int
     is_subscribed: bool
+    # Only meaningful for FREE-tier users; None for paid tiers (see users/routers.py).
+    daily_messages_remaining: Optional[int] = None
 

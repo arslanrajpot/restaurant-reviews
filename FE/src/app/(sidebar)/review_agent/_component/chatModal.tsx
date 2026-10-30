@@ -3,10 +3,10 @@
 import ChatInput from "@/app/(sidebar)/review_agent/_component/ChatInput";
 import Message from "@/app/(sidebar)/_components/message";
 import ChildQuestions from "@/app/(sidebar)/review_agent/_component/ChildQuestions";
+import LimitReachedBanner from "@/app/(sidebar)/review_agent/_component/LimitReachedBanner";
 import {useEffect, useRef, useState} from "react";
 import { get_user_data, review_agent } from "@/service/api";
 import { UserDataType, FAQNode } from "@/types/api";
-import { useRouter } from "next/navigation";
 
 interface MessageType {
   userMessage: string;
@@ -23,11 +23,10 @@ interface Props {
 const ChatModal = ({ message, setMessage }: Props) => {
   const messageEndRef = useRef<HTMLDivElement | null>(null);
   const [userData, setUserData] = useState<UserDataType | null>(null);
-  const [showLimitTooltip, setShowLimitTooltip] = useState(false);
+  const [dailyLimitMessage, setDailyLimitMessage] = useState<string | null>(null);
   const [availableChildQuestions, setAvailableChildQuestions] = useState<FAQNode[]>([]);
   const [isProcessing, setIsProcessing] = useState(false);
   const [clickedChildQuestions, setClickedChildQuestions] = useState<Set<number>>(new Set());
-  const router = useRouter();
 
   useEffect(() => {
       if (messageEndRef.current !== null) {
@@ -58,18 +57,15 @@ const ChatModal = ({ message, setMessage }: Props) => {
     setAvailableChildQuestions(allChildQuestions);
   }, [message]);
 
-  // Show tooltip and redirect if user is FREE and out of messages
+  // Surface the free-tier daily limit as soon as we know about it (e.g. right after
+  // loading the chat), not just after the user's next message fails.
   useEffect(() => {
-    if (userData && userData.tier === "FREE" && userData.message_count === 0) {
-      setShowLimitTooltip(true);
-      const timer = setTimeout(() => {
-        router.push("/subscription");
-      }, 3000);
-      return () => clearTimeout(timer);
-    } else {
-      setShowLimitTooltip(false);
+    if (userData && userData.tier === "FREE" && userData.daily_messages_remaining === 0) {
+      setDailyLimitMessage(
+        "You've reached today's free message limit. Subscribe for unlimited access, or come back tomorrow when your free messages reset."
+      );
     }
-  }, [userData, router]);
+  }, [userData]);
 
   const handleChildQuestionClick = async (question: string, faqId: number) => {
     if (isProcessing) return;
@@ -99,6 +95,8 @@ const ChatModal = ({ message, setMessage }: Props) => {
       });
     } catch (error) {
       console.error("Error asking child FAQ:", error);
+      const { status, message: errorMessage } = (error as { status?: number; message?: string }) || {};
+      const isLimitReached = status === 403 && typeof errorMessage === "string";
       // Update with error message
       setMessage(prev => {
         const newMessages = [...prev];
@@ -106,12 +104,15 @@ const ChatModal = ({ message, setMessage }: Props) => {
         if (lastIndex >= 0) {
           newMessages[lastIndex] = {
             userMessage: question,
-            agentMessage: "Sorry, I couldn't process that question. Please try again.",
+            agentMessage: isLimitReached ? errorMessage! : "Sorry, I couldn't process that question. Please try again.",
             loading: false
           };
         }
         return newMessages;
       });
+      if (isLimitReached) {
+        setDailyLimitMessage(errorMessage!);
+      }
     } finally {
       setIsProcessing(false);
     }
@@ -119,13 +120,8 @@ const ChatModal = ({ message, setMessage }: Props) => {
 
   return (
     <>
-      {showLimitTooltip && (
-        <div className="fixed top-40 right-8 z-50 flex items-center gap-2 px-4 py-2 bg-red-100 border border-red-300 text-red-800 rounded-lg shadow-lg animate-fade-in">
-          <svg className="w-5 h-5 text-red-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01M21 12A9 9 0 1 1 3 12a9 9 0 0 1 18 0z" />
-          </svg>
-          <span className="font-medium">Limit reached, redirecting to subscription page</span>
-        </div>
+      {dailyLimitMessage && (
+        <LimitReachedBanner message={dailyLimitMessage} onClose={() => setDailyLimitMessage(null)} />
       )}
       <div className="relative flex flex-col justify-center items-center w-full h-[70vh] max-w-4xl mx-auto py-4">
         <div className="flex-grow p-4 w-full overflow-y-auto max-h-[70vh]">
@@ -153,7 +149,7 @@ const ChatModal = ({ message, setMessage }: Props) => {
           </div>
         )}
         <div className="mb-[-70px] w-full px-4 bg-white">
-          <ChatInput setMessage={setMessage} message={message}/>
+          <ChatInput setMessage={setMessage} message={message} onLimitReached={setDailyLimitMessage}/>
         </div>
       </div>
     </>
