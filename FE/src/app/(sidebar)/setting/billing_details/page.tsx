@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import { get_billing_details, cancel_subscription, get_subscription_status } from "@/service/api";
 import Loader from "@/shared/loader";
 
@@ -32,9 +33,11 @@ function formatDate(ts?: number | null) {
 }
 
 export default function BillingDetailsPage() {
+  const router = useRouter();
   const [invoice, setInvoice] = useState<LatestPaidInvoice | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [noSubscription, setNoSubscription] = useState(false);
   const [cancelLoading, setCancelLoading] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
   const [popupMessage, setPopupMessage] = useState<string | null>(null);
@@ -45,7 +48,13 @@ export default function BillingDetailsPage() {
   useEffect(() => {
     get_billing_details()
       .then((data) => setInvoice(data.latest_paid_invoice))
-      .catch((err) => setError(err.message || err))
+      .catch((err) => {
+        if (err?.status === 404) {
+          setNoSubscription(true);
+        } else {
+          setError(err.message || err);
+        }
+      })
       .finally(() => setLoading(false));
     // Use the new status endpoint
     get_subscription_status()
@@ -54,6 +63,7 @@ export default function BillingDetailsPage() {
           setAlreadyCancelled(true);
         }
       })
+      .catch(() => {})
       .finally(() => setCancelStatusLoading(false));
   }, []);
 
@@ -132,8 +142,24 @@ export default function BillingDetailsPage() {
         </div>
       )}
     
-      {error && <div className="text-red-500">Error: {error}</div>}
-      {!loading && !error && invoice && (
+      {noSubscription && (
+        <div className="flex justify-center">
+          <div className="w-full max-w-lg bg-white rounded-xl shadow-md p-10 text-center">
+            <h1 className="text-2xl font-bold mb-3">You&apos;re on the Free plan</h1>
+            <p className="text-gray-600 mb-8">
+              There&apos;s no billing history to show yet. Upgrade to a paid plan to unlock more features.
+            </p>
+            <button
+              onClick={() => router.push("/subscription")}
+              className="px-6 py-2 bg-[var(--button-theme)] text-white font-medium rounded-full hover:bg-[var(--button-theme)]/80"
+            >
+              View Plans
+            </button>
+          </div>
+        </div>
+      )}
+      {error && !noSubscription && <div className="text-red-500">Error: {error}</div>}
+      {!loading && !error && !noSubscription && invoice && (
         <>
           <div className="flex justify-center">
             <div className="w-full max-w-4xl bg-white rounded-xl shadow-md p-10">
